@@ -1,0 +1,3 @@
+#Nơi lưu trữ văn bản, hướng dẫn, đường link
+* Information : http://goo.gl/upkpni
+* ......
