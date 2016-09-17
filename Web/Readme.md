@@ -22,5 +22,10 @@
 3. Thiết kế bao gồm tối thiểu 3 màn hình chính
 4. Có Accessibility ( Option)
 
-[Chi tiết xem tại đây](https://github.com/nartoan/DesigningTheUserInterface/blob/master/Web/docs/YeuCau.pptx)
+---
+###Tham khảo : 
+- Yêu cầu [Chi tiết xem tại đây](https://github.com/nartoan/DesigningTheUserInterface/blob/master/Web/docs/YeuCau.pptx)
+- Màu flat : http://flatuicolors.com/
+- [Mẫu web](http://reeoo.com/)
+- [Seri về thiết kế web] (http://kimthang.vn/category/bai-viet/thiet-ke-website/)
 
