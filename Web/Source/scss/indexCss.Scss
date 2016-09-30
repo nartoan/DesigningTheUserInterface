@@ -1,0 +1,151 @@
+    #wrapper {
+        #header {
+            .clearfix {
+                overflow: hidden;
+            }
+            height: 60px;
+            box-sizing: border-box;
+            background: #69c;
+            padding: 10px;
+            ul {
+                list-style-type: none;
+                height: 30px;
+                margin: 0;
+                padding: 0;
+                li {
+                    display: inline;
+                }
+            }
+            .svg-icon {
+                width: 1em;
+                height: 1em;
+                path,
+                polygon,
+                rect {
+                    fill: green;
+                }
+                circle {
+                    stroke: green;
+                    stroke-width: 1;
+                }
+            }
+            .nav-right {
+                float: right;
+                margin-right: 7.5%;
+                .profile {
+                    display: inline-block;
+                    position: relative;
+                    padding: 0 15px;
+                    height: 40px;
+                    line-height: 40px;
+                    border-radius: 5px;
+                    background-color: #f1f1f1;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #b3bc20;
+                    }
+                    .display-img {
+                        float: left;
+                        margin: 0 5px 0 -15px;
+                        height: 40px;
+                        width: 40px;
+                        border-radius: 5px;
+                    }
+                    .dropdown-setting {
+                        display: none;
+                        position: absolute;
+                        overflow: auto;
+                        background-color: #f9f9f9;
+                        border-radius:2px;
+                        min-width: 12em;
+                        margin: 4px 0px 40px -15px;
+                        padding: 4px;
+                        z-index: 1;
+                        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                        a {
+                            display: block;
+                            text-decoration: none;
+                            text-align: left;
+                            padding: 5px 10px;
+                            margin : 0px 3px;
+                            border-bottom: solid 1px #d9d9d9;
+                            font-weight: bold;
+                            color: black;
+                            &:hover {
+                                background: #b3bc20;
+                                text-decoration: none;
+                                border-radius: 2px;
+                            }
+                            &:last-child {
+                                border-bottom: none;
+                            }
+                        }
+                    }
+                    .show {
+                        display: block;
+                    }
+                }
+            }
+            .nav-left {
+                float: left;
+                margin: 0 7.5%;
+            }
+            .search {
+                display: inline!important;
+                max-height: 40px;
+                position: relative;
+                .search-box {
+                    box-sizing: border-box;
+                    width: 20%;
+                    height: 40px;
+                    padding: 5px 27px 6px 30px;
+                    font-size: 12px;
+                    border: 1px solid #e1e8ed;
+                    border-radius: 5px;
+                    -webkit-transition: width 0.4s ease-in-out;
+                    transition: width 0.4s ease-in-out;
+                    &:focus {
+                        width: 40%;
+                    }
+                }
+                svg {
+                    position: absolute;
+                    margin: 12px 0px 0px 5px;
+                }
+            }
+        }
+        #mainContent {
+            max-width: 1149px;
+            margin: auto;
+            .carousel {
+                box-sizing: border-box;
+                background: #FAFAFA;
+                position: relative;
+                .carousel-cell {
+                    width: 100%;
+                    height: 500px;
+                    margin-right: 5px;
+                    background: #8C8;
+                    border-radius: 0px;
+                    counter-increment: carousel-cell;
+                }
+                .static-banner {
+                    position: absolute;
+                    background: hsla(0, 0%, 0%, 0.3);
+                    z-index: 1;
+                    padding: 2px 20px;
+                    font-size: 26px;
+                    color: white;
+                    pointer-events: none;
+                    .static-banner1 {
+                        left: 10px;
+                        top: 10px;
+                    }
+                }
+            }
+        }
+        #footer {
+            background: black;
+            height: 100px;
+        }
+    }
