@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="bootstrap1.js"></script>
+  <script src="bootstrap2.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 600px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: black;
+      color: white;
+      padding: 15px;
+      height: 200px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+    p{
+    	margin-top: 20px;
+    	font-size: 20px;
+    	font-family: Arial;
+    }
+	button{
+		margin-right: 50px;
+	}
+	[id="sel1"]{
+		width: 50%;
+	}
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Trang chủ</a></li>
+        <li><a href="http://localhost:8080/Lab1/ucpostevent/caidatchung.html">Cài đặt</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+     
+    </div>
+    <div class="col-sm-8 text-left">
+	<p><b>Đăng sự kiện</b> </p>
+    <hr>
+    <form class="form-horizontal">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Tên sự kiện:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" placeholder="Nhập tên sự kiện">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Thời gian:</label>
+      <div class="col-sm-10">
+        <input type="datetime-local" class="form-control" id="pwd" placeholder="Enter password">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Địa điểm:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" placeholder="Nhập địa điểm tổ chức">
+      </div>
+
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Link sự kiện:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" placeholder="Nhập link sự kiện">
+      </div>
+
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="comment">Mô tả:</label>
+      <div class="col-sm-10">
+		<textarea class="form-control" rows="5" id="comment" placeholder="Mô tả về sự kiện"></textarea>
+      </div>
+    </div>
+
+        <div class="form-group">
+    <label class="control-label col-sm-2" for="sel1">Kiểu sự kiện:</label>
+
+      <div class="col-sm-10">
+      <select class="form-control" id="sel1">
+        <option>Hội thảo</option>
+        <option>Giải trí</option>
+        <option>Văn hóa</option>
+        <option>Âm nhạc</option>
+        <option>Khoa học</option>
+        <option>Khác</option>
+      </select>
+
+      </div>
+
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="myFile">Ảnh sự kiện:</label>
+      <div class="col-sm-10">
+		<input type="file" id="myFile">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+		<button type="button" class="btn btn-primary">Đăng</button>
+      <button type="button" class="btn btn-primary">Hủy</button>
+      </div>
+    </div>
+
+  </form>
+      
+    </div>
+    <div class="col-sm-2 sidenav">
+  
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  
+</footer>
+
+</body>
+</html>
+
