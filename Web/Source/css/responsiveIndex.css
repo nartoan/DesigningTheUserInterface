@@ -1,2 +1,44 @@
+@media screen and (max-width: 1024px) {
+  .responsive2 {
+    display: -webkit-inline-box !important;
+    display: -webkit-inline-flex !important;
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important; }
 
-/*# sourceMappingURL=responsive.css.map */
+  .dropdown-setting {
+    margin-top: 40px !important; }
+
+  .responsive1 {
+    width: 0px;
+    margin-right: 2em; }
+    .responsive1 b {
+      display: none; } }
+@media screen and (max-width: 768px) {
+  .nav-right {
+    margin-right: 0px !important; }
+
+  .profile {
+    width: 0px;
+    margin-right: 6em; }
+    .profile b {
+      display: none; }
+
+  .dropdown-setting {
+    margin-left: -180px !important; } }
+@media screen and (max-width: 680px) {
+  .search .search-box:focus {
+    width: 25%; }
+
+  #mainContent {
+    width: 100% !important; } }
+@media screen and (max-width: 580px) {
+  .profile {
+    margin-right: 5em; } }
+@media screen and (max-width: 480px) {
+  .profile {
+    margin-right: 3em; } }
+@media screen and (max-width: 320px) {
+  .profile {
+    margin-right: 1.5em; } }
+
+/*# sourceMappingURL=responsiveIndex.css.map */
