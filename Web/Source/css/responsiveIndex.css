@@ -1,44 +1,63 @@
 @media screen and (max-width: 1024px) {
-  .responsive2 {
-    display: -webkit-inline-box !important;
-    display: -webkit-inline-flex !important;
-    display: -ms-inline-flexbox !important;
-    display: inline-flex !important; }
+  .nav-right {
+    width: 42% !important;
+    margin-right: 0 !important; }
+    .nav-right .profile {
+      margin-right: 50% !important; }
+      .nav-right .profile > span {
+        display: none; }
+      .nav-right .profile .dropdown {
+        margin: 3.1em 0 0 -10em !important; }
+    .nav-right .notification {
+      padding-right: 0px !important; }
 
-  .dropdown-setting {
-    margin-top: 40px !important; }
-
-  .responsive1 {
-    width: 0px;
-    margin-right: 2em; }
-    .responsive1 b {
-      display: none; } }
+  .nav-left {
+    width: 40% !important;
+    margin-left: 0 !important; }
+    .nav-left .left-display {
+      margin-left: 40% !important;
+      padding-left: 0 !important; }
+    .nav-left .search-box {
+      display: none; }
+    .nav-left .fa.fa-search {
+      font-size: 2em;
+      width: 38%;
+      margin: 3px 0 0 0 !important;
+      color: #fff; }
+      .nav-left .fa.fa-search:hover {
+        background: #298946; } }
 @media screen and (max-width: 768px) {
   .nav-right {
-    margin-right: 0px !important; }
+    width: 40% !important; }
+    .nav-right .notification {
+      width: 45% !important; }
 
-  .profile {
-    width: 0px;
-    margin-right: 6em; }
-    .profile b {
-      display: none; }
-
-  .dropdown-setting {
-    margin-left: -180px !important; } }
+  .nav-left {
+    width: 37% !important; } }
 @media screen and (max-width: 680px) {
-  .search .search-box:focus {
-    width: 25%; }
+  .nav-right {
+    width: 42% !important; }
 
-  #mainContent {
-    width: 100% !important; } }
+  .nav-left {
+    width: 33% !important; } }
 @media screen and (max-width: 580px) {
-  .profile {
-    margin-right: 5em; } }
+  .nav-right {
+    width: 45% !important; }
+    .nav-right .notification {
+      width: 40% !important; }
+
+  .nav-left {
+    width: 30% !important; } }
 @media screen and (max-width: 480px) {
-  .profile {
-    margin-right: 3em; } }
+  .content-noti {
+    width: 100vw !important; } }
 @media screen and (max-width: 320px) {
-  .profile {
-    margin-right: 1.5em; } }
+  .nav-right {
+    width: 45% !important; }
+    .nav-right .notification {
+      width: 20% !important; }
+
+  .nav-left {
+    width: 25% !important; } }
 
 /*# sourceMappingURL=responsiveIndex.css.map */

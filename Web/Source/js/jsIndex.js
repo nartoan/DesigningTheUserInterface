@@ -1,16 +1,29 @@
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+window.onclick = function(e) {
+    if (!e.target.matches('.notification') && !e.target.matches(".fa") && !e.target.matches(".name-noti")) {
+        var dropdowns = document.getElementsByClassName("content-noti");
+        for (var d = 0; d < dropdowns.length; d++) {
+            var openDropdown = dropdowns[d];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+
+    if (!e.target.matches('.information') && !e.target.matches(".display-img") && !e.target.matches(".name-user")) {
+        var dropdowns = document.getElementsByClassName("content-infor");
+        for (var d = 0; d < dropdowns.length; d++) {
+            var openDropdown = dropdowns[d];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
 }
 
-window.onclick = function(e) {
-  if (!e.target.matches('.dropsetting')) {
+function showInformation() {
+    document.getElementById("dropdown-infor").classList.toggle("show");
+}
 
-    var dropdowns = document.getElementsByClassName("dropdown-setting");
-    for (var d = 0; d < dropdowns.length; d++) {
-      var openDropdown = dropdowns[d];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
+function showNotification() {
+    document.getElementById("dropdown-noti").classList.toggle("show");
 }
