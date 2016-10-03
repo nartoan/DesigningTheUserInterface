@@ -1,0 +1,8 @@
+﻿Demands for Event group , làm được càng nhiều càng tốt nha, chúc đại phó ôn thi tốt :)))
+
+1. Margin lại 2 cột của các sự kiện rộng ra tí
+2. Vẽ cột timeline ở giữa, có hình tròn các kiểu
+3. fix lại cái star voting rate
+4. Sửa lại màu nền thành #E5E5DC
+5. Chỉnh sủa lại ảnh của các sự kiện, đừng để trùng màu nền quá.
+

@@ -1,0 +1,39 @@
+Báo cáo:
+
+1. Tổng quan về website của mình
+- Mục đích, nội dung chính của website
+- Người dùng muốn ở website
+
+2. Các trang sự kiện liên quan
+Nêu lên hiện trạng các trang phổ biến về sự kiện, ưu và nhược điểm của các trường đó, phạm vi: website tiếng việt
+
+=> Cần có những gì ở trang về sự kiện => Xây dựng kế hoạch chi tiết cho website của mình nhằm phát triển các ưu điểm và khắc phục nhược điểm, đồng thời đưa ra các tính năng,
+giao diện mới phù hợp hơn với xu hướng và công nghệ hiện nay.
+
+3. Nội dung chính của việc xây dựng giao diện cho website sự kiện : Event Near Me
+3.1: Sơ đồ use case tổng quan
+
+3.2: Chi tiết từng use case
+
+3.3: Thiết kế giao diện
+
+3.3.1: Đưa bản nháp, các phiên bản của trang giao diện: bao gồm các bản nháp, các logo, thay đổi về bố cục.
+	- Xác định màu sắc chủ đạo, thống nhất phong cách thiết kế, giao diện phẳng (flat design);
+
+3.3.2: Đưa ra bản mẫu bằng hình ảnh trực quan thông qua thiết kế bằng photoshop , nhằm mục đích chuyển đổi sang giao diện ngôn ngữ html một cách trực quan và dễ dàng hơn.
+
+4. Thực hiện việc xây dựng giao diện cho website
+4.1: Xác định các công nghệ:
+   - Bootstrap twitter version 3 - font awesome
+   - IDE : Sublime text
+   - Công cụ quản lý code: Sublime Text 3
+   - User agent: chrome, firefox, internet explorer, Tor
+   - Hệ điều hành: Ubuntu 16.04.1, Windows 10
+
+4.2: Implementation
+	
+4.3 Kiểm thử: Kiểm thử mức đơn vị, kiểm tra responsive, các hành động, sự kiện cũng như các hiệu ứng.
+
+4.4 Tổng hợp tài liệu , tạo thành tài liệu tham khảo cho giao diện website
+
+5. Kết thúc và báo cáo
