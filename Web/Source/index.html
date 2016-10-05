@@ -7,28 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/responsiveIndex.css">
+    <!--
+    <link rel="stylesheet" type="text/css" href="css/responsiveIndex.css"> -->
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/flickity.css" media="screen">
+    <script src="js/flickity.pkgd.min.js"></script>
     <script src="js/jsIndex.js"></script>
-    <!-- Import for carousel -->
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.min.css">
-    <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
 </head>
 
 <body>
     <div id="wrapper">
         <div id="header">
-            <div class="nav-left">
-                <img class="left-display" id="logo" src="image/logo.png" width="40px" height="40px">
-                <div class="left-display">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                    <input class="search-box" type="text" placeholder="Search event..">
-                </div>
+            <div class="logo">
+                <img id="logo" src="image/logodemo.png">
+            </div>
+            <div class="search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input class="search-box" type="text" placeholder="Search event..">
             </div>
             <div class="nav-right">
                 <div class="profile notification" onclick="showNotification()">
                     <i class="fa fa-bell-o" aria-hidden="true"></i>
-                    <span class=".name-noti">Thông báo</span>
+                    <span class="name-noti">Thông báo</span>
                     <div class="dropdown content-noti" id="dropdown-noti">
                         <a href="#">Thông báo 1</a>
                         <a href="#">Thông báo 2</a>
@@ -51,6 +51,7 @@
                 </div>
             </div>
         </div>
+        <!--
         <div id="mainContent">
             <div class="carousel" data-flickity='{ "cellSelector": ".carousel-cell","wrapAround": true  }'>
                 <div class="carousel-cell"><img src="image/smartHack.jpg"></div>
@@ -66,65 +67,68 @@
             <div class="category">
                 <p>Nhóm loại sự kiện</p>
                 <div class="category-detail">
-                        <div class="card effect__EFFECT">
-                            <div class="card__front">
-                                <span class="card__text">front</span>
-                            </div>
-                            <div class="card__back">
-                                <span class="card__text">back</span>
-                            </div>
+                    <div class="card effect">
+                        <div class="card__front">
+                            <span class="card__text">front</span>
                         </div>
-                        <!-- /card1 -->
-                        <div class="card effect__EFFECT">
-                            <div class="card__front">
-                                <span class="card__text">front</span>
-                            </div>
-                            <div class="card__back">
-                                <span class="card__text">back</span>
-                            </div>
+                        <div class="card__back">
+                            <span class="card__text">back</span>
                         </div>
-                        <!-- /card2 -->
-                        <div class="card effect__EFFECT">
-                            <div class="card__front">
-                                <span class="card__text">front</span>
-                            </div>
-                            <div class="card__back">
-                                <span class="card__text">back</span>
-                            </div>
-                        </div>
-                        <!-- /card3 -->
-                        <div class="card effect__EFFECT">
-                            <div class="card__front">
-                                <span class="card__text">front</span>
-                            </div>
-                            <div class="card__back">
-                                <span class="card__text">back</span>
-                            </div>
-                        </div>
-                        <!-- /card4 -->
-                        <div class="card effect__EFFECT">
-                            <div class="card__front">
-                                <span class="card__text">front</span>
-                            </div>
-                            <div class="card__back">
-                                <span class="card__text">back</span>
-                            </div>
-                        </div>
-                        <!-- /card5 -->
-                        <div class="card effect__EFFECT">
-                            <div class="card__front">
-                                <span class="card__text">front</span>
-                            </div>
-                            <div class="card__back">
-                                <span class="card__text">back</span>
-                            </div>
-                        </div>
-                        <!-- /card6 -->
                     </div>
+                    <!-- /card1 
+                    <div class="card effect">
+                        <div class="card__front">
+                            <span class="card__text">front</span>
+                        </div>
+                        <div class="card__back">
+                            <span class="card__text">back</span>
+                        </div>
+                    </div>
+                    <!-- /card2 
+                    <div class="card effect">
+                        <div class="card__front">
+                            <span class="card__text">front</span>
+                        </div>
+                        <div class="card__back">
+                            <span class="card__text">back</span>
+                        </div>
+                    </div>
+                    <!-- /card3 
+                    <div class="card effect">
+                        <div class="card__front">
+                            <span class="card__text">front</span>
+                        </div>
+                        <div class="card__back">
+                            <span class="card__text">back</span>
+                        </div>
+                    </div>
+                    <!-- /card4 -
+                    <div class="card effect">
+                        <div class="card__front">
+                            <span class="card__text">front</span>
+                        </div>
+                        <div class="card__back">
+                            <span class="card__text">back</span>
+                        </div>
+                    </div>
+                    <!-- /card5 
+                    <div class="card effect">
+                        <div class="card__front">
+                            <img src="image/smartHack.jpg">
+                            <span>Công nghệ thông tin</span>
+                            <p>Những lĩnh vực về công nghệ thông tin</p>
+                        </div>
+                        <div class="card__back">
+                            <span class="card__text">back</span>
+                        </div>
+                    </div>
+                    <!-- /card6 
+                    <dir class="clear"></dir>
                 </div>
+            </div>
         </div>
         <div id="footer">
-        </div>
+        </div> -->
     </div>
 </body>
 
