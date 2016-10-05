@@ -1106,6 +1106,23 @@ hr {
     }
 }
 @media only screen and (min-width: 800px) {
+
+
+        /* part css to draw col*/
+    .js-events-list .g-cell:nth-child(2), .js-events-list .g-cell:nth-child(even) {
+          margin-top: 75px;
+          padding-left:5rem;
+          border-left:solid 5px gray;
+    }
+
+    .js-events-list .g-cell:nth-child(1), .js-events-list .g-cell:nth-child(odd){   
+          margin-top:0px;   
+          padding-right:5rem;
+    } 
+    .js-events-list .g-cell {
+          transition: all 0.5s erase-in-out;
+    }
+
     .g-cell,
     .timeline__content,
     .timeline__date,
@@ -2178,6 +2195,27 @@ hr {
     }
 }
 @media only screen and (min-width: 800px) {
+    
+
+        /* part css to draw col*/
+    .js-events-list .g-cell:nth-child(2), .js-events-list .g-cell:nth-child(even) {
+          margin-top: 75px;
+          padding-left:5rem;
+          border-left:solid 5px gray;
+    }
+
+    .js-events-list .g-cell:nth-child(1), .js-events-list .g-cell:nth-child(odd){   
+          margin-top:0px;   
+          padding-right:5rem;
+    } 
+    .js-events-list .g-cell {
+          transition: all 0.5s erase-in-out;
+    }
+
+
+  
+
+
     .hide-large {
         display: none!important
     }

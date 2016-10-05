@@ -3,22 +3,37 @@
 
 <head>
     <title>Event near me</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+    
+    <!-- css for homepage -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/responsiveIndex.css">
-    <link rel="stylesheet" href="css/flickity.min.css">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+    <!-- bootstrap plugin css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="http:/netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <!-- font awesome -->
+    <!-- <link rel="stylesheet" href="http:/netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> -->
+
+    <!-- main css and responsive -->
 	<link rel="stylesheet" type="text/css" href="css/event_group_base.css" />
-    <link rel="stylesheet" type="text/css" href="css/responsive_event_group.css" />
+
+    <!-- to responsive better ??? -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/responsive_event_group.css" /> -->
+
+    <!-- manual css -->
     <link rel="stylesheet" type="text/css" href="css/editor_some.css"/>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap-star-rating.js"></script>
-    <script src="js/flickity.pkgd.min.js"></script>
-    <script src="js/jsindex.js"></script>
+
+
+    <!-- manual js -->
+    <script type="text/javascript" src="js/jsIndex.js"></script>
+
+    <!-- jquery -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	
 </head>
 
 <body>
@@ -53,7 +68,9 @@
         </div>
         <div id="mainContent">
           	<section class="hero-image-container">
-    <div class="hero-overlay"></div>
+    <div class="hero-overlay">
+        <img src="img/banner.jpg" alt="" height="500px" width="100%">
+    </div>
 <div class="hero-image__content l-mar-top-2">
         <div class="g-cell g-cell-12-12 org-banner-cta">
             <h2 class="l-mar-top-3 text-epic text-heading--emphasized l-align-center">
@@ -69,10 +86,10 @@
 </section>
 
 <h2 class="is-hidden-accessible">Suggested Events</h2>
-<section class="g-grid l-pad-bot-5 l-sm-pad-bot-3">
+<div class="g-grid l-pad-bot-5 l-sm-pad-bot-3">
 <div class="js-popular-events">
-    <section class="js-events-list">
-        <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-2 g-cell-lg-1-3 l-pad-vert-3 ">
+    <div class="js-events-list">
+        <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-1 g-cell-lg-1-2 l-pad-vert-2 ">
             
                     <div class="poster-card js-d-poster">
                     <a href="#"
@@ -108,20 +125,8 @@
                     </div>
                 </a>
                 <div class="poster-card__footer">                     
-                   <div class="stars">
-                        <form action="">
-                          <input class="star star-5" id="star-5-2" type="radio" name="star">
-                          <label class="star star-5" for="star-5-2"></label>
-                          <input class="star star-4" id="star-4-2" type="radio" name="star">
-                          <label class="star star-4" for="star-4-2"></label>
-                          <input class="star star-3" id="star-3-2" type="radio" name="star">
-                          <label class="star star-3" for="star-3-2"></label>
-                          <input class="star star-2" id="star-2-2" type="radio" name="star">
-                          <label class="star star-2" for="star-2-2"></label>
-                          <input class="star star-1" id="star-1-2" type="radio" name="star">
-                          <label class="star star-1" for="star-1-2"></label>
-                        </form>
-                      </div>
+                    <span class="rateit">
+                    </span>
                 </div>
 
             </div>
@@ -130,7 +135,7 @@
         </div>
         
         
-        <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-2 g-cell-lg-1-3 l-pad-vert-3 ">
+        <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-1 g-cell-lg-1-2 l-pad-vert-2 ">
             
     <div class="poster-card js-d-poster">
     <a href="#"
@@ -145,7 +150,7 @@
             >
                 <img class="js-poster-image "
 
-                    src="img/2.png"
+                    src="img/2.jpg"
 
                     alt="NAFOSTED-NHMRC Joint Networking Symposium for Health and Medical Researchers tickets"
                 />
@@ -175,20 +180,7 @@
         </div>
     </a>
                     <div class="poster-card__footer">                     
-                   <div class="stars">
-                        <form action="">
-                          <input class="star star-5" id="star-5-2" type="radio" name="star">
-                          <label class="star star-5" for="star-5-2"></label>
-                          <input class="star star-4" id="star-4-2" type="radio" name="star">
-                          <label class="star star-4" for="star-4-2"></label>
-                          <input class="star star-3" id="star-3-2" type="radio" name="star">
-                          <label class="star star-3" for="star-3-2"></label>
-                          <input class="star star-2" id="star-2-2" type="radio" name="star">
-                          <label class="star star-2" for="star-2-2"></label>
-                          <input class="star star-1" id="star-1-2" type="radio" name="star">
-                          <label class="star star-1" for="star-1-2"></label>
-                        </form>
-                      </div>
+  
                 </div>
 
 </div>
@@ -197,7 +189,7 @@
         </div>
         
         
-        <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-2 g-cell-lg-1-3 l-pad-vert-3 ">
+        <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-1 g-cell-lg-1-2 l-pad-vert-2 ">
             
     <div class="poster-card js-d-poster">
     <a href="#"
@@ -213,7 +205,7 @@
             >
                 <img class="js-poster-image "
 
-                    src="img/3.png"
+                    src="img/3.jpg"
 
                     alt="Installing, Configuring and Managing VMware vSphere [v5.5+v6.0] Hanoi tickets"
                 />
@@ -243,21 +235,8 @@
         </div>
     </a>
           <div class="poster-card__footer">                     
-                   <div class="stars">
-                        <form action="">
-                          <input class="star star-5" id="star-5-2" type="radio" name="star">
-                          <label class="star star-5" for="star-5-2"></label>
-                          <input class="star star-4" id="star-4-2" type="radio" name="star">
-                          <label class="star star-4" for="star-4-2"></label>
-                          <input class="star star-3" id="star-3-2" type="radio" name="star">
-                          <label class="star star-3" for="star-3-2"></label>
-                          <input class="star star-2" id="star-2-2" type="radio" name="star">
-                          <label class="star star-2" for="star-2-2"></label>
-                          <input class="star star-1" id="star-1-2" type="radio" name="star">
-                          <label class="star star-1" for="star-1-2"></label>
-                        </form>
-                      </div>
-                </div>
+       
+         </div>
 
 </div>
 
@@ -265,7 +244,7 @@
         </div>
         
         
-        <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-2 g-cell-lg-1-3 l-pad-vert-3 ">
+        <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-1 g-cell-lg-1-2 l-pad-vert-2 ">
             
     <div class="poster-card js-d-poster">
     <a href="#"
@@ -311,21 +290,8 @@
         </div>
     </a>
         <div class="poster-card__footer">                     
-                   <div class="stars">
-                        <form action="">
-                          <input class="star star-5" id="star-5-2" type="radio" name="star">
-                          <label class="star star-5" for="star-5-2"></label>
-                          <input class="star star-4" id="star-4-2" type="radio" name="star">
-                          <label class="star star-4" for="star-4-2"></label>
-                          <input class="star star-3" id="star-3-2" type="radio" name="star">
-                          <label class="star star-3" for="star-3-2"></label>
-                          <input class="star star-2" id="star-2-2" type="radio" name="star">
-                          <label class="star star-2" for="star-2-2"></label>
-                          <input class="star star-1" id="star-1-2" type="radio" name="star">
-                          <label class="star star-1" for="star-1-2"></label>
-                        </form>
-                      </div>
-                </div>
+        
+        </div>
 
 </div>
 
@@ -333,7 +299,7 @@
         </div>
         
         
-        <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-2 g-cell-lg-1-3 l-pad-vert-3 ">
+        <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-1 g-cell-lg-1-2 l-pad-vert-2 ">
             
     <div class="poster-card js-d-poster">
     <a href="#"
@@ -349,7 +315,7 @@
             >
                 <img class="js-poster-image "
 
-                    src="img/5.png"
+                    src="img/5.jpg"
 
                     alt="The 4th Asia-Pacific Conference on Life Science and Engineering tickets"
                 />
@@ -379,21 +345,8 @@
         </div>
     </a>
           <div class="poster-card__footer">                     
-                   <div class="stars">
-                        <form action="">
-                          <input class="star star-5" id="star-5-2" type="radio" name="star">
-                          <label class="star star-5" for="star-5-2"></label>
-                          <input class="star star-4" id="star-4-2" type="radio" name="star">
-                          <label class="star star-4" for="star-4-2"></label>
-                          <input class="star star-3" id="star-3-2" type="radio" name="star">
-                          <label class="star star-3" for="star-3-2"></label>
-                          <input class="star star-2" id="star-2-2" type="radio" name="star">
-                          <label class="star star-2" for="star-2-2"></label>
-                          <input class="star star-1" id="star-1-2" type="radio" name="star">
-                          <label class="star star-1" for="star-1-2"></label>
-                        </form>
-                      </div>
-                </div>
+                   
+        </div>
 
 </div>
 
@@ -401,7 +354,7 @@
         </div>
         
         
-        <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-2 g-cell-lg-1-3 l-pad-vert-3 ">
+        <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-1 g-cell-lg-1-2 l-pad-vert-2 ">
             
             <div class="poster-card js-d-poster">
                 <a href="#"
@@ -413,7 +366,7 @@
                         <div class="poster-card__image">
                             <img class="js-poster-image "
 
-                            src="img/6.png"
+                            src="img/6.jpg"
 
                             alt="2017 International Business, Economics, Finance and Management Conference (BREFM) tickets"/>
                         </div>
@@ -437,7 +390,7 @@
                 </a>
 
                 <div class="poster-card__footer">                     
-                   <div id="stars-default" data-rating="3"><input type="hidden" name="rating" value="3"><span data-value="1" class="ratingicon glyphicon glyphicon-star" style="font-size: 1.3em; color: red; cursor: pointer;" aria-hidden="true"></span><span data-value="2" class="ratingicon glyphicon glyphicon-star" style="font-size: 1.3em; color: red; cursor: pointer;" aria-hidden="true"></span><span data-value="3" class="ratingicon glyphicon glyphicon-star" style="font-size: 1.3em; color: red; cursor: pointer;" aria-hidden="true"></span><span data-value="4" class="ratingicon glyphicon glyphicon-star" style="font-size: 1.3em; color: red; cursor: pointer;" aria-hidden="true"></span><span data-value="5" class="ratingicon glyphicon glyphicon-star" style="font-size: 1.3em; color: red; cursor: pointer;" aria-hidden="true"></span></div>
+                   
                 </div>
 
             </div>
@@ -449,7 +402,7 @@
         </div>
         
         
-        <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-2 g-cell-lg-1-3 l-pad-vert-3 ">
+        <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-1 g-cell-lg-1-2 l-pad-vert-2 ">
             
     <div class="poster-card js-d-poster">
     <a href="#"
@@ -464,12 +417,20 @@
   </section>
 
   <div class="seemore-btn">
-  	<button type="button" class="btn">See More</button>
+  	<button class="btn btn-primary">See More</button>
   </div>
  
     <div id="footer">
     </div>
    </div>
-</body>
+    <script type="text/javascript">
+          $(document).ready(function(){
+                // $(".js-events-list").css("margin-top","-15rem");
+                $(".js-events-list").css('margin-top','0');
+                $(".js-events-list").animate({ marginTop: '-15rem', opacity: 1 }, 1000);
 
+           });
+
+    </script>
+</body>
 </html>
