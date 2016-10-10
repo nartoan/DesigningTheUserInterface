@@ -228,7 +228,14 @@
 		            });
 		            infowindow.open(map, marker);
 		        }
-		        google.maps.event.addDomListener(window, 'load', initialize);
+		        function loadMapGg(){
+		        	google.maps.event.addDomListener(window, 'load', initialize);
+
+		        }
+
+		        window.setTimeout(loadMapGg, 500);
+
+
 		    	</script>
 			</div>
 		</div>	
