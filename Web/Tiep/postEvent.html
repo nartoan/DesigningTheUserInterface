@@ -51,6 +51,8 @@
 	[id="sel1"]{
 		width: 50%;
 	}
+
+  .Baoloi { color: #ff0000;}
   </style>
 </head>
 <body>
@@ -89,26 +91,30 @@
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">Tên sự kiện:</label>
       <div class="col-sm-10">
-        <input type="email" class="form-control" id="email" placeholder="Nhập tên sự kiện">
+        <input type="email" class="form-control" id="tensukien" placeholder="Nhập tên sự kiện">
+        <span id="loi_ten" class="Baoloi" ></span>
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2" for="pwd">Thời gian:</label>
       <div class="col-sm-10">
-        <input type="datetime-local" class="form-control" id="pwd" placeholder="Enter password">
+        <input type="datetime-local" class="form-control" id="thoigian" >
+        <span id="loi_thoigian" class="Baoloi"></span>
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">Địa điểm:</label>
       <div class="col-sm-10">
-        <input type="email" class="form-control" id="email" placeholder="Nhập địa điểm tổ chức">
+        <input type="email" class="form-control" id="diadiem" placeholder="Nhập địa điểm tổ chức">
+        <span id="loi_diadiem" class="Baoloi"></span>
       </div>
 
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">Link sự kiện:</label>
       <div class="col-sm-10">
-        <input type="email" class="form-control" id="email" placeholder="Nhập link sự kiện">
+        <input type="email" class="form-control" id="linksk" placeholder="Nhập link sự kiện">
+        <span id="loi_link" class="Baoloi"></span>
       </div>
 
     </div>
@@ -116,6 +122,7 @@
       <label class="control-label col-sm-2" for="comment">Mô tả:</label>
       <div class="col-sm-10">
 		<textarea class="form-control" rows="5" id="comment" placeholder="Mô tả về sự kiện"></textarea>
+    <span id="loi_mota" class="Baoloi"></span>
       </div>
     </div>
 
@@ -144,8 +151,10 @@
 
     <div class="form-group">
       <div class="col-sm-offset-2 col-sm-10">
-		<button type="button" class="btn btn-primary">Đăng</button>
-      <button type="button" class="btn btn-primary">Hủy</button>
+		<button type="button" class="btn btn-primary" onclick="javascript:dang();" id="dangbtn">
+    Đăng
+    </button>
+      <button type="reset" class="btn btn-primary" onclick="javascript:huy()">Nhập lại</button>
       </div>
     </div>
 
@@ -161,6 +170,67 @@
 <footer class="container-fluid text-center">
   
 </footer>
+
+<script type="text/javascript">
+  function dang() {
+  okie = true; //chua co loi
+  //xoa cac thong bao loi
+  document.getElementById("loi_ten").innerHTML  = "";
+    document.getElementById("loi_thoigian").innerHTML  = "";
+  document.getElementById("loi_diadiem").innerHTML  = "";
+    document.getElementById("loi_link").innerHTML  = "";
+        document.getElementById("loi_mota").innerHTML  = "";
+
+
+  if (document.getElementById("tensukien").value == "") {
+    document.getElementById("loi_ten").innerHTML = "Chưa nhập tên sự kiện"; 
+    document.getElementById("tensukien").focus();
+    okie = false;
+  }
+  if (document.getElementById("thoigian").value == "") {
+    document.getElementById("loi_thoigian").innerHTML = "Chưa nhập thời gian"; 
+    document.getElementById("thoigian").focus();
+    okie = false;
+  }
+  if (document.getElementById("diadiem").value == "") {
+    document.getElementById("loi_diadiem").innerHTML = "Chưa nhập địa điểm tổ chức"; 
+    document.getElementById("diadiem").focus();
+    okie = false;
+  }
+   
+if (document.getElementById("linksk").value == "") {
+    document.getElementById("loi_link").innerHTML = "Chưa nhập link sự kiện"; 
+    document.getElementById("linksk").focus();
+    okie = false;
+  }
+
+  if (document.getElementById("comment").value == "") {
+    document.getElementById("loi_mota").innerHTML = "Chưa nhập mô tả"; 
+    document.getElementById("comment").focus();
+    okie = false;
+  }
+
+  if (okie) {
+    //táº¥t cáº£ cĂ¡c dá»¯ liá»‡u Ä‘Æ°á»£c nháº­p Ä‘Ăºng Ä‘áº¯n
+    //submit form
+    
+    
+        document.getElementById("dangbtn").type = "reset";    
+        location.href = "sucess.html";
+  }
+}
+
+function huy() {
+    // body...
+    //xoa cac thong bao loi
+  document.getElementById("loi_ten").innerHTML  = "";
+    document.getElementById("loi_thoigian").innerHTML  = "";
+  document.getElementById("loi_diadiem").innerHTML  = "";
+    document.getElementById("loi_link").innerHTML  = "";
+        document.getElementById("loi_mota").innerHTML  = "";
+
+  }
+</script>
 
 </body>
 </html>

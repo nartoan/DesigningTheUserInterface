@@ -91,18 +91,61 @@ table{
      <a class="navbar-brand" href="http://localhost:8080/Lab1/ucpostevent/tuychinh.html">Tùy chỉnh</a>
     </div>
     <div class="col-sm-8 text-left">
-	<p><b>Cài đặt chung</b> </p>
+	<p><b>Cài đặt bảo mật</b> </p>
     <hr>
       <table style="width: 80%">
         <tr>
           <td><b>E-mail bảo vệ tài khoản:</b> </td>
           <td>tieptv96@gmail.com</td>
-          <td><a href="#">Chỉnh sửa</a></td>
+          <td>
+            
+             <div class="modal fade dialogmo1" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    
+      <div class="modal-body">
+        <div class="form-group">
+      <label for="email">E-mail bảo vệ mới:</label>
+      
+        <input type="email" class="form-control" id="tensukien" placeholder="Nhập E-mail bảo vệ mới">
+      
+    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Hủy</button>
+        <button type="button" class="btn btn-primary">Lưu</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<a href="#" data-toggle="modal" data-target=".dialogmo1"> Chỉnh sửa </a>
+          </td>
         </tr>
           <tr>
           <td><b>Số điện thoại bảo vệ tài khoản:</b></td>
           <td>0969666969</td>
-          <td><a href="#">Chỉnh sửa</a></td>
+          <td>
+             <div class="modal fade dialogmo2" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    
+      <div class="modal-body">
+        <div class="form-group">
+      <label for="email">Số điện thoại bảo vệ mới:</label>
+      
+        <input type="email" class="form-control" id="tensukien" placeholder="Nhập số điện thoại bảo vệ mới">
+      
+    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Hủy</button>
+        <button type="button" class="btn btn-primary">Lưu</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<a href="#" data-toggle="modal" data-target=".dialogmo2"> Chỉnh sửa </a>
+          </td>
         </tr>
       </table> 
     </div>
