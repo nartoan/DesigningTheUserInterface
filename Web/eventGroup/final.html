@@ -18,14 +18,14 @@
     <!-- font awesome -->
     <!-- <link rel="stylesheet" href="http:/netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> -->
 
-    <!-- main css and responsive -->
-	<link rel="stylesheet" type="text/css" href="css/event_group_base.css" />
+    <!-- Flexy Grid Plugin -->
+	<link rel="stylesheet" type="text/css" href="css/FlexyGridPlugin.css" />
 
     <!-- to responsive better ??? -->
     <!-- <link rel="stylesheet" type="text/css" href="css/responsive_event_group.css" /> -->
 
     <!-- manual css -->
-    <link rel="stylesheet" type="text/css" href="css/editor_some.css"/>
+    <link rel="stylesheet" type="text/css" href="css/eventGroup.css"/>
 
 
     <!-- manual js -->
@@ -37,90 +37,86 @@
 </head>
 
 <body>
-    <div id="wrapper">
-        <div id="header" class="clearfix">
-            <ul class="nav-left">
-                <img src="img/logo.png" width="40px" height="40px">
-            </ul>
-            <ul class="nav-right">
-                <li class="profile">
-                    <svg class="display-img svg-icon svg-icon-noti" viewBox="0 0 20 20">
-                        <path fill="none" d="M16.254,3.399h-0.695V3.052c0-0.576-0.467-1.042-1.041-1.042c-0.576,0-1.043,0.467-1.043,1.042v0.347H6.526V3.052c0-0.576-0.467-1.042-1.042-1.042S4.441,2.476,4.441,3.052v0.347H3.747c-0.768,0-1.39,0.622-1.39,1.39v11.813c0,0.768,0.622,1.39,1.39,1.39h12.507c0.768,0,1.391-0.622,1.391-1.39V4.789C17.645,4.021,17.021,3.399,16.254,3.399z M14.17,3.052c0-0.192,0.154-0.348,0.348-0.348c0.191,0,0.348,0.156,0.348,0.348v0.347H14.17V3.052z M5.136,3.052c0-0.192,0.156-0.348,0.348-0.348S5.831,2.86,5.831,3.052v0.347H5.136V3.052z M16.949,16.602c0,0.384-0.311,0.694-0.695,0.694H3.747c-0.384,0-0.695-0.311-0.695-0.694V7.568h13.897V16.602z M16.949,6.874H3.052V4.789c0-0.383,0.311-0.695,0.695-0.695h12.507c0.385,0,0.695,0.312,0.695,0.695V6.874z M5.484,11.737c0.576,0,1.042-0.467,1.042-1.042c0-0.576-0.467-1.043-1.042-1.043s-1.042,0.467-1.042,1.043C4.441,11.271,4.908,11.737,5.484,11.737z M5.484,10.348c0.192,0,0.347,0.155,0.347,0.348c0,0.191-0.155,0.348-0.347,0.348s-0.348-0.156-0.348-0.348C5.136,10.503,5.292,10.348,5.484,10.348z M14.518,11.737c0.574,0,1.041-0.467,1.041-1.042c0-0.576-0.467-1.043-1.041-1.043c-0.576,0-1.043,0.467-1.043,1.043C13.475,11.271,13.941,11.737,14.518,11.737z M14.518,10.348c0.191,0,0.348,0.155,0.348,0.348c0,0.191-0.156,0.348-0.348,0.348c-0.193,0-0.348-0.156-0.348-0.348C14.17,10.503,14.324,10.348,14.518,10.348z M14.518,15.212c0.574,0,1.041-0.467,1.041-1.043c0-0.575-0.467-1.042-1.041-1.042c-0.576,0-1.043,0.467-1.043,1.042C13.475,14.745,13.941,15.212,14.518,15.212z M14.518,13.822c0.191,0,0.348,0.155,0.348,0.347c0,0.192-0.156,0.348-0.348,0.348c-0.193,0-0.348-0.155-0.348-0.348C14.17,13.978,14.324,13.822,14.518,13.822z M10,15.212c0.575,0,1.042-0.467,1.042-1.043c0-0.575-0.467-1.042-1.042-1.042c-0.576,0-1.042,0.467-1.042,1.042C8.958,14.745,9.425,15.212,10,15.212z M10,13.822c0.192,0,0.348,0.155,0.348,0.347c0,0.192-0.156,0.348-0.348,0.348s-0.348-0.155-0.348-0.348C9.653,13.978,9.809,13.822,10,13.822z M5.484,15.212c0.576,0,1.042-0.467,1.042-1.043c0-0.575-0.467-1.042-1.042-1.042s-1.042,0.467-1.042,1.042C4.441,14.745,4.908,15.212,5.484,15.212z M5.484,13.822c0.192,0,0.347,0.155,0.347,0.347c0,0.192-0.155,0.348-0.347,0.348s-0.348-0.155-0.348-0.348C5.136,13.978,5.292,13.822,5.484,13.822z M10,11.737c0.575,0,1.042-0.467,1.042-1.042c0-0.576-0.467-1.043-1.042-1.043c-0.576,0-1.042,0.467-1.042,1.043C8.958,11.271,9.425,11.737,10,11.737z M10,10.348c0.192,0,0.348,0.155,0.348,0.348c0,0.191-0.156,0.348-0.348,0.348s-0.348-0.156-0.348-0.348C9.653,10.503,9.809,10.348,10,10.348z"></path>
-                    </svg>
-                    <b>Thông báo</b>
-                </li>
-                <li class="profile" onclick="myFunction()">
-                    <img class="display-img" src="img/profile.png">
-                    <b>Trần Đức Toàn</b>
-                    <div  id="myDropdown" class="dropdown-setting">
-                    	<a href="#">Trần Đức Toàn</a>
-                        <a href="#">Cài đặt</a>
-                        <a href="#">Thoát</a>
-                    </div>
-                </li>
-            </ul>
-            <div class="search">
-                <svg class="svg-icon svg-icon-search" viewBox="0 0 20 20">
-                    <path fill="none" d="M18.109,17.776l-3.082-3.081c-0.059-0.059-0.135-0.077-0.211-0.087c1.373-1.38,2.221-3.28,2.221-5.379c0-4.212-3.414-7.626-7.625-7.626c-4.212,0-7.626,3.414-7.626,7.626s3.414,7.627,7.626,7.627c1.918,0,3.665-0.713,5.004-1.882c0.006,0.085,0.033,0.17,0.098,0.234l3.082,3.081c0.143,0.142,0.371,0.142,0.514,0C18.25,18.148,18.25,17.918,18.109,17.776zM9.412,16.13c-3.811,0-6.9-3.089-6.9-6.9c0-3.81,3.089-6.899,6.9-6.899c3.811,0,6.901,3.09,6.901,6.899C16.312,13.041,13.223,16.13,9.412,16.13z"></path>
-                </svg>
-                <input class="search-box" type="text" placeholder="Search Event..">
+  <div id="wrapper">
+<div id="header" class="clearfix">
+    <ul class="nav-left">
+        <img src="img/logo.png" width="40px" height="40px">
+    </ul>
+    <ul class="nav-right">
+        <li class="profile">
+            <svg class="display-img svg-icon svg-icon-noti" viewBox="0 0 20 20">
+                <path fill="none" d="M16.254,3.399h-0.695V3.052c0-0.576-0.467-1.042-1.041-1.042c-0.576,0-1.043,0.467-1.043,1.042v0.347H6.526V3.052c0-0.576-0.467-1.042-1.042-1.042S4.441,2.476,4.441,3.052v0.347H3.747c-0.768,0-1.39,0.622-1.39,1.39v11.813c0,0.768,0.622,1.39,1.39,1.39h12.507c0.768,0,1.391-0.622,1.391-1.39V4.789C17.645,4.021,17.021,3.399,16.254,3.399z M14.17,3.052c0-0.192,0.154-0.348,0.348-0.348c0.191,0,0.348,0.156,0.348,0.348v0.347H14.17V3.052z M5.136,3.052c0-0.192,0.156-0.348,0.348-0.348S5.831,2.86,5.831,3.052v0.347H5.136V3.052z M16.949,16.602c0,0.384-0.311,0.694-0.695,0.694H3.747c-0.384,0-0.695-0.311-0.695-0.694V7.568h13.897V16.602z M16.949,6.874H3.052V4.789c0-0.383,0.311-0.695,0.695-0.695h12.507c0.385,0,0.695,0.312,0.695,0.695V6.874z M5.484,11.737c0.576,0,1.042-0.467,1.042-1.042c0-0.576-0.467-1.043-1.042-1.043s-1.042,0.467-1.042,1.043C4.441,11.271,4.908,11.737,5.484,11.737z M5.484,10.348c0.192,0,0.347,0.155,0.347,0.348c0,0.191-0.155,0.348-0.347,0.348s-0.348-0.156-0.348-0.348C5.136,10.503,5.292,10.348,5.484,10.348z M14.518,11.737c0.574,0,1.041-0.467,1.041-1.042c0-0.576-0.467-1.043-1.041-1.043c-0.576,0-1.043,0.467-1.043,1.043C13.475,11.271,13.941,11.737,14.518,11.737z M14.518,10.348c0.191,0,0.348,0.155,0.348,0.348c0,0.191-0.156,0.348-0.348,0.348c-0.193,0-0.348-0.156-0.348-0.348C14.17,10.503,14.324,10.348,14.518,10.348z M14.518,15.212c0.574,0,1.041-0.467,1.041-1.043c0-0.575-0.467-1.042-1.041-1.042c-0.576,0-1.043,0.467-1.043,1.042C13.475,14.745,13.941,15.212,14.518,15.212z M14.518,13.822c0.191,0,0.348,0.155,0.348,0.347c0,0.192-0.156,0.348-0.348,0.348c-0.193,0-0.348-0.155-0.348-0.348C14.17,13.978,14.324,13.822,14.518,13.822z M10,15.212c0.575,0,1.042-0.467,1.042-1.043c0-0.575-0.467-1.042-1.042-1.042c-0.576,0-1.042,0.467-1.042,1.042C8.958,14.745,9.425,15.212,10,15.212z M10,13.822c0.192,0,0.348,0.155,0.348,0.347c0,0.192-0.156,0.348-0.348,0.348s-0.348-0.155-0.348-0.348C9.653,13.978,9.809,13.822,10,13.822z M5.484,15.212c0.576,0,1.042-0.467,1.042-1.043c0-0.575-0.467-1.042-1.042-1.042s-1.042,0.467-1.042,1.042C4.441,14.745,4.908,15.212,5.484,15.212z M5.484,13.822c0.192,0,0.347,0.155,0.347,0.347c0,0.192-0.155,0.348-0.347,0.348s-0.348-0.155-0.348-0.348C5.136,13.978,5.292,13.822,5.484,13.822z M10,11.737c0.575,0,1.042-0.467,1.042-1.042c0-0.576-0.467-1.043-1.042-1.043c-0.576,0-1.042,0.467-1.042,1.043C8.958,11.271,9.425,11.737,10,11.737z M10,10.348c0.192,0,0.348,0.155,0.348,0.348c0,0.191-0.156,0.348-0.348,0.348s-0.348-0.156-0.348-0.348C9.653,10.503,9.809,10.348,10,10.348z"></path>
+            </svg>
+            <b>Thông báo</b>
+        </li>
+        <li class="profile" onclick="myFunction()">
+            <img class="display-img" src="img/profile.png">
+            <b>Trần Đức Toàn</b>
+            <div  id="myDropdown" class="dropdown-setting">
+                <a href="#">Trần Đức Toàn</a>
+                <a href="#">Cài đặt</a>
+                <a href="#">Thoát</a>
             </div>
-        </div>
-        <div id="mainContent">
-          	<section class="hero-image-container">
+        </li>
+    </ul>
+    <div class="search">
+        <svg class="svg-icon svg-icon-search" viewBox="0 0 20 20">
+            <path fill="none" d="M18.109,17.776l-3.082-3.081c-0.059-0.059-0.135-0.077-0.211-0.087c1.373-1.38,2.221-3.28,2.221-5.379c0-4.212-3.414-7.626-7.625-7.626c-4.212,0-7.626,3.414-7.626,7.626s3.414,7.627,7.626,7.627c1.918,0,3.665-0.713,5.004-1.882c0.006,0.085,0.033,0.17,0.098,0.234l3.082,3.081c0.143,0.142,0.371,0.142,0.514,0C18.25,18.148,18.25,17.918,18.109,17.776zM9.412,16.13c-3.811,0-6.9-3.089-6.9-6.9c0-3.81,3.089-6.899,6.9-6.899c3.811,0,6.901,3.09,6.901,6.899C16.312,13.041,13.223,16.13,9.412,16.13z"></path>
+        </svg>
+        <input class="search-box" type="text" placeholder="Search Event..">
+    </div>
+</div>
+<div id="mainContent">
+<section class="hero-image-container">
     <div class="hero-overlay">
         <img src="img/banner.jpg" alt="" height="500px" width="100%">
     </div>
-<div class="hero-image__content l-mar-top-2">
-        <div class="g-cell g-cell-12-12 org-banner-cta">
-            <h2 class="l-mar-top-3 text-epic text-heading--emphasized l-align-center">
-                Group Event 1
-            </h2>
-            <div class="text-default l-mar-top-1 l-pad-hor-2 text-body text-heading--emphasized l-align-center hide-small">
-                Describe
+    <div class="hero-image__content l-mar-top-2">
+    <div class="g-cell g-cell-12-12 org-banner-cta">
+        <h2 class="namegroup l-mar-top-3 text-epic l-align-center">
+            Công nghệ thông tin và đời sống
+        </h2>
+        <div class="describe l-mar-top-1 l-pad-hor-2 l-align-center">
+            Một mảng lớn trong xã hội thông tin, nhất là trong thời điểm ứng dụng công nghệ thông tin, ngành nghề đang được ứng dụng vào hầu hết những mảng lớn trong đời sống <br/><br/>
+            <button class=" btn btn-filter">Lọc theo danh mục </button>
+            <div class="filter-bar">
+                <input type="radio"/><button class="btn btn-filter">Thời gian</button>
+                <input type="radio"/><button class="btn btn-filter">Địa điểm</button>
+                <input type="radio"/><button class="btn btn-filter">Phí tham dự</button>
             </div>
-            <div class="text-default l-mar-top-1 l-pad-hor-2 text-body text-heading--emphasized l-align-center hide-medium hide-large">
-                Describe
-            </div>
-    </div><!--hero-image__content--> 
+        </div>
+        <div class="text-default l-mar-top-1 l-pad-hor-2 text-body text-heading--emphasized l-align-center hide-small">
+    </div>
 </section>
 
-<h2 class="is-hidden-accessible">Suggested Events</h2>
+<!-- Plugin flexy grid -->
 <div class="g-grid l-pad-bot-5 l-sm-pad-bot-3">
 <div class="js-popular-events">
     <div class="js-events-list">
         <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-1 g-cell-lg-1-2 l-pad-vert-2 ">
-            
-                    <div class="poster-card js-d-poster">
-                    <a href="#"
+            <div class="poster-card js-d-poster">
+                <a href="#"
                     class="
-                        poster-card__main
-                        js-event-link">
-
+                    poster-card__main
+                    js-event-link">
                     <div class="poster-card__header">
                         <div class="poster-card__image">
                             <img class="js-poster-image "
-                                src="img/1.png"
+                                src="img\1.png"
                                 alt="Agile Vietnam Conference 2016 - Hanoi Capital tickets"/>
                         </div>
-
-                <span class="poster-card__label">$17.39</span>
+                        <span class="poster-card__label">$99.99</span>
                     </div>
                     <div class="poster-card__body">
                         <time class="poster-card__date">
-
-
-                            Sun, Oct 16
-                            8:00 AM
-                
-
+                        Sun, Oct 23
+                        09:00 AM
                         </time>
                         <div class="poster-card__title">
-                            Agile Vietnam Conference 2016 - Hanoi Capital
+                            Ngày hội công nghệ Google Day X Hà Nội 2016
                         </div>
                         <div class="poster-card__venue">
-
-                            Alt Plus Vietnam Co., Ltd, Hanoi
+                            Google Day X Vietnam Phòng 1203, Tòa Nhà Sakura 47, Vũ Trọng Phụng, Hà Nội.
                         </div>
                     </div>
                 </a>
@@ -128,308 +124,212 @@
                     <span class="rateit">
                     </span>
                 </div>
-
             </div>
-
-
         </div>
-        
-        
         <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-1 g-cell-lg-1-2 l-pad-vert-2 ">
-            
-    <div class="poster-card js-d-poster">
-    <a href="#"
-        class="
-            poster-card__main
-            js-event-link
-        
-        ">
-        <div class="poster-card__header">
-            <div class="poster-card__image"
-
-            >
-                <img class="js-poster-image "
-
-                    src="img/2.jpg"
-
-                    alt="NAFOSTED-NHMRC Joint Networking Symposium for Health and Medical Researchers tickets"
-                />
-            </div>
-
-
-
-    <span class="poster-card__label">Free</span>
-
-        </div>
-        <div class="poster-card__body">
-            <time class="poster-card__date">
-
-
-                Tue, Nov 29
-                9:00 AM
-    
-
-            </time>
-            <div class="poster-card__title">
-                NAFOSTED-NHMRC Joint Networking Symposium for Health and Medical Researchers
-            </div>
-            <div class="poster-card__venue">
-
-                Hanoi City
-            </div>
-        </div>
-    </a>
-                    <div class="poster-card__footer">                     
-
-                </div>
-
-</div>
-
-
-        </div>
-        
-        
-        <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-1 g-cell-lg-1-2 l-pad-vert-2 ">
-            
-    <div class="poster-card js-d-poster">
-    <a href="#"
-        class="
-            poster-card__main
-            js-event-link
-        
-        "
-    >
-        <div class="poster-card__header">
-            <div class="poster-card__image"
-
-            >
-                <img class="js-poster-image "
-
-                    src="img/3.jpg"
-
-                    alt="Installing, Configuring and Managing VMware vSphere [v5.5+v6.0] Hanoi tickets"
-                />
-            </div>
-
-
-
-    <span class="poster-card__label">$1,307.45</span>
-
-        </div>
-        <div class="poster-card__body">
-            <time class="poster-card__date">
-
-
-                Mon, Oct 3
-                7:00 PM
-    
-
-            </time>
-            <div class="poster-card__title">
-                Installing, Configuring and Managing VMware vSphere [v5.5+v6.0] Hanoi
-            </div>
-            <div class="poster-card__venue">
-
-                Hanoi, Hanoi
-            </div>
-        </div>
-    </a>
-          <div class="poster-card__footer">                     
-       
-         </div>
-
-</div>
-
-
-        </div>
-        
-        
-        <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-1 g-cell-lg-1-2 l-pad-vert-2 ">
-            
-    <div class="poster-card js-d-poster">
-    <a href="#"
-        class="
-            poster-card__main
-            js-event-link
-        
-        "
-    >
-        <div class="poster-card__header">
-            <div class="poster-card__image"
-
-            >
-                <img class="js-poster-image "
-
-                    src="img/4.png"
-
-                    alt="Kick-off event: Corporate Sustainability and Reporting for Competitive Business tickets"
-                />
-            </div>
-
-
-
-    <span class="poster-card__label">Free</span>
-
-        </div>
-        <div class="poster-card__body">
-            <time class="poster-card__date">
-
-
-                Mon, Oct 17
-                1:30 PM
-    
-
-            </time>
-            <div class="poster-card__title">
-                Kick-off event: Corporate Sustainability and Reporting for Competitive Business
-            </div>
-            <div class="poster-card__venue">
-
-                IFC office, Ha Noi City
-            </div>
-        </div>
-    </a>
-        <div class="poster-card__footer">                     
-        
-        </div>
-
-</div>
-
-
-        </div>
-        
-        
-        <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-1 g-cell-lg-1-2 l-pad-vert-2 ">
-            
-    <div class="poster-card js-d-poster">
-    <a href="#"
-        class="
-            poster-card__main
-            js-event-link
-        
-        "
-    >
-        <div class="poster-card__header">
-            <div class="poster-card__image"
-
-            >
-                <img class="js-poster-image "
-
-                    src="img/5.jpg"
-
-                    alt="The 4th Asia-Pacific Conference on Life Science and Engineering tickets"
-                />
-            </div>
-
-
-
-    <span class="poster-card__label">$410.99</span>
-
-        </div>
-        <div class="poster-card__body">
-            <time class="poster-card__date">
-
-
-                Tue, Jun 20
-                8:00 AM
-    
-
-            </time>
-            <div class="poster-card__title">
-                The 4th Asia-Pacific Conference on Life Science and Engineering
-            </div>
-            <div class="poster-card__venue">
-
-                Hanoi, Hanoi
-            </div>
-        </div>
-    </a>
-          <div class="poster-card__footer">                     
-                   
-        </div>
-
-</div>
-
-
-        </div>
-        
-        
-        <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-1 g-cell-lg-1-2 l-pad-vert-2 ">
-            
             <div class="poster-card js-d-poster">
                 <a href="#"
-                class="
-                poster-card__main
-                js-event-link"
-                >
+                    class="
+                    poster-card__main
+                    js-event-link
+                    ">
                     <div class="poster-card__header">
-                        <div class="poster-card__image">
+                        <div class="poster-card__image"
+                            >
                             <img class="js-poster-image "
-
-                            src="img/6.jpg"
-
-                            alt="2017 International Business, Economics, Finance and Management Conference (BREFM) tickets"/>
+                                src="img\2.jpg"
+                                alt="NAFOSTED-NHMRC Joint Networking Symposium for Health and Medical Researchers tickets"
+                                />
                         </div>
-
-                        <span class="poster-card__label">$410.99</span>
+                        <span class="poster-card__label">$98.89</span>
                     </div>
                     <div class="poster-card__body">
                         <time class="poster-card__date">
-
-
-                            Tue, Jun 20
-                            8:00 AM
+                        Tue, Mar 07-08
+                        9:00 AM
                         </time>
                         <div class="poster-card__title">
-                            2017 International Business, Economics, Finance and     Management Conference (BREFM)
+                            Internet World Messe 2017
                         </div>
                         <div class="poster-card__venue">
-                            Hanoi, Hanoi
+                            Hanoi City
                         </div>
                     </div>
                 </a>
-
                 <div class="poster-card__footer">                     
-                   
                 </div>
-
             </div>
         </div>
-        
-        
-
-
-        </div>
-        
-        
         <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-1 g-cell-lg-1-2 l-pad-vert-2 ">
-            
-    <div class="poster-card js-d-poster">
-    <a href="#"
-        class="
-            poster-card__main
-            js-event-link
-        
-        ">
-	</div>
+            <div class="poster-card js-d-poster">
+                <a href="#"
+                    class="
+                    poster-card__main
+                    js-event-link
+                    "
+                    >
+                    <div class="poster-card__header">
+                        <div class="poster-card__image"
+                            >
+                            <img class="js-poster-image "
+                                src="img\3.jpg"
+                                alt="Installing, Configuring and Managing VMware vSphere [v5.5+v6.0] Hanoi tickets"
+                                />
+                        </div>
+                        <span class="poster-card__label">$96,69</span>
+                    </div>
+                    <div class="poster-card__body">
+                        <time class="poster-card__date">
+                        Thur, Oct 20
+                        8:00 AM
+                        </time>
+                        <div class="poster-card__title">
+                            Gõ cửa mùa thu 2016
+                        </div>
+                        <div class="poster-card__venue">
+                            144 Xuân Thủy, Hà Nội
+                        </div>
+                    </div>
+                </a>
+                <div class="poster-card__footer">                     
+                </div>
+            </div>
+        </div>
+        <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-1 g-cell-lg-1-2 l-pad-vert-2 ">
+            <div class="poster-card js-d-poster">
+                <a href="#"
+                    class="
+                    poster-card__main
+                    js-event-link
+                    "
+                    >
+                    <div class="poster-card__header">
+                        <div class="poster-card__image"
+                            >
+                            <img class="js-poster-image "
+                                src="img\4.png"
+                                alt="Kick-off event: Corporate Sustainability and Reporting for Competitive Business tickets"
+                                />
+                        </div>
+                        <span class="poster-card__label">$92.29</span>
+                    </div>
+                    <div class="poster-card__body">
+                        <time class="poster-card__date">
+                        Mon, Oct 20
+                        1:30 PM
+                        </time>
+                        <div class="poster-card__title">
+                            Installing, Configuring and Managing VMware vSphere [v5.5+v6.0] 
+                        </div>
+                        <div class="poster-card__venue">
+                            IFC office, Ha Noi City
+                        </div>
+                    </div>
+                </a>
+                <div class="poster-card__footer">                     
+                </div>
+            </div>
+        </div>
+        <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-1 g-cell-lg-1-2 l-pad-vert-2 ">
+            <div class="poster-card js-d-poster">
+                <a href="#"
+                    class="
+                    poster-card__main
+                    js-event-link
+                    "
+                    >
+                    <div class="poster-card__header">
+                        <div class="poster-card__image"
+                            >
+                            <img class="js-poster-image "
+                                src="img\5.png"
+                                alt="The 4th Asia-Pacific Conference on Life Science and Engineering tickets"
+                                />
+                        </div>
+                        <span class="poster-card__label">$89.98</span>
+                    </div>
+                    <div class="poster-card__body">
+                        <time class="poster-card__date">
+                        Tue, Jun 20
+                        8:00 AM
+                        </time>
+                        <div class="poster-card__title">
+                            Fullday OpenStack Workshop
+                        </div>
+                        <div class="poster-card__venue">
+                            AVC Tower, Hanoi
+                        </div>
+                    </div>
+                </a>
+                <div class="poster-card__footer">                     
+                </div>
+            </div>
+        </div>
+        <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-1 g-cell-lg-1-2 l-pad-vert-2 ">
+            <div class="poster-card js-d-poster">
+                <a href="#"
+                    class="
+                    poster-card__main
+                    js-event-link"
+                    >
+                    <div class="poster-card__header">
+                        <div class="poster-card__image">
+                            <img class="js-poster-image "
+                                src="   img\6.jpg"
+                                alt="2017 International Business, Economics, Finance and Management Conference (BREFM) tickets"/>
+                        </div>
+                        <span class="poster-card__label">$69.96</span>
+                    </div>
+                    <div class="poster-card__body">
+                        <time class="poster-card__date">
+                        Tue, Jun 25
+                        8:00 AM
+                        </time>
+                        <div class="poster-card__title">
+                            2016 Google Workshop
+                        </div>
+                        <div class="poster-card__venue">
+                            DuyTan Tower, Hanoi
+                        </div>
+                    </div>
+                </a>
+                <div class="poster-card__footer">                     
+                </div>
+            </div>
+        </div>
     </div>
-
-  </section>
-
-  <div class="seemore-btn">
-  	<button class="btn btn-primary">See More</button>
-  </div>
- 
-    <div id="footer">
+    <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-1 g-cell-lg-1-2 l-pad-vert-2 ">
+        <div class="poster-card js-d-poster">
+            <a href="#"
+                class="
+                poster-card__main
+                js-event-link
+                ">
+        </div>
     </div>
-   </div>
+</div>
+</div>
+<div class="seemore">
+    <button class="btn" src="#">See More</button>
+</div>
+</div>
+<div class="footer">
+    <!-- footer in here -->
+</div>
+<!-- animation slide up -->
     <script type="text/javascript">
           $(document).ready(function(){
                 // $(".js-events-list").css("margin-top","-15rem");
-                $(".js-events-list").css('margin-top','0');
-                $(".js-events-list").animate({ marginTop: '-15rem', opacity: 1 }, 1000);
+                $(".js-events-list").css('margin-top','2rem');
+                $(".js-events-list").animate({ marginTop: '-10rem', opacity: 1 }, 1000);
 
            });
+
+          $(".btn-filter").click(function () {
+                $(".filter-bar").slideToggle(500,"swing");
+          })
+
+
 
     </script>
 </body>
