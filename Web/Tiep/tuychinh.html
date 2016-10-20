@@ -56,6 +56,36 @@
 table{
   margin-left: 50px;
 }
+
+ [id="left-footer"]{
+    background-color: black;
+    width: 40%;
+    float: left;
+  }
+  [id="center-footer"]{
+    background-color: black;
+    width: 30%;
+  }
+  [id="right-footer"]{
+    background-color: black;
+    width: 30%;
+  }
+
+  .insidefooter{
+    float: left;
+    height: 150px;
+  }
+
+    hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
   </style>
 </head>
 <body>
@@ -132,7 +162,24 @@ table{
   </div>
 </div>
 
-<footer class="container-fluid text-center">
+<footer class="container-fluid">
+  <div id="left-footer" class="insidefooter">
+    <p>Event near me</p>
+    <p>Home · Blog · Pricing · About · Faq · Contact</p>
+    <p>Company name &#169; 2016</p>
+    
+
+
+  </div>
+  <div id="center-footer" class="insidefooter">
+    <p>Addr: 144 Xuân Thủy - Hà Nội</p>
+    <p>Tel: +01664 375 871</p>
+    <p>E-mail: support@eventnearme.com</p>
+  </div>
+  <div id="right-footer" class="insidefooter">
+    <p>Về chúng tôi:</p>
+    Đơn giản là mình thích thì mình làm thôi, chứ không cần phải có mục đích nào cả!
+  </div>
   
 </footer>
 
