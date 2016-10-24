@@ -172,4 +172,7 @@
   .container .row .col-md-9{
     margin-left: auto;
   }
+  .col-md-5 {
+    width: 100%;
+  }
 }

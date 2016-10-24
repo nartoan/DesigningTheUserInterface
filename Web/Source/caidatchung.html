@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        
+        <title>Event Near Me</title>
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="css_trang/style.css">
+        <link rel="stylesheet" type="text/css" href="css_trang/bootstrap-social.css">
+        <link rel="stylesheet" type="text/css" href="css_trang/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css_trang/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css_trang/index.css">
+        <link rel="stylesheet" type="text/css" href="css/footer_NguyenDucThuan.css">
+
+        <script src="js_trang/bootstrap1.js"></script>
+        <script src="js_trang/bootstrap2.js"></script>
+
+
+    </head>
+    
+    <body>
+
+<!-- header start -->
+<div class ="wrapper1" id="wrapper1" style="padding-bottom: 85px;">
+        <div id="header">
+            <div class="logo">
+                <a href="#">
+                    <img id="logosmall" src="image_trang/logoSmall.png">
+                </a>
+            </div>
+            <div class="search">
+                <i class="fa fa-search" aria-hidden="true" onclick="showAllEvent()"></i>
+                <input class="search-box" type="text" placeholder="Tìm kiếm..." onfocus="showAllEvent()">
+                <ul class="dropdown list-event" id="all-event">
+                    <li>
+                        <input class="cheat-search" type="text" placeholder="Tìm kiếm...">
+                    </li>
+                    <li><a href="#">Câu lạc bộ, đoàn hội</a></li>
+                    <li><a href="#">Hội thảo, talkshow</a></li>
+                    <li><a href="#">Cuộc thi</a></li>
+                    <li><a href="#">Khóa học miễn phí</a></li>
+                    <li><a href="#">Hội sách</a></li>
+                    <li><a href="#">Festival, lễ hội</a></li>
+                    <li><a href="#">Công nghệ</a></li>
+                    <li><a href="#">Ăn chơi, giải trí</a></li>
+                    <li><a href="#">Khác</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="profile information" onclick="showInformation()">
+                    <img class="display-img" src="image_trang/profile.png">
+                    <span class="name-user">Trần Đức Toàn</span>
+                    <div class="dropdown content-infor" id="dropdown-infor">
+                        <a href="#">
+                            <i class="fa fa-cogs" aria-hidden="true"></i>
+                            <span>Cài đặt</span>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                            <span>Thoát</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="profile notification" onclick="showNotification()">
+                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                    <span class="name-noti">Thông báo</span>
+                    <div class="dropdown content-noti" id="dropdown-noti">
+                        <a href="#">Thông báo 1</a>
+                        <a href="#">Thông báo 2</a>
+                        <a href="#">Thông báo 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- header end-->
+
+    <div class="container">
+        <div class="col-md-3">
+            <p style="padding: 65px 40px 40px 20px;">
+            <a href="#" style="font-size: 22px"> Cài đặt chung</a> </br>
+            <a href="#" style="font-size: 22px"> Bảo mật </a> </br>
+            <a href="#" style="font-size: 22px"> Tùy chỉnh </a>
+            </p>
+        </div>
+        <div class="col-md-9" style="line-height:40px;">
+            <p><b style="font-size: 22px">Cài đặt chung</b> </p>
+            <hr>
+            <table style="width: 80%">
+                <tr>
+                    <td><b>Tên:</b></td>
+                    <td>Phan Hà Trang</td>
+                    <td>
+            
+            
+            <div class="modal fade dialogmo" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="email">Tên mới:</label>
+                                
+                                <input type="email" class="form-control" id="tensukien" placeholder="Nhập tên mới">
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Hủy</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Lưu</button>
+                        </div>
+                        </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                        </div><!-- /.modal -->
+                        <a href="#" data-toggle="modal" data-target=".dialogmo"> Chỉnh sửa </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Tên người dùng:</b></td>
+                    <td>Trangkute96</td>
+                    <td>
+                        <div class="modal fade dialogmo2" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <label for="email">Tên người dùng mới:</label>
+                                            
+                                            <input type="email" class="form-control" id="tensukien" placeholder="Nhập tên người dùng mới">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Hủy</button>
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Lưu</button>
+                                    </div>
+                                    </div><!-- /.modal-content -->
+                                    </div><!-- /.modal-dialog -->
+                                    </div><!-- /.modal -->
+                                    <a href="#" data-toggle="modal" data-target=".dialogmo2"> Chỉnh sửa </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>Mật khẩu:</b> </td>
+                                <td>**************</td>
+                                <td>
+                                    <div class="modal fade dialogmo3" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                
+                                                <div class="modal-body">
+                                                    <div class="form-group">
+                                                        <label for="email">Mật khẩu mới:</label>
+                                                        
+                                                        <input type="password" class="form-control" id="tensukien" placeholder="Nhập mật khẩu mới">
+                                                        
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="email">Nhập lại khẩu mới:</label>
+                                                        
+                                                        <input type="password" class="form-control" id="tensukien" placeholder="Nhập lại mật khẩu mới">
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Hủy</button>
+                                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Lưu</button>
+                                                </div>
+                                                </div><!-- /.modal-content -->
+                                                </div><!-- /.modal-dialog -->
+                                                </div><!-- /.modal -->
+                                                <a href="#" data-toggle="modal" data-target=".dialogmo3"> Chỉnh sửa </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>E-mail:</b> </td>
+                                            <td>hatrang1921@gmail.com</td>
+                                            <td>
+                                                <div class="modal fade dialogmo4" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                            
+                                                            <div class="modal-body">
+                                                                <div class="form-group">
+                                                                    <label for="email">E-mail mới:</label>
+                                                                    
+                                                                    <input type="email" class="form-control" id="tensukien" placeholder="Nhập E-mail mới">
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-default" data-dismiss="modal">Hủy</button>
+                                                                <button type="button" class="btn btn-primary" data-dismiss="modal">Lưu</button>
+                                                            </div>
+                                                            </div><!-- /.modal-content -->
+                                                            </div><!-- /.modal-dialog -->
+                                                            </div><!-- /.modal -->
+                                                            <a href="#" data-toggle="modal" data-target=".dialogmo4"> Chỉnh sửa </a>
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                </table>
+        </div>
+    </div>
+
+<!-- footer start -->
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <h3>Event near me</h3>
+            <span class="imglogo"><img src="image_trang/logo.gif" width = 140 heigh = 140 style="margin-left: 30px;"> </span>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>144 Xuân Thủy</span> Hà Nội</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+01664 375 871</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">support@eventnearme.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>Về chúng tôi</span>
+                <span>Đơn giản là mình thích thì mình làm thôi, chứ không cần phải có mục đích nào cả!</span>
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    
+
+    </body>
+</html>
