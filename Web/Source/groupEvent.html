@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Event near me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+    <!-- css for homepage -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/responsiveIndex.css">
+    <!-- bootstrap plugin css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <!-- Flexy Grid Plugin -->
+    <link rel="stylesheet" type="text/css" href="css/FlexyGridPlugin.css" />
+    <!-- manual css -->
+    <link rel="stylesheet" type="text/css" href="css/eventGroup.css" />
+    <!-- manual js -->
+    <script type="text/javascript" src="js/jsIndex.js"></script>
+    <!-- jquery -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/footer_NguyenDucThuan.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- header start -->
+        <div id="header">
+            <div class="logo">
+                <a href="#">
+                    <img id="logosmall" src="image/logoSmall.png">
+                    <img id="logodemo" src="image/logodemo.png">
+                </a>
+            </div>
+            <div class="search">
+                <i class="fa fa-search" aria-hidden="true" onclick="showAllEvent()"></i>
+                <input class="search-box" type="text" placeholder="Tìm kiếm..." onfocus="showAllEvent()">
+                <ul class="dropdown list-event" id="all-event">
+                    <li>
+                        <input class="cheat-search" type="text" placeholder="Tìm kiếm...">
+                    </li>
+                    <li><a href="#">Câu lạc bộ, đoàn hội</a></li>
+                    <li><a href="#">Hội thảo, talkshow</a></li>
+                    <li><a href="#">Cuộc thi</a></li>
+                    <li><a href="#">Khóa học miễn phí</a></li>
+                    <li><a href="#">Hội sách</a></li>
+                    <li><a href="#">Festival, lễ hội</a></li>
+                    <li><a href="#">Công nghệ</a></li>
+                    <li><a href="#">Ăn chơi, giải trí</a></li>
+                    <li><a href="#">Khác</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="profile information" onclick="showInformation()">
+                    <img class="display-img" src="image/profile.png">
+                    <span class="name-user">Trần Đức Toàn</span>
+                    <div class="dropdown content-infor" id="dropdown-infor">
+                        <a href="#">
+                            <i class="fa fa-cogs" aria-hidden="true"></i>
+                            <span>Cài đặt</span>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                            <span>Thoát</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="profile noti" onclick="showNotification()">
+                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                    <span class="name-noti">Thông báo</span>
+                    <div class="dropdown content-noti" id="dropdown-noti">
+                        <a href="#">Thông báo 1</a>
+                        <a href="#">Thông báo 2</a>
+                        <a href="#">Thông báo 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header end-->
+        <div id="mainContent">
+            <section class="hero-image-container">
+                <div class="hero-overlay">
+                    <img src="image/banner.jpg" alt="" height="500px" width="100%">
+                </div>
+                <div class="hero-image__content l-mar-top-2">
+                    <div class="g-cell g-cell-12-12 org-banner-cta">
+                        <h2 class="namegroup l-mar-top-3 text-epic l-align-center">
+            Công nghệ thông tin và đời sống
+        </h2>
+                        <div class="describe l-mar-top-1 l-pad-hor-2 l-align-center">
+                            Một mảng lớn trong xã hội thông tin, nhất là trong thời điểm ứng dụng công nghệ thông tin, ngành nghề đang được ứng dụng vào hầu hết những mảng lớn trong đời sống
+                            <br/>
+                            <br/>
+                            <button class=" btn btn-filter">Lọc theo danh mục </button>
+                            <div class="filter-bar">
+                                <input type="radio" />
+                                <button class="btn btn-filter">Thời gian</button>
+                                <input type="radio" />
+                                <button class="btn btn-filter">Địa điểm</button>
+                                <input type="radio" />
+                                <button class="btn btn-filter">Phí tham dự</button>
+                            </div>
+                        </div>
+                        <div class="text-default l-mar-top-1 l-pad-hor-2 text-body text-heading--emphasized l-align-center hide-small">
+                        </div>
+            </section>
+            <!-- Plugin flexy grid -->
+            <div class="g-grid l-pad-bot-5 l-sm-pad-bot-3">
+                <div class="js-popular-events">
+                    <div class="js-events-list">
+                        <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-1 g-cell-lg-1-2 l-pad-vert-2 ">
+                            <div class="poster-card js-d-poster">
+                                <a href="#" class="
+                    poster-card__main
+                    js-event-link">
+                                    <div class="poster-card__header">
+                                        <div class="poster-card__image">
+                                            <img class="js-poster-image " src="image\1.png" alt="Agile Vietnam Conference 2016 - Hanoi Capital tickets" />
+                                        </div>
+                                        <span class="poster-card__label">$99.99</span>
+                                    </div>
+                                    <div class="poster-card__body">
+                                        <time class="poster-card__date">
+                                            Sun, Oct 23 09:00 AM
+                                        </time>
+                                        <div class="poster-card__title">
+                                            Ngày hội công nghệ Google Day X Hà Nội 2016
+                                        </div>
+                                        <div class="poster-card__venue">
+                                            Google Day X Vietnam Phòng 1203, Tòa Nhà Sakura 47, Vũ Trọng Phụng, Hà Nội.
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="poster-card__footer">
+                                    <span class="rateit">
+                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-1 g-cell-lg-1-2 l-pad-vert-2 ">
+                            <div class="poster-card js-d-poster">
+                                <a href="#" class="
+                    poster-card__main
+                    js-event-link
+                    ">
+                                    <div class="poster-card__header">
+                                        <div class="poster-card__image">
+                                            <img class="js-poster-image " src="image\2.jpg" alt="NAFOSTED-NHMRC Joint Networking Symposium for Health and Medical Researchers tickets" />
+                                        </div>
+                                        <span class="poster-card__label">$98.89</span>
+                                    </div>
+                                    <div class="poster-card__body">
+                                        <time class="poster-card__date">
+                                            Tue, Mar 07-08 9:00 AM
+                                        </time>
+                                        <div class="poster-card__title">
+                                            Internet World Messe 2017
+                                        </div>
+                                        <div class="poster-card__venue">
+                                            Hanoi City
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="poster-card__footer">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-1 g-cell-lg-1-2 l-pad-vert-2 ">
+                            <div class="poster-card js-d-poster">
+                                <a href="#" class="
+                    poster-card__main
+                    js-event-link
+                    ">
+                                    <div class="poster-card__header">
+                                        <div class="poster-card__image">
+                                            <img class="js-poster-image " src="image\3.jpg" alt="Installing, Configuring and Managing VMware vSphere [v5.5+v6.0] Hanoi tickets" />
+                                        </div>
+                                        <span class="poster-card__label">$96,69</span>
+                                    </div>
+                                    <div class="poster-card__body">
+                                        <time class="poster-card__date">
+                                            Thur, Oct 20 8:00 AM
+                                        </time>
+                                        <div class="poster-card__title">
+                                            Gõ cửa mùa thu 2016
+                                        </div>
+                                        <div class="poster-card__venue">
+                                            144 Xuân Thủy, Hà Nội
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="poster-card__footer">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-1 g-cell-lg-1-2 l-pad-vert-2 ">
+                            <div class="poster-card js-d-poster">
+                                <a href="#" class="
+                    poster-card__main
+                    js-event-link
+                    ">
+                                    <div class="poster-card__header">
+                                        <div class="poster-card__image">
+                                            <img class="js-poster-image " src="image\4.png" alt="Kick-off event: Corporate Sustainability and Reporting for Competitive Business tickets" />
+                                        </div>
+                                        <span class="poster-card__label">$92.29</span>
+                                    </div>
+                                    <div class="poster-card__body">
+                                        <time class="poster-card__date">
+                                            Mon, Oct 20 1:30 PM
+                                        </time>
+                                        <div class="poster-card__title">
+                                            Installing, Configuring and Managing VMware vSphere [v5.5+v6.0]
+                                        </div>
+                                        <div class="poster-card__venue">
+                                            IFC office, Ha Noi City
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="poster-card__footer">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-1 g-cell-lg-1-2 l-pad-vert-2 ">
+                            <div class="poster-card js-d-poster">
+                                <a href="#" class="
+                    poster-card__main
+                    js-event-link
+                    ">
+                                    <div class="poster-card__header">
+                                        <div class="poster-card__image">
+                                            <img class="js-poster-image " src="image\5.png" alt="The 4th Asia-Pacific Conference on Life Science and Engineering tickets" />
+                                        </div>
+                                        <span class="poster-card__label">$89.98</span>
+                                    </div>
+                                    <div class="poster-card__body">
+                                        <time class="poster-card__date">
+                                            Tue, Jun 20 8:00 AM
+                                        </time>
+                                        <div class="poster-card__title">
+                                            Fullday OpenStack Workshop
+                                        </div>
+                                        <div class="poster-card__venue">
+                                            AVC Tower, Hanoi
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="poster-card__footer">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-1 g-cell-lg-1-2 l-pad-vert-2 ">
+                            <div class="poster-card js-d-poster">
+                                <a href="#" class="
+                    poster-card__main
+                    js-event-link">
+                                    <div class="poster-card__header">
+                                        <div class="poster-card__image">
+                                            <img class="js-poster-image " src="image\6.jpg" alt="2017 International Business, Economics, Finance and Management Conference (BREFM) tickets" />
+                                        </div>
+                                        <span class="poster-card__label">$69.96</span>
+                                    </div>
+                                    <div class="poster-card__body">
+                                        <time class="poster-card__date">
+                                            Tue, Jun 25 8:00 AM
+                                        </time>
+                                        <div class="poster-card__title">
+                                            2016 Google Workshop
+                                        </div>
+                                        <div class="poster-card__venue">
+                                            DuyTan Tower, Hanoi
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="poster-card__footer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-1 g-cell-lg-1-2 l-pad-vert-2 ">
+                        <div class="poster-card js-d-poster">
+                            <a href="#" class="
+                poster-card__main
+                js-event-link
+                ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="seemore">
+                <button class="btn" src="#">See More</button>
+            </div>
+            </div>
+            <!-- footer start -->
+            <footer class="footer-distributed">
+                <div class="footer-left">
+                    <h4>Event near me</h4>
+                    <p class="footer-company-name"><img src="image/logo.gif" width=240 heigh=240></p>
+                </div>
+                <div class="footer-center">
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p><span>144 Xuân Thủy</span> Hà Nội</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p>+01664 375 871</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto:support@company.com">support@eventnearme.com</a></p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <p class="footer-company-about">
+                        <span>Về chúng tôi</span>
+                        <span>Đơn giản là mình thích thì mình làm thôi, chứ không cần phải có mục đích nào cả!</span>
+                    </p>
+                    <div class="footer-icons">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-github"></i></a>
+                    </div>
+                </div>
+            </footer>
+            <!-- footer end -->
+            <!-- animation slide up -->
+            <script type="text/javascript">
+            $(document).ready(function() {
+                // $(".js-events-list").css("margin-top","-15rem");
+                $(".js-events-list").css('margin-top', '2rem');
+                $(".js-events-list").animate({
+                    marginTop: '-10rem',
+                    opacity: 1
+                }, 1000);
+
+            });
+
+            $(".btn-filter").click(function() {
+                $(".filter-bar").slideToggle(500, "swing");
+            })
+            </script>
+</body>
+
+</html>

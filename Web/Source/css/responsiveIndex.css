@@ -29,7 +29,7 @@
     width: 50%; }
     .nav-right .information {
       margin-right: 23% !important; }
-    .nav-right .notification {
+    .nav-right .noti {
       margin-right: 40% !important; }
 
   .search {
@@ -65,7 +65,7 @@
 @media screen and (max-width: 480px) {
   .nav-right .information {
     margin-right: 20% !important; }
-  .nav-right .notification {
+  .nav-right .noti {
     margin-right: 35% !important; }
 
   .search {

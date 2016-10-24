@@ -39,6 +39,7 @@
         display: none; }
       #wrapper #header .search .list-event li {
         float: left;
+        list-style-type: none;
         margin: 1em; }
         #wrapper #header .search .list-event li:first-child {
           margin: 0px; }
