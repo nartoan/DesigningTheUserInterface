@@ -1,0 +1,140 @@
+#wrapper1 #header {
+  position: fixed;
+  z-index: 500;
+  width: 100%;
+  height: 3.75em;
+  background: #35b15a;
+  box-sizing: border-box; }
+  #wrapper1 #header .logo {
+    float: left;
+    width: 10%;
+    margin-left: 5%; }
+    #wrapper1 #header .logo img {
+      width: 100%;
+      height: auto; }
+    #wrapper1 #header .logo #logosmall {
+      display: none; }
+  #wrapper1 #header .search {
+    float: left;
+    width: 25%;
+    margin: 0.625em 0 0.625em 10%;
+    position: relative; }
+    #wrapper1 #header .search .fa.fa-search {
+      position: absolute;
+      margin: 0.6em 0 0 0.5em; }
+    #wrapper1 #header .search .search-box {
+      margin-top: 0.125em;
+      border: none;
+      border-radius: 2px;
+      width: 80%;
+      height: 2em;
+      padding: 0.2em 0 0 2em;
+      -webkit-transition: width 0.4s ease-in-out;
+      transition: width 0.4s ease-in-out; }
+      #wrapper1 #header .search .search-box:focus {
+        width: 100%; }
+    #wrapper1 #header .search .list-event {
+      min-width: 550px; }
+      #wrapper1 #header .search .list-event .cheat-search {
+        display: none; }
+      #wrapper1 #header .search .list-event li {
+        float: left;
+        list-style-type: none;
+        margin: 1em; }
+        #wrapper1 #header .search .list-event li:first-child {
+          margin: 0px; }
+        #wrapper1 #header .search .list-event li a {
+          color: #35b15a;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+          width: 150px;
+          border-radius: 2px; }
+          #wrapper1 #header .search .list-event li a:hover {
+            background-color: #298946;
+            color: #fff; }
+  #wrapper1 #header .dropdown {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
+  #wrapper1 #header .content-noti {
+    width: 20em;
+    margin: 0.5em 0 0 -1.7em; }
+    #wrapper1 #header .content-noti a {
+      padding-left: 0.5em; }
+  #wrapper1 #header .content-infor {
+    width: 11em;
+    margin: 0.5em 0 0 -1.7em; }
+  #wrapper1 #header .show {
+    display: block; }
+  #wrapper1 #header .nav-right {
+    float: right; }
+    #wrapper1 #header .nav-right .profile {
+      float: right;
+      position: relative;
+      margin: 0.625em 3em 0.625em 0em;
+      border-radius: 2px;
+      height: 2.5em;
+      font-weight: bold;
+      line-height: 2.5em;
+      color: #fff; }
+      #wrapper1 #header .nav-right .profile:hover {
+        background: #298946; }
+      #wrapper1 #header .nav-right .profile .display-img {
+        float: left;
+        margin: 0 0.3em 0 -1.625em;
+        height: 2.5em;
+        width: 2.5em;
+        border-radius: 2px; }
+      #wrapper1 #header .nav-right .profile .fa.fa-bell-o {
+        float: left;
+        margin: 0.1em;
+        border-radius: 2px;
+        font-size: 2em; }
+      #wrapper1 #header .nav-right .profile .dropdown > a {
+        color: #35b15a;
+        margin: 0.8em 1em;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        border-bottom: solid 1px;
+        border-radius: 2px; }
+        #wrapper1 #header .nav-right .profile .dropdown > a:last-child {
+          border-bottom: none; }
+        #wrapper1 #header .nav-right .profile .dropdown > a:hover {
+          background-color: #298946;
+          color: #fff; }
+        #wrapper1 #header .nav-right .profile .dropdown > a span {
+          margin-left: 1.5em; }
+    #wrapper1 #header .nav-right .dropdown-setting {
+      display: none; }
+#wrapper1 #mainContent {
+  padding-top: 3.75em;
+  height: auto; }
+  #wrapper1 #mainContent .carousel {
+    width: 100%;
+    height: 500px;
+    margin: auto; }
+    #wrapper1 #mainContent .carousel .carousel-cell {
+      width: 100%;
+      margin-right: 10px;
+      border-radius: 2px;
+      counter-increment: gallery-cell; }
+      #wrapper1 #mainContent .carousel .carousel-cell img {
+        width: 100%;
+        height: auto; }
+  #wrapper1 #mainContent .category .list-event-name {
+    margin-top: 0.5em;
+    background: #fff;
+    display: block;
+    text-align: center;
+    color: #298946;
+    font-size: 400%; }
+  #wrapper1 #mainContent .category hr {
+    width: 30%;
+    font-size: 300%; }
+
+/*# sourceMappingURL=index.css.map */

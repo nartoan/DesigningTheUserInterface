@@ -116,6 +116,17 @@ div.hero-overlay > img{
   font-size:50px;
 }
 
+@media only screen and (max-width: 767px) {
+   .namegroup{
+        margin-top:2rem;
+        font-size:30px;
+   }
+
+   .js-events-list{
+     margin-top:2rem;
+   }
+}
+
 .describe {
   font-size: 20px;
 }

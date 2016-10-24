@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		
+		<title>Event Near Me</title>
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="css_trang/style.css">
+		<link rel="stylesheet" type="text/css" href="css_trang/bootstrap-social.css">
+		<link rel="stylesheet" type="text/css" href="css_trang/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css_trang/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css_trang/index.css">
+		<link rel="stylesheet" type="text/css" href="css/footer_NguyenDucThuan.css">
+	</head>
+	
+	<body>
+
+<!-- header start -->
+<div class ="wrapper1" id="wrapper1">
+        <div id="header">
+            <div class="logo">
+                <a href="#">
+                    <img id="logosmall" src="image_trang/logoSmall.png">
+                    <img id="logodemo" src="image_trang/logodemo.png">
+                </a>
+            </div>
+            <div class="search">
+                <i class="fa fa-search" aria-hidden="true" onclick="showAllEvent()"></i>
+                <input class="search-box" type="text" placeholder="Tìm kiếm..." onfocus="showAllEvent()">
+                <ul class="dropdown list-event" id="all-event">
+                    <li>
+                        <input class="cheat-search" type="text" placeholder="Tìm kiếm...">
+                    </li>
+                    <li><a href="#">Câu lạc bộ, đoàn hội</a></li>
+                    <li><a href="#">Hội thảo, talkshow</a></li>
+                    <li><a href="#">Cuộc thi</a></li>
+                    <li><a href="#">Khóa học miễn phí</a></li>
+                    <li><a href="#">Hội sách</a></li>
+                    <li><a href="#">Festival, lễ hội</a></li>
+                    <li><a href="#">Công nghệ</a></li>
+                    <li><a href="#">Ăn chơi, giải trí</a></li>
+                    <li><a href="#">Khác</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="profile information" onclick="showInformation()">
+                    <img class="display-img" src="image_trang/profile.png">
+                    <span class="name-user">Trần Đức Toàn</span>
+                    <div class="dropdown content-infor" id="dropdown-infor">
+                        <a href="#">
+                            <i class="fa fa-cogs" aria-hidden="true"></i>
+                            <span>Cài đặt</span>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                            <span>Thoát</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="profile notification" onclick="showNotification()">
+                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                    <span class="name-noti">Thông báo</span>
+                    <div class="dropdown content-noti" id="dropdown-noti">
+                        <a href="#">Thông báo 1</a>
+                        <a href="#">Thông báo 2</a>
+                        <a href="#">Thông báo 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- header end-->
+
+<!-- Ảnh sự kiện -->
+		<div>
+			<img src="image_trang/1.jpg" style="width:100%; margin-top: 90px;">
+		</div>
+<!-- Nội dung sự kiện -->
+		<div class="container" id="mainContent">
+			<div class="row">
+				<div class="col-lg-12">
+					<center>
+					<h1 class="page-header" style="color:green;font-weight:bold;">CLB Thư viện Hội sinh viên Tuyển thành viên</h1>
+					</center>
+				</div>
+			</div>
+<!-- Thời gian, vote -->
+			<div class="row">
+				<div class="col-md-7" style="font-size: 16px;">
+					<p><h3><i class="fa fa-calendar"></i> &nbsp;</h3><b>Thời gian:</b> 18h30 - 21/09/2016</p>
+					<p><h3>&nbsp;<i class="fa fa-map-marker"></i>&nbsp;&nbsp;</h3><b> Địa điểm:</b> Giảng đường G2-Trường Đại học Công Nghệ-ĐHQGHN</p>
+					<p><h3><i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;</h3><b>Đơn vị tổ chức:</b> CLB Thư Viện-HSV</p>
+				</div>
+				<div class="col-md-5">
+					<i class="fa fa-eye"></i> 5 000 Lượt xem
+				</div>
+			</div>
+			<hr>
+<!-- Nội dung chính + map -->
+			<div class="row">
+				<div class="col-md-9">
+					<p><span style="font-weight: 600;">Giới thiệu về CLB:</span><br />
+						- Quản lí tư liệu (sách giáo trình, tham khảo, luận văn, báo chí, …) phục vụ nhu cầu học tập cũng như giải trí của cán bộ và sinh viên.<br />
+						- Tạo môi trường hoạt động và học tập đầy bổ ích cho sinh viên thông qua các hoạt động: tổ chức ngày hội trao đổi sách...<br />
+						Hoạt động tại thư viện, vừa là tình nguyện, bồi dưỡng kỹ năng cho bản thân, đồng thời cũng là sự đóng góp của sinh viên cho nhà trường, bạn bè sinh viên cùng học tập. Đây là một hoạt động mang đậm ý nghĩa và tính thiết thực.<br />
+						<span style="font-weight: 600;">* Link đăng kí:</span><br />
+					<a style="word-wrap: break-word">https://goo.gl/forms/XFOOnexe0feWNfC12</a></p>
+					<p> <span span style="font-weight: 600;">* Giới thiệu về các bộ phận trong CLB:</span><br />
+						1. Bộ phận phục vụ bạn đọc: <br />
+						- Thực hiện trực tại phòng 109-G2 (phòng tài liệu và giáo trình)<br />
+						- Thực hiện việc mượn trả sách cho cán bộ và sinh viên<br />
+						- Kiểm kê những sách chưa dán tem, đóng dấu, những sách bị hư hỏng,…<br />
+						- Dán tem và đóng dấu sách theo quy định.<br />
+						2. Bộ phận kĩ thuật:<br />
+						- Quản lý, sửa chữa, bảo trì, bảo dưỡng cơ sở vật chất: đồ dùng, trang thiết bị, máy tính.<br />
+						- Xây dựng và phát triển phần mềm, trang web<br />
+						3. Bộ phận tổ chức sự kiện:<br />
+						- Thiết kế, tổ chức các chương trình sinh hoạt tập thể của Thư viện<br />
+						- Tổ chức thực hiện, liên hệ các hoạt động tình nguyện để thành viên TV tham gia.<br />
+						- Tổ chức hoạt động tương trợ sinh viên trường ĐHCN<br />
+					- Thực hiện các biện pháp giới thiệu về TVHSV, tuyên truyền những hiểu biết đúng về TV</p>
+					<p style="word-wrap: break-word"> <span span style="font-weight: 600;">Mọi thắc mắc liện hệ:</span><br />
+						Mail: thuvienhsv.uet@gmail.com<br />
+						Page: https://www.facebook.com/TVHSV.UET<br />
+					Group: https://www.facebook.com/groups/TVHSV.UET/</p>
+				</div>
+<!-- Lịch + Map -->
+				<div class="col-md-2">
+					<div id="calendar" style="margin-left: 25px; margin-bottom: 100px;">
+						<h1>Tháng 9</h1>
+						<table>
+							<tr style="color: blue;"">
+								<td>T2</td>
+								<td>T3</td>
+								<td>T4</td>
+								<td>T5</td>
+								<td>T6</td>
+								<td>T7</td>
+								<td>CN</td>
+							</tr>
+							<tr>
+								<td class="lastmonth"></td>
+								<td class="lastmonth"></td>
+								<td class="lastmonth"></td>
+								<td>1</td>
+								<td>2</td>
+								<td>3</td>
+								<td class="hastask">4</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>6</td>
+								<td>7</td>
+								<td>8</td>
+								<td>9</td>
+								<td>10</td>
+								<td class="hastask">11</td>
+							</tr>
+							<tr>
+								<td>12</td>
+								<td>13</td>
+								<td>14</td>
+								<td>15</td>
+								<td>16</td>
+								<td>17</td>
+								<td class="hastask">18</td>
+							</tr>
+							<tr>
+								<td>19</td>
+								<td>20</td>
+								<td class="current">21</td>
+								<td>22</td>
+								<td>23</td>
+								<td>24</td>
+								<td class="hastask">25</td>
+							</tr>
+							<tr>
+								<td>26</td>
+								<td>27</td>
+								<td>28</td>
+								<td>29</td>
+								<td>30</td>
+								<td class="nextmonth"></td>
+								<td class="nextmonth"></td>
+							</tr>
+						</table>
+					</div>
+	<!--Map -->
+      				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.866348214252!2d105.7810818143784!3d21.038033092838784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab3543c19f87%3A0xad7715a55a01b5fc!2zR2nhuqNuZyDEkcaw4budbmcgRzIsIMSQSCBDw7RuZyBuZ2jhu4csIMSQSFFHIEjDoCBO4buZaQ!5e0!3m2!1svi!2s!4v1477016756366" width="240" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+				</div> <!--ahihiEnd col-md-4 -->
+
+			</div> <!--End row nội dung-->
+		</div> <!--End container toàn bộ -->
+
+<!-- Class Icon -->
+		<div  style="margin-top: 20px; text-align: center">
+			<a class="btn btn-social-icon btn-facebook">
+				<span class="fa fa-facebook"></span>
+			</a>
+			<a class="btn btn-social-icon btn-google-plus">
+				<span class="fa fa-google-plus"></span>
+			</a>
+			<a class="btn btn-social-icon btn-twitter">
+				<span class="fa fa-twitter"></span>
+			</a>
+			<a class="btn btn-social-icon btn-instagram">
+				<span class="fa fa-instagram"></span>
+			</a>
+			<a class="btn btn-social-icon btn-dropbox">
+				<span class="fa fa-dropbox"></span>
+			</a>
+		</div>
+
+		
+<!-- Sự kiện liên quan -->
+		<div class="container" id="mainContent">
+			<hr>
+			<h3>Sự kiện liên quan</h3>
+			<div class="row">
+				<div class="col-md-4" style="margin-top: 30px;">
+					<div class="bi-img">
+						<a href="#">
+						<img src="image_trang/3.jpg" class="img-responsive" alt="CLB Hr Tech Tuyển Thành Viên" />                    </a>
+					</div>
+					<h4>
+					<a href="#">CLB Hr Tech Tuyển Thành Viên</a></h4><br class="break-related">
+					<p class="date">
+						<i class="fa fa-small fa-clock-o"></i>
+					Từ 18:00 - Ngày 05/10/2016                </p>
+				</div>
+				<div class="col-md-4" style="margin-top: 30px;">
+					<div class="bi-img">
+						<a href="#">
+						<img src="image_trang/4.jpg" class="img-responsive" alt="Tuyển Cộng tác viên Đoàn Thanh niên - Hội Sinh viên" / >                    </a>
+					</div>
+					<h4>
+					<a href="#">Tuyển Cộng tác viên Đoàn Thanh niên - Hội Sinh viên</a></h4>
+					<p class="date">
+						<i class="fa fa-small fa-clock-o"></i>
+					Từ 18:00 - Ngày 12/09/2016                </p>
+				</div>
+				<div class="col-md-4" style="margin-top: 30px;">
+					<div class="bi-img">
+						<a href="#">
+						<img src="image_trang/5.jpg" class="img-responsive" alt="Trung thu cho em" / >                    </a>
+					</div>
+					<h4>
+					<a href="#">Trung thu cho em</a></h4><br>
+					<p class="date">
+						<i class="fa fa-small fa-clock-o"></i>
+					Từ 16:00 - Ngày 15/09/2016                </p>
+				</div>
+			</div>
+			<hr>
+		</div>
+
+<!-- Comment -->
+
+	<div class="container" id="comment1">
+			<div class="comment-box">
+				<div class="comment-form">
+					<div class="header">Thêm bình luận của bạn</div>
+					<form action="#"  onsubmit="event.preventDefault(); postComment()">
+						<div class="form-group">
+							<input class="form-control" type="text" id="name" placeholder="Tên của bạn"/>
+						</div>
+						<div class="form-group">
+							<textarea class="form-control" id="comment" rows="5" cols="20" placeholder="Nội dung bình luận"></textarea>
+						</div>
+						<button class="btn btn-success" type="submit">Bình Luận</button>
+					</form>
+				</div>
+				<div>
+					<div id="comments"></div>
+				</div>
+			</div>
+		</div>
+<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+        <script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+        <script>
+        // Initialize Firebase
+        var config = {
+        apiKey: "AIzaSyCVgS47frE4mg5nZwQ7ovBk2Zji5srjf9s",
+        authDomain: "dtui-nhom8.firebaseapp.com",
+        databaseURL: "https://dtui-nhom8.firebaseio.com",
+        storageBucket: "",
+        messagingSenderId: "394242325405"
+        };
+        firebase.initializeApp(config);
+</script>
+<script type="text/javascript">
+            //var firebase =
+            var ref = new Firebase("https://dtui-nhom8.firebaseio.com");
+        // Thanks to https://gist.github.com/hurjas/2660489#file-timestamp-js-L26
+        function timeStamp() {
+        var now = new Date();
+        var date = [now.getMonth() + 1, now.getDate(), now.getFullYear()];
+        var time = [now.getHours(), now.getMinutes()];
+        var suffix = (time[0] < 12) ? "AM" : "PM";
+        time[0] = (time[0] < 12) ? time[0] : time[0] - 12;
+        for (var i = 1; i < 3; i++) {
+        if (time[i] < 10) {
+        time[i] = "0" + time[i];
+        }
+        }
+        return date.join("/") + ", " + time.join(":") + " " + suffix;
+        }
+        function postComment() {
+        var name = document.getElementById("name").value,
+        comment = document.getElementById("comment").value,
+        time = timeStamp();
+        if (name && comment) {
+        ref.push({
+        name: name,
+        comment: comment,
+        time: time
+        });
+        }
+        document.getElementById("name").value = '';
+        document.getElementById("comment").value = '';
+        }
+        ref.on("child_added", function(snapshot) {
+        var comment = snapshot.val();
+        addComment(comment.name, comment.comment, comment.time);
+        });
+        function addComment(name, comment, timeStamp) {
+        var comments = document.getElementById("comments");
+        comments.innerHTML = "<hr><h4>" + name + "<span style='float: right;'>" + timeStamp + "</span></h4><p>" + comment + "</p>" + comments.innerHTML;
+        }
+        </script>
+
+
+		<script src="js_trang/jsIndex.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<script src="js_trang/myJs.js"></script>
+		<!-- footer start -->
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <h3>Event near me</h3>
+            <span class="imglogo"><img src="image/logo.gif" width = 140 heigh = 140 style="margin-left: 30px;"> </span>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>144 Xuân Thủy</span> Hà Nội</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+01664 375 871</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">support@eventnearme.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>Về chúng tôi</span>
+                <span>Đơn giản là mình thích thì mình làm thôi, chứ không cần phải có mục đích nào cả!</span>
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+	</body>
+</html>
