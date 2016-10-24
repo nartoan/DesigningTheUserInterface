@@ -144,8 +144,6 @@ body {
     #wrapper #mainContent .category .category-detail .shape div .base {
       width: 100%;
       min-height: 300px; }
-    #wrapper #mainContent .category .category-detail .shape div img:hover {
-      opacity: 0.2; }
 
 .scroll-logo {
   width: auto !important;

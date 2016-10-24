@@ -50,15 +50,6 @@
     -moz-transition-duration: 0.3s;
 }
 
-.shape:hover .bg {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-    filter: alpha(opacity=80);
-    -moz-opacity: 0.8;
-    -khtml-opacity: 0.8;
-    opacity: 0.8;
-    display: block;
-}
-
 .shape:hover .details {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100);
@@ -71,7 +62,6 @@
 
 /* content styles */
 
-.shape .bg,
 .shape .details {
     position: absolute;
     display: table-cell;
@@ -85,10 +75,6 @@
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     display: none;
-}
-
-.shape .bg {
-    background: #4b5a78;
 }
 
 .shape .details span.heading {
@@ -127,7 +113,12 @@
     margin-top: 15px;
 }
 
+.shape .base:hover {
+    opacity: 0.2;
+}
+
 .shape a.button:hover {
     background: #fff;
     color: #2f3644;
+    z-index: 1000;
 }
