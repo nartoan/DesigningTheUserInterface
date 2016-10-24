@@ -1,9 +1,9 @@
 @media screen and (max-width: 1024px) {
     .nav-right {
-        width: 42%!important;
-        margin-right: 0!important;
+        width: 35%;
+        margin-right: 0px!important;
         .profile {
-            margin-right: 50%!important;
+            margin-right: 25%!important;
             > span {
                 display: none;
             }
@@ -11,79 +11,96 @@
                 margin: 3.1em 0 0 -10em!important;
             }
         }
-        .notification {
-            padding-right: 0px!important;
-        }
     }
-    .nav-left {
-        width: 40%!important;
-        margin-left: 0!important;
-        .left-display {
-            margin-left: 40%!important;
-            padding-left: 0!important;
+    .logo {
+        width: auto!important;
+        margin-left: 5%!important;
+        #logosmall {
+            display: block!important;
+            width: 55px!important;
+            margin-top: 2px;
         }
-        .search-box {
+        #logodemo {
             display: none;
         }
-        .fa.fa-search {
-            font-size: 2em;
-            width: 38%;
-            margin: 3px 0 0 0!important;
-            color: #fff;
-            &:hover {
-                background: #298946;
-            }
-        }
+    }
+    .shape {
+        width: 40%!important;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .nav-right {
-        width: 40%!important;
-        .notification {
-            width: 45%!important;
-        }
-    }
-    .nav-left {
-        width: 37%!important;
+    .list-event {
+        min-width: 370px!important;
     }
 }
 
 @media screen and (max-width: 680px) {
     .nav-right {
-        width: 42%!important;
+        width: 50%;
+        .information {
+            margin-right: 23%!important;
+        }
+        .notification {
+            margin-right: 40%!important;
+        }
     }
-    .nav-left {
-        width: 33%!important;
+    .search {
+        width: auto!important;
+        margin-left: 15%!important;
+        .search-box {
+            display: none;
+        }
+        .fa-search {
+            margin: 0.1em!important;
+            font-size: 2em;
+            color: #fff;
+        }
+    }
+    .logo {
+        margin-left: 10%!important;
+        #logosmall {
+            width: 43px!important;
+            margin-top: 8px;
+        }
+    }
+    .list-event {
+        margin-top: 3.1em!important;
+        min-width: 200px!important;
+        .cheat-search {
+            display: block!important;
+            width: 140px;
+            height: 40px;
+            margin: 0.7em;
+            border: solid 1px #35b15a;
+            border-radius: 2px;
+            padding: 0.2em 0 0 1em;
+        }
+    }
+    .shape {
+        width: 90%!important;
     }
 }
 
-@media screen and (max-width: 580px) {
-    .nav-right {
-        width: 45%!important;
-        .notification {
-            width: 40%!important;
-        }
-    }
-    .nav-left {
-        width: 30%!important;
-    }
-}
+@media screen and (max-width: 580px) {}
 
 @media screen and (max-width: 480px) {
-    .content-noti {
-        width:100vw!important;
+    .nav-right {
+        .information {
+            margin-right: 20%!important;
+        }
+        .notification {
+            margin-right: 35%!important;
+        }
+    }
+    .search {
+        width: auto!important;
+        margin-left: 10%!important;
+    }
+    .shape {
+        width: 90%!important;
+        margin : 0px;
     }
 }
 
-@media screen and (max-width: 320px) {
-    .nav-right {
-        width: 45%!important;
-        .notification {
-            width: 20%!important;
-        }
-    }
-    .nav-left {
-        width: 25%!important;
-    }
-}
+@media screen and (max-width: 320px) {}

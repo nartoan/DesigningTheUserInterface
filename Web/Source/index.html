@@ -7,35 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <!--
-    <link rel="stylesheet" type="text/css" href="css/responsiveIndex.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/responsiveIndex.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" href="css/flickity.css" media="screen">
-    <script src="js/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/shape.css">
     <script src="js/jsIndex.js"></script>
+    <link rel="stylesheet" href="css/flickity.min.css">
 </head>
 
 <body>
     <div id="wrapper">
         <div id="header">
             <div class="logo">
-                <img id="logo" src="image/logodemo.png">
+                <a href="#">
+                    <img id="logosmall" src="image/logoSmall.png">
+                    <img id="logodemo" src="image/logodemo.png">
+                </a>
             </div>
             <div class="search">
-                <i class="fa fa-search" aria-hidden="true"></i>
-                <input class="search-box" type="text" placeholder="Search event..">
+                <i class="fa fa-search" aria-hidden="true" onclick="showAllEvent()"></i>
+                <input class="search-box" type="text" placeholder="Tìm kiếm..." onfocus="showAllEvent()">
+                <ul class="dropdown list-event" id="all-event">
+                    <li>
+                        <input class="cheat-search" type="text" placeholder="Tìm kiếm...">
+                    </li>
+                    <li><a href="#">Câu lạc bộ, đoàn hội</a></li>
+                    <li><a href="#">Hội thảo, talkshow</a></li>
+                    <li><a href="#">Cuộc thi</a></li>
+                    <li><a href="#">Khóa học miễn phí</a></li>
+                    <li><a href="#">Hội sách</a></li>
+                    <li><a href="#">Festival, lễ hội</a></li>
+                    <li><a href="#">Công nghệ</a></li>
+                    <li><a href="#">Ăn chơi, giải trí</a></li>
+                    <li><a href="#">Khác</a></li>
+                </ul>
             </div>
             <div class="nav-right">
-                <div class="profile notification" onclick="showNotification()">
-                    <i class="fa fa-bell-o" aria-hidden="true"></i>
-                    <span class="name-noti">Thông báo</span>
-                    <div class="dropdown content-noti" id="dropdown-noti">
-                        <a href="#">Thông báo 1</a>
-                        <a href="#">Thông báo 2</a>
-                        <a href="#">Thông báo 3</a>
-                    </div>
-                </div>
-                <div class="profile information" onmousedown="showInformation()">
+                <div class="profile information" onclick="showInformation()">
                     <img class="display-img" src="image/profile.png">
                     <span class="name-user">Trần Đức Toàn</span>
                     <div class="dropdown content-infor" id="dropdown-infor">
@@ -49,9 +56,17 @@
                         </a>
                     </div>
                 </div>
+                <div class="profile notification" onclick="showNotification()">
+                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                    <span class="name-noti">Thông báo</span>
+                    <div class="dropdown content-noti" id="dropdown-noti">
+                        <a href="#">Thông báo 1</a>
+                        <a href="#">Thông báo 2</a>
+                        <a href="#">Thông báo 3</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <!--
         <div id="mainContent">
             <div class="carousel" data-flickity='{ "cellSelector": ".carousel-cell","wrapAround": true  }'>
                 <div class="carousel-cell"><img src="image/smartHack.jpg"></div>
@@ -59,77 +74,142 @@
                 <div class="carousel-cell"><img src="image/hrtech.jpg"></div>
                 <div class="carousel-cell"><img src="image/tuyenthanhvien.jpg"></div>
                 <div class="carousel-cell"><img src="image/hoisach.jpg"></div>
-            </div>
-            <div class="intro-page">
-                <p>Sự kiện nổi bật</p>
-                <hr class="line text-left">
+                <div class="carousel-cell"><img src="image/smartHack.jpg"></div>
+                <div class="carousel-cell"><img src="image/trungthu.jpg"></div>
+                <div class="carousel-cell"><img src="image/hrtech.jpg"></div>
+                <div class="carousel-cell"><img src="image/tuyenthanhvien.jpg"></div>
+                <div class="carousel-cell"><img src="image/hoisach.jpg"></div>
             </div>
             <div class="category">
-                <p>Nhóm loại sự kiện</p>
-                <div class="category-detail">
-                    <div class="card effect">
-                        <div class="card__front">
-                            <span class="card__text">front</span>
-                        </div>
-                        <div class="card__back">
-                            <span class="card__text">back</span>
-                        </div>
-                    </div>
-                    <!-- /card1 
-                    <div class="card effect">
-                        <div class="card__front">
-                            <span class="card__text">front</span>
-                        </div>
-                        <div class="card__back">
-                            <span class="card__text">back</span>
-                        </div>
-                    </div>
-                    <!-- /card2 
-                    <div class="card effect">
-                        <div class="card__front">
-                            <span class="card__text">front</span>
-                        </div>
-                        <div class="card__back">
-                            <span class="card__text">back</span>
-                        </div>
-                    </div>
-                    <!-- /card3 
-                    <div class="card effect">
-                        <div class="card__front">
-                            <span class="card__text">front</span>
-                        </div>
-                        <div class="card__back">
-                            <span class="card__text">back</span>
-                        </div>
-                    </div>
-                    <!-- /card4 -
-                    <div class="card effect">
-                        <div class="card__front">
-                            <span class="card__text">front</span>
-                        </div>
-                        <div class="card__back">
-                            <span class="card__text">back</span>
-                        </div>
-                    </div>
-                    <!-- /card5 
-                    <div class="card effect">
-                        <div class="card__front">
-                            <img src="image/smartHack.jpg">
-                            <span>Công nghệ thông tin</span>
-                            <p>Những lĩnh vực về công nghệ thông tin</p>
-                        </div>
-                        <div class="card__back">
-                            <span class="card__text">back</span>
-                        </div>
-                    </div>
-                    <!-- /card6 
-                    <dir class="clear"></dir>
+                <div>
+                    <span class="list-event-name">Sự kiện nổi bật</span>
+                    <hr>
                 </div>
+                <ul class="category-detail">
+                    <li class="shape">
+                        <a href="#" class="overlay hexagon"></a>
+                        <div class="details">
+                            <span class="heading">Câu lạc bộ, đoàn hội</span>
+                            <hr />
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            <a href="#" class="button">VIEW</a>
+                        </div>
+                        <div class="bg"></div>
+                        <div class="base">
+                            <img src="img/1.jpg" alt="" />
+                        </div>
+                    </li>
+                    <li class="shape">
+                        <a href="#" class="overlay hexagon"></a>
+                        <div class="details">
+                            <span class="heading">Hội thảo, talkshow</span>
+                            <hr />
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            <a href="#" class="button">VIEW</a>
+                        </div>
+                        <div class="bg"></div>
+                        <div class="base">
+                            <img src="img/1.jpg" alt="" />
+                        </div>
+                    </li>
+                    <li class="shape">
+                        <a href="#" class="overlay hexagon"></a>
+                        <div class="details">
+                            <span class="heading">Cuộc thi</span>
+                            <hr />
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            <a href="#" class="button">VIEW</a>
+                        </div>
+                        <div class="bg"></div>
+                        <div class="base">
+                            <img src="img/1.jpg" alt="" />
+                        </div>
+                    </li>
+                    <li class="shape">
+                        <a href="#" class="overlay hexagon"></a>
+                        <div class="details">
+                            <span class="heading">Khóa học miễn phí</span>
+                            <hr />
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            <a href="#" class="button">VIEW</a>
+                        </div>
+                        <div class="bg"></div>
+                        <div class="base">
+                            <img src="img/1.jpg" alt="" />
+                        </div>
+                    </li>
+                    <li class="shape">
+                        <a href="#" class="overlay hexagon"></a>
+                        <div class="details">
+                            <span class="heading">Hội sách</span>
+                            <hr/>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            <a href="#" class="button">VIEW</a>
+                        </div>
+                        <div class="bg"></div>
+                        <div class="base">
+                            <img src="img/1.jpg" alt="" />
+                        </div>
+                    </li>
+                    <li class="shape">
+                        <a href="#" class="overlay hexagon"></a>
+                        <div class="details">
+                            <span class="heading">Festival, lễ hội</span>
+                            <hr />
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            <a href="#" class="button">VIEW</a>
+                        </div>
+                        <div class="bg"></div>
+                        <div class="base">
+                            <img src="img/1.jpg" alt="" />
+                        </div>
+                    </li>
+                    <li class="shape">
+                        <a href="#" class="overlay hexagon"></a>
+                        <div class="details">
+                            <span class="heading">Công nghệ</span>
+                            <hr />
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            <a href="#" class="button">VIEW</a>
+                        </div>
+                        <div class="bg"></div>
+                        <div class="base">
+                            <img src="img/1.jpg" alt="" />
+                        </div>
+                    </li>
+                    <li class="shape">
+                        <a href="#" class="overlay hexagon"></a>
+                        <div class="details">
+                            <span class="heading">Ăn chơi, giải trí</span>
+                            <hr />
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            <a href="#" class="button">VIEW</a>
+                        </div>
+                        <div class="bg"></div>
+                        <div class="base">
+                            <img src="img/1.jpg" alt="" />
+                        </div>
+                    </li>
+                    <li class="shape">
+                        <a href="#" class="overlay hexagon"></a>
+                        <div class="details">
+                            <span class="heading">Khác</span>
+                            <hr />
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            <a href="#" class="button">VIEW</a>
+                        </div>
+                        <div class="bg"></div>
+                        <div class="base">
+                            <img src="img/1.jpg" alt="" />
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
         <div id="footer">
-        </div> -->
+        </div>
     </div>
+    <script src="js/flickity.pkgd.min.js"></script>
 </body>
 
 </html>
