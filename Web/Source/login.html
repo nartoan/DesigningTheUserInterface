@@ -17,7 +17,7 @@
         <!-- header start -->
         <div id="header">
             <div class="logo">
-                <a href="#">
+                <a href="homepage.html">
                     <img id="logosmall" src="image/logoSmall.png">
                     <img id="logodemo" src="image/logodemo.png">
                 </a>
@@ -39,7 +39,7 @@
                             </div>
                             <div class="col"><a href="#" rel="forgot_password" class="linkform" title="Tìm lại tài khoản">Quên mật khẩu?</a></div>
                         </div>
-                        <a href="#" class="login-button btn-3">Đăng nhập</a>
+                        <a href="homepage.html" class="login-button btn-3" onclick="dangnhap()">Đăng nhập</a>
                         <div class="" style="margin-top: 30px;">
                             <a href="register.html" class="linkform" rel="register"><span style="color:black;">Chưa có tài khoản?</span> Đăng ký ở đây</a>
                         </div>
@@ -151,6 +151,9 @@
                 e.preventDefault();
             });
     });
+    function dangnhap(){
+    	alert("Đăng nhập thành công");
+    }
     </script>
     <div class="clear"></div>
     <!-- footer start -->
