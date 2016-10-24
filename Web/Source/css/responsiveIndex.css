@@ -20,7 +20,7 @@
       display: none; }
 
   .shape {
-    width: 40% !important; } }
+    width: 44% !important; } }
 @media screen and (max-width: 768px) {
   .list-event {
     min-width: 370px !important; } }
@@ -61,7 +61,10 @@
       padding: 0.2em 0 0 1em; }
 
   .shape {
-    width: 90% !important; } }
+    width: 95% !important; }
+
+  .list-event-name {
+    font-size: 2em !important; } }
 @media screen and (max-width: 480px) {
   .nav-right .information {
     margin-right: 20% !important; }
@@ -73,7 +76,6 @@
     margin-left: 10% !important; }
 
   .shape {
-    width: 90% !important;
     margin: 0px; } }
 
 /*# sourceMappingURL=responsiveIndex.css.map */

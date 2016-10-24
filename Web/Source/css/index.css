@@ -116,7 +116,7 @@
   height: auto; }
   #wrapper #mainContent .carousel {
     width: 100%;
-    height: 500px;
+    height: auto;
     margin: auto; }
     #wrapper #mainContent .carousel .carousel-cell {
       width: 100%;
@@ -136,5 +136,12 @@
   #wrapper #mainContent .category hr {
     width: 30%;
     font-size: 300%; }
+  #wrapper #mainContent .category .category-detail .shape div {
+    width: 100%; }
+    #wrapper #mainContent .category .category-detail .shape div .base {
+      width: 100%;
+      min-height: 300px; }
+    #wrapper #mainContent .category .category-detail .shape div img:hover {
+      opacity: 0.2; }
 
 /*# sourceMappingURL=index.css.map */
