@@ -238,21 +238,8 @@
     </footer>
     <!-- footer end -->
     <script>
-    var mn = $(".logo");
-    var temp1 = $("#logosmall");
-    var temp2 = $("#logodemo");
+    var mn = $(".logo"); var temp1 = $("#logosmall"); var temp2 = $("#logodemo"); $(window).scroll(function() { if ($(this).scrollTop() > 0) { mn.addClass("scroll-logo"); temp1.addClass("scroll-logo1"); temp2.addClass("scroll-logo2"); } else { mn.removeClass("scroll-logo"); temp1.removeClass("scroll-logo1"); temp2.removeClass("scroll-logo2"); } });
 
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 0) {
-            mn.addClass("scroll-logo");
-            temp1.addClass("scroll-logo1");
-            temp2.addClass("scroll-logo2");
-        } else {
-            mn.removeClass("scroll-logo");
-            temp1.removeClass("scroll-logo1");
-            temp2.removeClass("scroll-logo2");
-        }
-    });
     </script>
     <script src="js/flickity.pkgd.min.js"></script>
 </body>

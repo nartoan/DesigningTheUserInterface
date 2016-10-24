@@ -325,38 +325,54 @@
             <!-- footer end -->
             <!-- animation slide up -->
             <script type="text/javascript">
-                $(document).ready(function() {
-                    if ($(window).width() >= 767){
-                        $(".js-events-list").css('margin-top', '2rem');
-                        $(".js-events-list").animate({
-                            marginTop: '-10rem',
-                            opacity: 1
-                        }, 1000);
-                    }else{
-                        $(".describe").hide();
-                    }
-                });
+            $(document).ready(function() {
+                if ($(window).width() >= 767) {
+                    $(".js-events-list").css('margin-top', '2rem');
+                    $(".js-events-list").animate({
+                        marginTop: '-10rem',
+                        opacity: 1
+                    }, 1000);
+                } else {
+                    $(".describe").hide();
+                }
+            });
 
 
-                $(window).resize(function(){
-                   if ($(window).width() >= 767){
-                        $(".js-events-list").css('margin-top', '2rem');
-                        $(".js-events-list").animate({
-                            marginTop: '-10rem',
-                            opacity: 1
-                        }, 1000);
-                        $(".describe").show();
-                    }else{
-                        $(".describe").hide();
-                    }
+            $(window).resize(function() {
+                if ($(window).width() >= 767) {
+                    $(".js-events-list").css('margin-top', '2rem');
+                    $(".js-events-list").animate({
+                        marginTop: '-10rem',
+                        opacity: 1
+                    }, 1000);
+                    $(".describe").show();
+                } else {
+                    $(".describe").hide();
+                }
 
-                });
+            });
 
 
 
-                $(".btn-filter").click(function() {
-                    $(".filter-bar").slideToggle(500, "swing");
-                })
+            $(".btn-filter").click(function() {
+                $(".filter-bar").slideToggle(500, "swing");
+            })
+            </script>
+            <script>
+            var mn = $(".logo");
+            var temp1 = $("#logosmall");
+            var temp2 = $("#logodemo");
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 0) {
+                    mn.addClass("scroll-logo");
+                    temp1.addClass("scroll-logo1");
+                    temp2.addClass("scroll-logo2");
+                } else {
+                    mn.removeClass("scroll-logo");
+                    temp1.removeClass("scroll-logo1");
+                    temp2.removeClass("scroll-logo2");
+                }
+            });
             </script>
 </body>
 
