@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/shape.css">
     <link rel="stylesheet" type="text/css" href="css/footer_NguyenDucThuan.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
     <script src="js/jsIndex.js"></script>
     <link rel="stylesheet" href="css/flickity.min.css">
 </head>
@@ -98,7 +99,7 @@
                             <a href="#" class="button">VIEW</a>
                         </div>
                         <div>
-                            <img class="base" src="image/category/club.png"/>
+                            <img class="base" src="image/category/club.png" />
                         </div>
                     </li>
                     <li class="shape">
@@ -110,7 +111,7 @@
                             <a href="#" class="button">VIEW</a>
                         </div>
                         <div>
-                            <img class="base" src="image/category/talkshow.png"/>
+                            <img class="base" src="image/category/talkshow.png" />
                         </div>
                     </li>
                     <li class="shape">
@@ -194,7 +195,7 @@
                             <a href="#" class="button">VIEW</a>
                         </div>
                         <div>
-                            <img class="base" src="image/category/other.png"/>
+                            <img class="base" src="image/category/other.png" />
                         </div>
                     </li>
                 </ul>
@@ -236,6 +237,23 @@
         </div>
     </footer>
     <!-- footer end -->
+    <script>
+    var mn = $(".logo");
+    var temp1 = $("#logosmall");
+    var temp2 = $("#logodemo");
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 0) {
+            mn.addClass("scroll-logo");
+            temp1.addClass("scroll-logo1");
+            temp2.addClass("scroll-logo2");
+        } else {
+            mn.removeClass("scroll-logo");
+            temp1.removeClass("scroll-logo1");
+            temp2.removeClass("scroll-logo2");
+        }
+    });
+    </script>
     <script src="js/flickity.pkgd.min.js"></script>
 </body>
 

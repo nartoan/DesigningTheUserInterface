@@ -144,4 +144,16 @@
     #wrapper #mainContent .category .category-detail .shape div img:hover {
       opacity: 0.2; }
 
+.scroll-logo {
+  width: auto !important;
+  margin-left: 5% !important; }
+
+.scroll-logo1 {
+  display: block !important;
+  width: 55px !important;
+  margin-top: 2px; }
+
+.scroll-logo2 {
+  display: none; }
+
 /*# sourceMappingURL=index.css.map */
