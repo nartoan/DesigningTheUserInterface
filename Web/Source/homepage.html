@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Event near me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/responsiveIndex.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/shape.css">
+    <link rel="stylesheet" type="text/css" href="css/footer_NguyenDucThuan.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/jsIndex.js"></script>
+    <link rel="stylesheet" href="css/flickity.min.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- header start -->
+        <div id="header">
+            <div class="logo">
+                <a href="homepage.html">
+                    <img id="logosmall" src="image/logoSmall.png">
+                    <img id="logodemo" src="image/logodemo.png">
+                </a>
+            </div>
+            <div class="search">
+                <i class="fa fa-search" aria-hidden="true" onclick="showAllEvent()"></i>
+                <input class="search-box" type="text" placeholder="Tìm kiếm..." onfocus="showAllEvent()">
+                <ul class="dropdown list-event" id="all-event">
+                    <li>
+                        <input class="cheat-search" type="text" placeholder="Tìm kiếm...">
+                    </li>
+                    <li><a href="groupEvent.html">Câu lạc bộ, đoàn hội</a></li>
+                    <li><a href="groupEvent.html">Hội thảo, talkshow</a></li>
+                    <li><a href="groupEvent.html">Cuộc thi</a></li>
+                    <li><a href="groupEvent.html">Khóa học miễn phí</a></li>
+                    <li><a href="groupEvent.html">Hội sách</a></li>
+                    <li><a href="groupEvent.html">Festival, lễ hội</a></li>
+                    <li><a href="groupEvent.html">Công nghệ</a></li>
+                    <li><a href="groupEvent.html">Ăn chơi, giải trí</a></li>
+                    <li><a href="#">Khác</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="profile information" onclick="showInformation()">
+                    <img class="display-img" src="image/profile.png">
+                    <span class="name-user">Phan Hà Trang</span>
+                    <div class="dropdown content-infor" id="dropdown-infor">
+                    <a href="dangSK.html">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <span>Đăng SK</span>
+                        </a>
+                        <a href="caidatchung.html">
+                            <i class="fa fa-cogs" aria-hidden="true"></i>
+                            <span>Cài đặt</span>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                            <span>Thoát</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="profile noti" onclick="showNotification()">
+                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                    <span class="name-noti">Thông báo</span>
+                    <div class="dropdown content-noti" id="dropdown-noti">
+                        <a href="#">Thông báo 1</a>
+                        <a href="#">Thông báo 2</a>
+                        <a href="#">Thông báo 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header end-->
+        <div id="mainContent">
+            <div class="carousel" data-flickity='{ "cellSelector": ".carousel-cell","wrapAround": true  }'>
+                <div class="carousel-cell"><img src="image/smartHack.jpg"></div>
+                <div class="carousel-cell"><img src="image/trungthu.jpg"></div>
+                <div class="carousel-cell"><img src="image/hrtech.jpg"></div>
+                <div class="carousel-cell"><img src="image/tuyenthanhvien.jpg"></div>
+                <div class="carousel-cell"><img src="image/hoisach.jpg"></div>
+                <div class="carousel-cell"><img src="image/smartHack.jpg"></div>
+                <div class="carousel-cell"><img src="image/trungthu.jpg"></div>
+                <div class="carousel-cell"><img src="image/hrtech.jpg"></div>
+                <div class="carousel-cell"><img src="image/tuyenthanhvien.jpg"></div>
+                <div class="carousel-cell"><img src="image/hoisach.jpg"></div>
+            </div>
+            <div class="category">
+                <div>
+                    <span class="list-event-name">Danh mục sự kiện</span>
+                    <hr/>
+                </div>
+                <ul class="category-detail">
+                    <li class="shape">
+                        <a href="groupEvent.html" class="overlay"></a>
+                        <div class="details">
+                            <span class="heading">Câu lạc bộ, đoàn hội</span>
+                            <hr/>
+                            <p>Các sự kiện liên quan tới câu lạc bộ như : tuyển thành viên, làm việc nhóm, tiếp sức mùa thi, hội thi,...</p>
+                            <a href="groupEvent.html" class="button">VIEW</a>
+                        </div>
+                        <div>
+                            <img class="base" src="image/category/club.png" />
+                        </div>
+                    </li>
+                    <li class="shape">
+                        <a href="#" class="overlay"></a>
+                        <div class="details">
+                            <span class="heading">Hội thảo, Tọa đàm</span>
+                            <hr/>
+                            <p>Các hội thảo tọa đàm đang và sắp diễn ra phù hợp với sinh viên.</p>
+                            <a href="groupEvent.html" class="button">VIEW</a>
+                        </div>
+                        <div>
+                            <a href="groupEvent.html"><img class="base" src="image/category/talkshow.png" /></a>
+                        </div>
+                    </li>
+                    <li class="shape">
+                        <a href="#" class="overlay"></a>
+                        <div class="details">
+                            <span class="heading">Cuộc thi</span>
+                            <hr />
+                            <p>Các cuộc thi đang và sắp diễn ra phù hợp với sinh viên.</p>
+                            <a href="groupEvent.html" class="button">VIEW</a>
+                        </div>
+                        <div>
+                            <img class="base" src="image/category/competition.png" />
+                        </div>
+                    </li>
+                    <li class="shape">
+                        <a href="#" class="overlay"></a>
+                        <div class="details">
+                            <span class="heading">Khóa học miễn phí</span>
+                            <hr />
+                            <p>Các khóa học đang và sắp diễn ra phù hợp với sinh viên.</p>
+                            <a href="groupEvent.html" class="button">VIEW</a>
+                        </div>
+                        <div>
+                            <img class="base" src="image/category/course.png" />
+                        </div>
+                    </li>
+                    <li class="shape">
+                        <a href="#" class="overlay"></a>
+                        <div class="details">
+                            <span class="heading">Hội sách</span>
+                            <hr/>
+                            <p>Các sự kiện sách với nhiều đầu sách hay sắp diễn ra.</p>
+                            <a href="groupEvent.html" class="button">VIEW</a>
+                        </div>
+                        <div>
+                            <img class="base" src="image/category/book.png" />
+                        </div>
+                    </li>
+                    <li class="shape">
+                        <a href="#" class="overlay"></a>
+                        <div class="details">
+                            <span class="heading">Ngày hội, lễ hội</span>
+                            <hr />
+                            <p>Các sự kiện lễ hội, ngày hội sắp diễn ra.</p>
+                            <a href="groupEvent.html" class="button">VIEW</a>
+                        </div>
+                        <div>
+                            <img class="base" src="image/category/festival.png" />
+                        </div>
+                    </li>
+                    <li class="shape">
+                        <a href="#" class="overlay"></a>
+                        <div class="details">
+                            <span class="heading">Công nghệ</span>
+                            <hr />
+                            <p>Các sự kiện, cuộc thi, buổi trò chuyện, đào tạo,... về công nghệ cho sinh viên.</p>
+                            <a href="groupEvent.html" class="button">VIEW</a>
+                        </div>
+                        <div>
+                            <img class="base" src="image/category/Tech.png" />
+                        </div>
+                    </li>
+                    <li class="shape">
+                        <a href="#" class="overlay"></a>
+                        <div class="details">
+                            <span class="heading">Ăn chơi, giải trí</span>
+                            <hr />
+                            <p>Các sự kiện mang tính giải trí, thư giãn sắp diễn ra.</p>
+                            <a href="groupEvent.html" class="button">VIEW</a>
+                        </div>
+                        <div>
+                            <img class="base" src="image/category/entertainment.png" />
+                        </div>
+                    </li>
+                    <li class="shape">
+                        <a href="#" class="overlay"></a>
+                        <div class="details">
+                            <span class="heading">Khác</span>
+                            <hr />
+                            <p>Các sự kiện khác đang và sắp diễn ra.</p>
+                            <a href="groupEvent.html" class="button">VIEW</a>
+                        </div>
+                        <div>
+                            <img class="base" src="image/category/other.png" />
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+    <!-- footer start -->
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <h3>Event near me</h3>
+            <span class="imglogo"><img src="image/logo.gif" width = 140 heigh = 140 style="margin-left: 30px;"> </span>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>144 Xuân Thủy</span> Hà Nội</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+01664 375 871</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">support@eventnearme.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>Về chúng tôi</span>
+                <span>Đơn giản là mình thích thì mình làm thôi, chứ không cần phải có mục đích nào cả!</span>
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <script>
+    var mn = $(".logo"); var temp1 = $("#logosmall"); var temp2 = $("#logodemo"); $(window).scroll(function() { if ($(this).scrollTop() > 0) { mn.addClass("scroll-logo"); temp1.addClass("scroll-logo1"); temp2.addClass("scroll-logo2"); } else { mn.removeClass("scroll-logo"); temp1.removeClass("scroll-logo1"); temp2.removeClass("scroll-logo2"); } });
+
+    </script>
+    <script src="js/flickity.pkgd.min.js"></script>
+</body>
+
+</html>
