@@ -329,19 +329,30 @@
             <!-- footer end -->
             <!-- animation slide up -->
             <script type="text/javascript">
-            $(document).ready(function() {
-                // $(".js-events-list").css("margin-top","-15rem");
-                $(".js-events-list").css('margin-top', '2rem');
-                $(".js-events-list").animate({
-                    marginTop: '-10rem',
-                    opacity: 1
-                }, 1000);
+                $(document).ready(function() {
+                    if ($(window).width() >= 800){
+                        $(".js-events-list").css('margin-top', '2rem');
+                        $(".js-events-list").animate({
+                            marginTop: '-10rem',
+                            opacity: 1
+                        }, 1000);
+                    }
+                });
 
-            });
 
-            $(".btn-filter").click(function() {
-                $(".filter-bar").slideToggle(500, "swing");
-            })
+                $(window).resize(function(){
+                   if ($(window).width() >= 800){
+                        $(".js-events-list").css('margin-top', '2rem');
+                        $(".js-events-list").animate({
+                            marginTop: '-10rem',
+                            opacity: 1
+                        }, 1000);
+                    } 
+                });
+
+                $(".btn-filter").click(function() {
+                    $(".filter-bar").slideToggle(500, "swing");
+                })
             </script>
 </body>
 
