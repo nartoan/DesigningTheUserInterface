@@ -121,7 +121,7 @@ http://flickity.metafizzy.co
 }
 
 .flickity-page-dots .dot {
-    display: inline-block;
+    display: none;
     width: 10px;
     height: 10px;
     margin: 0 8px;
