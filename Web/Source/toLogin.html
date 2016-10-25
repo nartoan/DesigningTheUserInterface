@@ -5,8 +5,10 @@
     <title>Event near me</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--css lấy sẵn -->
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!--My css-->
     <link rel="stylesheet" type="text/css" href="css/responsiveIndex.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/shape.css">
@@ -20,12 +22,15 @@
     <div id="wrapper">
         <!-- header start -->
         <div id="header">
+            <!-- logo start -->
             <div class="logo">
                 <a href="homepage.html">
                     <img id="logosmall" src="image/logoSmall.png">
                     <img id="logodemo" src="image/logodemo.png">
                 </a>
             </div>
+            <!-- logo end -->
+            <!-- search start -->
             <div class="search">
                 <i class="fa fa-search" aria-hidden="true" onclick="showAllEvent()"></i>
                 <input class="search-box" type="text" placeholder="Tìm kiếm..." onfocus="showAllEvent()">
@@ -44,31 +49,61 @@
                     <li><a href="#">Khác</a></li>
                 </ul>
             </div>
-            <div class="nav-right"><a href="login.html" style="text-decoration:none;color:#fff;">
-                <div class="profile information" onclick="showInformation()">
-                    <i class="fa fa-sign-in" aria-hidden="true"></i>
-                    <span class="name-user">Đăng nhập</span></a>
-                </div><a href="register.html" style="text-decoration:none;color:#fff;">
-                <div class="profile noti" onclick="showNotification()">
-                  <i class="fa fa-sign-out" aria-hidden="true"></i>
-                    <span class="name-user">Đăng kí</span>
-                </div></a>
+            <!-- search end -->
+            <!-- navigation start -->
+            <div class="nav-right">
+                <a href="login.html" style="text-decoration:none;color:#fff;">
+                    <div class="profile information" onclick="showInformation()">
+                        <i class="fa fa-sign-in" aria-hidden="true"></i>
+                        <span class="name-user">Đăng nhập</span></a>
+                </div>
+                <a href="register.html" style="text-decoration:none;color:#fff;">
+                    <div class="profile noti" onclick="showNotification()">
+                        <i class="fa fa-registered" aria-hidden="true"></i>
+                        <span class="name-user">Đăng kí</span>
+                    </div>
+                </a>
             </div>
+            <!-- navigation end -->
         </div>
         <!-- header end-->
+        <!-- main-content start -->
         <div id="mainContent">
+            <!-- event-top-slide-show start -->
             <div class="carousel" data-flickity='{ "cellSelector": ".carousel-cell","wrapAround": true  }'>
-                <div class="carousel-cell"><img src="image/smartHack.jpg"></div>
-                <div class="carousel-cell"><img src="image/trungthu.jpg"></div>
-                <div class="carousel-cell"><img src="image/hrtech.jpg"></div>
-                <div class="carousel-cell"><img src="image/tuyenthanhvien.jpg"></div>
-                <div class="carousel-cell"><img src="image/hoisach.jpg"></div>
-                <div class="carousel-cell"><img src="image/smartHack.jpg"></div>
-                <div class="carousel-cell"><img src="image/trungthu.jpg"></div>
-                <div class="carousel-cell"><img src="image/hrtech.jpg"></div>
-                <div class="carousel-cell"><img src="image/tuyenthanhvien.jpg"></div>
-                <div class="carousel-cell"><img src="image/hoisach.jpg"></div>
+                <div class="carousel-cell">
+                    <a href="tungsk.html"><img src="image/smartHack.jpg"></a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="tungsk.html"><img src="image/trungthu.jpg"></a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="tungsk.html"><img src="image/hrtech.jpg"></a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="tungsk.html"><img src="image/tuyenthanhvien.jpg"></a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="tungsk.html"><img src="image/hoisach.jpg"></a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="tungsk.html"><img src="image/smartHack.jpg"></a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="tungsk.html"><img src="image/trungthu.jpg"></a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="tungsk.html"><img src="image/hrtech.jpg"></a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="tungsk.html"><img src="image/tuyenthanhvien.jpg"></a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="tungsk.html"><img src="image/hoisach.jpg"></a>
+                </div>
             </div>
+            <!-- event-top-slide-show end -->
+            <!-- List group event start -->
             <div class="category">
                 <div>
                     <span class="list-event-name">Danh mục sự kiện</span>
@@ -84,7 +119,9 @@
                             <a href="groupEvent.html" class="button">VIEW</a>
                         </div>
                         <div>
-                            <img class="base" src="image/category/club.png" />
+                            <a href="groupEvent.html">
+                                <img class="base" src="image/category/club.png" />
+                            </a>
                         </div>
                     </li>
                     <li class="shape">
@@ -96,7 +133,9 @@
                             <a href="groupEvent.html" class="button">VIEW</a>
                         </div>
                         <div>
-                            <a href="groupEvent.html"><img class="base" src="image/category/talkshow.png" /></a>
+                            <a href="groupEvent.html">
+                                <img class="base" src="image/category/talkshow.png" />
+                            </a>
                         </div>
                     </li>
                     <li class="shape">
@@ -108,7 +147,9 @@
                             <a href="groupEvent.html" class="button">VIEW</a>
                         </div>
                         <div>
-                            <img class="base" src="image/category/competition.png" />
+                            <a href="groupEvent.html">
+                                <img class="base" src="image/category/competition.png" />
+                            </a>
                         </div>
                     </li>
                     <li class="shape">
@@ -120,7 +161,9 @@
                             <a href="groupEvent.html" class="button">VIEW</a>
                         </div>
                         <div>
-                            <img class="base" src="image/category/course.png" />
+                            <a href="groupEvent.html">
+                                <img class="base" src="image/category/course.png" />
+                            </a>
                         </div>
                     </li>
                     <li class="shape">
@@ -132,7 +175,9 @@
                             <a href="groupEvent.html" class="button">VIEW</a>
                         </div>
                         <div>
-                            <img class="base" src="image/category/book.png" />
+                            <a href="groupEvent.html">
+                                <img class="base" src="image/category/book.png" />
+                            </a>
                         </div>
                     </li>
                     <li class="shape">
@@ -144,7 +189,9 @@
                             <a href="groupEvent.html" class="button">VIEW</a>
                         </div>
                         <div>
-                            <img class="base" src="image/category/festival.png" />
+                            <a href="groupEvent.html">
+                                <img class="base" src="image/category/festival.png" />
+                            </a>
                         </div>
                     </li>
                     <li class="shape">
@@ -156,7 +203,9 @@
                             <a href="groupEvent.html" class="button">VIEW</a>
                         </div>
                         <div>
-                            <img class="base" src="image/category/Tech.png" />
+                            <a href="groupEvent.html">
+                                <img class="base" src="image/category/Tech.png" />
+                            </a>
                         </div>
                     </li>
                     <li class="shape">
@@ -168,7 +217,9 @@
                             <a href="groupEvent.html" class="button">VIEW</a>
                         </div>
                         <div>
-                            <img class="base" src="image/category/entertainment.png" />
+                            <a href="groupEvent.html">
+                                <img class="base" src="image/category/entertainment.png" />
+                            </a>
                         </div>
                     </li>
                     <li class="shape">
@@ -180,11 +231,14 @@
                             <a href="groupEvent.html" class="button">VIEW</a>
                         </div>
                         <div>
-                            <img class="base" src="image/category/other.png" />
+                            <a href="groupEvent.html">
+                                <img class="base" src="image/category/other.png" />
+                            </a>
                         </div>
                     </li>
                 </ul>
             </div>
+            <!-- List group event start -->
             <div style="clear: both;"></div>
         </div>
     </div>
@@ -222,10 +276,25 @@
         </div>
     </footer>
     <!-- footer end -->
+    <!--Event scroll for logo-->
     <script>
-    var mn = $(".logo"); var temp1 = $("#logosmall"); var temp2 = $("#logodemo"); $(window).scroll(function() { if ($(this).scrollTop() > 0) { mn.addClass("scroll-logo"); temp1.addClass("scroll-logo1"); temp2.addClass("scroll-logo2"); } else { mn.removeClass("scroll-logo"); temp1.removeClass("scroll-logo1"); temp2.removeClass("scroll-logo2"); } });
-
+    var mn = $(".logo");
+    var temp1 = $("#logosmall");
+    var temp2 = $("#logodemo");
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 0) {
+            mn.addClass("scroll-logo");
+            temp1.addClass("scroll-logo1");
+            temp2.addClass("scroll-logo2");
+        } else {
+            mn.removeClass("scroll-logo");
+            temp1.removeClass("scroll-logo1");
+            temp2.removeClass("scroll-logo2");
+        }
+    });
     </script>
+    <!--Event scroll for logo end-->
+    <!--Slide show plugin-->
     <script src="js/flickity.pkgd.min.js"></script>
 </body>
 

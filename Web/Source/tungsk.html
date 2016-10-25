@@ -25,14 +25,16 @@
 <body>
     <!-- header start -->
     <div class="wrapper1" id="wrapper1">
-        <!-- header start -->
         <div id="header">
+            <!-- logo start -->
             <div class="logo">
                 <a href="homepage.html">
                     <img id="logosmall" src="image/logoSmall.png">
                     <img id="logodemo" src="image/logodemo.png">
                 </a>
             </div>
+            <!-- logo end -->
+            <!-- search start -->
             <div class="search">
                 <i class="fa fa-search" aria-hidden="true" onclick="showAllEvent()"></i>
                 <input class="search-box" type="text" placeholder="Tìm kiếm..." onfocus="showAllEvent()">
@@ -51,16 +53,22 @@
                     <li><a href="#">Khác</a></li>
                 </ul>
             </div>
+            <!-- search end -->
+            <!-- navigation start -->
             <div class="nav-right">
                 <div class="profile information" onclick="showInformation()">
                     <img class="display-img" src="image/profile.png">
                     <span class="name-user">Phan Hà Trang</span>
                     <div class="dropdown content-infor" id="dropdown-infor">
+                        <a href="dangSK.html">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <span>Đăng SK</span>
+                        </a>
                         <a href="caidatchung.html">
                             <i class="fa fa-cogs" aria-hidden="true"></i>
                             <span>Cài đặt</span>
                         </a>
-                        <a href="#">
+                        <a href="toLogin.html">
                             <i class="fa fa-sign-out" aria-hidden="true"></i>
                             <span>Thoát</span>
                         </a>
@@ -76,13 +84,13 @@
                     </div>
                 </div>
             </div>
+            <!-- navigation end -->
         </div>
-        <!-- header end-->
     </div>
     <!-- header end-->
     <!-- Ảnh sự kiện -->
     <div>
-        <img src="image_trang/1.jpg" style="width:100%; margin-top: 3.75em;">
+        <img src="image/hrtech.jpg" style="width:100%; margin-top: 3.75em;">
     </div>
     <!-- Nội dung sự kiện -->
     <div class="container" id="mainContent">
@@ -105,7 +113,7 @@
             </div>
             <div class="col-md-5" style="font-size: 16px">
                 <i class="fa fa-eye" style="margin-left: 25px;"></i>&nbsp; 5 000 Lượt xem</br>
-                <img src="image_trang/2.jpg">
+                <img src="image/2.jpg">
             </div>
         </div>
         <hr>
@@ -236,7 +244,7 @@
                 <div class="col-md-4 " style="margin-top: 30px; ">
                     <div class="bi-img ">
                         <a href="# ">
-                        <img src="image_trang/3.jpg " class="img-responsive " alt="CLB Hr Tech Tuyển Thành Viên " />                    </a>
+                        <img src="image/smartHack.jpg " class="img-responsive " alt="CLB Hr Tech Tuyển Thành Viên " />                    </a>
                     </div>
                     <h4>
                     <a href="# ">CLB Hr Tech Tuyển Thành Viên</a></h4><br class="break-related ">
@@ -247,7 +255,7 @@
                 <div class="col-md-4 " style="margin-top: 30px; ">
                     <div class="bi-img ">
                         <a href="# ">
-                        <img src="image_trang/4.jpg " class="img-responsive " alt="Tuyển Cộng tác viên Đoàn Thanh niên - Hội Sinh viên " / >                    </a>
+                        <img src="image/tuyenthanhvien.jpg " class="img-responsive " alt="Tuyển Cộng tác viên Đoàn Thanh niên - Hội Sinh viên " / >                    </a>
                     </div>
                     <h4>
                     <a href="# ">Tuyển Cộng tác viên Đoàn Thanh niên - Hội Sinh viên</a></h4>
@@ -258,7 +266,7 @@
                 <div class="col-md-4 " style="margin-top: 30px; ">
                     <div class="bi-img ">
                         <a href="# ">
-                        <img src="image_trang/5.jpg " class="img-responsive " alt="Trung thu cho em " / >                    </a>
+                        <img src="image/trungthu.jpg " class="img-responsive " alt="Trung thu cho em " / >                    </a>
                     </div>
                     <h4>
                     <a href="# ">Trung thu cho em</a></h4><br>
@@ -272,58 +280,58 @@
 
 <!-- Comment -->
 
-	<div class="container" id="comment1">
-			<div class="comment-box">
-				<div class="comment-form">
-					<div class="header">Thêm bình luận của bạn</div>
-					<form action="#"  onsubmit="event.preventDefault(); postComment()">
-						<div class="form-group">
-							<input class="form-control" type="text" id="name" placeholder="Tên của bạn"/>
-						</div>
-						<div class="form-group">
-							<textarea class="form-control" id="comment" rows="5" cols="20" placeholder="Nội dung bình luận"></textarea>
-						</div>
-						<button class="btn btn-success" type="submit">Bình Luận</button>
-					</form>
-				</div>
-				<div>
-					<div id="comments"></div>
-				</div>
-			</div>
-		</div>
+    <div class="container " id="comment1 ">
+            <div class="comment-box ">
+                <div class="comment-form ">
+                    <div class="header ">Thêm bình luận của bạn</div>
+                    <form action="# "  onsubmit="event.preventDefault(); postComment() ">
+                        <div class="form-group ">
+                            <input class="form-control " type="text " id="name " placeholder="Tên của bạn "/>
+                        </div>
+                        <div class="form-group ">
+                            <textarea class="form-control " id="comment " rows="5 " cols="20 " placeholder="Nội dung bình luận "></textarea>
+                        </div>
+                        <button class="btn btn-success " type="submit ">Bình Luận</button>
+                    </form>
+                </div>
+                <div>
+                    <div id="comments "></div>
+                </div>
+            </div>
+        </div>
 <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
-        <script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js "></script>
         <script>
         // Initialize Firebase
         var config = {
-        apiKey: "AIzaSyCVgS47frE4mg5nZwQ7ovBk2Zji5srjf9s",
-        authDomain: "dtui-nhom8.firebaseapp.com",
-        databaseURL: "https://dtui-nhom8.firebaseio.com",
-        storageBucket: "",
-        messagingSenderId: "394242325405"
+        apiKey: "AIzaSyCVgS47frE4mg5nZwQ7ovBk2Zji5srjf9s ",
+        authDomain: "dtui-nhom8.firebaseapp.com ",
+        databaseURL: "https://dtui-nhom8.firebaseio.com ",
+        storageBucket: " ",
+        messagingSenderId: "394242325405 "
         };
         firebase.initializeApp(config);
 </script>
-<script type="text/javascript">
+<script type="text/javascript ">
             //var firebase =
-            var ref = new Firebase("https://dtui-nhom8.firebaseio.com");
+            var ref = new Firebase("https://dtui-nhom8.firebaseio.com ");
         // Thanks to https://gist.github.com/hurjas/2660489#file-timestamp-js-L26
         function timeStamp() {
         var now = new Date();
         var date = [now.getMonth() + 1, now.getDate(), now.getFullYear()];
         var time = [now.getHours(), now.getMinutes()];
-        var suffix = (time[0] < 12) ? "AM" : "PM";
+        var suffix = (time[0] < 12) ? "AM " : "PM ";
         time[0] = (time[0] < 12) ? time[0] : time[0] - 12;
         for (var i = 1; i < 3; i++) {
         if (time[i] < 10) {
-        time[i] = "0" + time[i];
+        time[i] = "0 " + time[i];
         }
         }
-        return date.join("/") + ", " + time.join(":") + " " + suffix;
+        return date.join("/ ") + ", " + time.join(": ") + " " + suffix;
         }
         function postComment() {
-        var name = document.getElementById("name").value,
-        comment = document.getElementById("comment").value,
+        var name = document.getElementById("name ").value,
+        comment = document.getElementById("comment ").value,
         time = timeStamp();
         if (name && comment) {
         ref.push({
@@ -332,18 +340,19 @@
         time: time
         });
         }
-        document.getElementById("name").value = '';
-        document.getElementById("comment").value = '';
+        document.getElementById("name ").value = '';
+        document.getElementById("comment ").value = '';
         }
-        ref.on("child_added", function(snapshot) {
+        ref.on("child_added ", function(snapshot) {
         var comment = snapshot.val();
         addComment(comment.name, comment.comment, comment.time);
         });
         function addComment(name, comment, timeStamp) {
-        var comments = document.getElementById("comments");
-        comments.innerHTML = "<hr><h4>" + name + "<span style='float: right;'>" + timeStamp + "</span></h4><p>" + comment + "</p>" + comments.innerHTML;
-        }
-        </script>
+        var comments = document.getElementById("comments ");
+        comments.innerHTML = "<hr>
+                            <h4>" + name + "<span style='float: right;'>" + timeStamp + "</span></h4>
+                            <p>" + comment + "</p>" + comments.innerHTML; }
+                            </script>
                             <script src="js_trang/jsIndex.js"></script>
                             <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
                             <script src="js_trang/myJs.js"></script>
@@ -351,7 +360,7 @@
                             <footer class="footer-distributed">
                                 <div class="footer-left">
                                     <h3>Event near me</h3>
-                                    <span class="imglogo"><img src="image_trang/logo.gif" width = 140 heigh = 140 style="margin-left: 30px;"> </span>
+                                    <span class="imglogo"><img src="image/logo.gif" width = 140 heigh = 140 style="margin-left: 30px;"> </span>
                                 </div>
                                 <div class="footer-center">
                                     <div>
@@ -381,11 +390,22 @@
                                 </div>
                             </footer>
                             <!-- footer end -->
-
                             <script>
-    var mn = $(".logo"); var temp1 = $("#logosmall"); var temp2 = $("#logodemo"); $(window).scroll(function() { if ($(this).scrollTop() > 0) { mn.addClass("scroll-logo"); temp1.addClass("scroll-logo1"); temp2.addClass("scroll-logo2"); } else { mn.removeClass("scroll-logo"); temp1.removeClass("scroll-logo1"); temp2.removeClass("scroll-logo2"); } });
-
-    </script>
+                            var mn = $(".logo");
+                            var temp1 = $("#logosmall");
+                            var temp2 = $("#logodemo");
+                            $(window).scroll(function() {
+                                if ($(this).scrollTop() > 0) {
+                                    mn.addClass("scroll-logo");
+                                    temp1.addClass("scroll-logo1");
+                                    temp2.addClass("scroll-logo2");
+                                } else {
+                                    mn.removeClass("scroll-logo");
+                                    temp1.removeClass("scroll-logo1");
+                                    temp2.removeClass("scroll-logo2");
+                                }
+                            });
+                            </script>
 </body>
 
 </html>
