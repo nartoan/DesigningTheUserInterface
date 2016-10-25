@@ -330,25 +330,33 @@
             <!-- animation slide up -->
             <script type="text/javascript">
                 $(document).ready(function() {
-                    if ($(window).width() >= 800){
+                    if ($(window).width() >= 767){
                         $(".js-events-list").css('margin-top', '2rem');
                         $(".js-events-list").animate({
                             marginTop: '-10rem',
                             opacity: 1
                         }, 1000);
+                    }else{
+                        $(".describe").hide();
                     }
                 });
 
 
                 $(window).resize(function(){
-                   if ($(window).width() >= 800){
+                   if ($(window).width() >= 767){
                         $(".js-events-list").css('margin-top', '2rem');
                         $(".js-events-list").animate({
                             marginTop: '-10rem',
                             opacity: 1
                         }, 1000);
-                    } 
+                        $(".describe").show();
+                    }else{
+                        $(".describe").hide();
+                    }
+
                 });
+
+
 
                 $(".btn-filter").click(function() {
                     $(".filter-bar").slideToggle(500, "swing");

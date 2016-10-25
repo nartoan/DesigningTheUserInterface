@@ -19028,6 +19028,10 @@ a.is-hover .ico--color-is-disabled {
     padding-bottom: 30px
 }
 @media only screen and (max-width: 479px) {
+    .namegroup{
+        margin-top:20rem;
+    }
+
     .l-sm-mar-all-0 {
         margin: 0
     }
@@ -19356,6 +19360,10 @@ a.is-hover .ico--color-is-disabled {
     }
 }
 @media only screen and (min-width: 480px) and (max-width: 799px) {
+    h2{
+        font-size:30px;
+    }
+
     .l-md-mar-all-0 {
         margin: 0
     }
