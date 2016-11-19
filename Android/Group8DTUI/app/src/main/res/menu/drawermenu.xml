@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<item android:title="Giải ngoại hạng">
+    <menu>
+        <item android:title="Bóng đá Anh"
+            android:id="@+id/nav_item_inbox"
+            android:icon="@drawable/anh"/>
+
+        <item android:title="Bóng đá Ý"
+            android:id="@+id/nav_item_sent"
+            android:icon="@drawable/y"/>
+
+        <item android:title="Bóng đá Đức"
+            android:id="@+id/nav_item_draft"
+            android:icon="@drawable/duc"/>
+
+        <item android:title="Bóng đá Tây Ban Nha"
+            android:id="@+id/nav_tbn"
+            android:icon="@drawable/tbn"/>
+
+        <item android:title="Bóng đá Pháp"
+            android:id="@+id/nav_phap"
+            android:icon="@drawable/phap"/>
+    </menu>
+</item>
+
+    <item android:title="Giải châu lục">
+        <menu>
+            <item
+                android:title="Champions league"
+                android:icon="@drawable/c1"/>
+            <item
+                android:title="Europa League"
+                android:icon="@drawable/c2"/>
+        </menu>
+    </item>
+
+
+
+
+</menu>

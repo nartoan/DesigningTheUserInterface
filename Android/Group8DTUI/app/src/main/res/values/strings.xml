@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Euro Soccer News</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="soccer">
+        <item>Bóng đá Anh</item>
+        <item>Bóng đá Pháp</item>
+        <item>Bóng đá Ý</item>
+        <item>Bóng đá Đức</item>
+        <item>Bóng đá Tây Ban Nha</item>
+        <item>Champions League</item>
+        <item>Europa League</item>
+    </string-array>
+</resources>
