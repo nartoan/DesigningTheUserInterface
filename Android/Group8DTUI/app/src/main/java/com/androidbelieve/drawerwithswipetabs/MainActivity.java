@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity{
 
              mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
              mNavigationView = (NavigationView) findViewById(R.id.shitstuff) ;
+        mNavigationView.setItemIconTintList(null);
+
 
         /**
          * Lets inflate the very first fragment
@@ -64,13 +66,6 @@ public class MainActivity extends AppCompatActivity{
              public boolean onNavigationItemSelected(MenuItem menuItem) {
                 mDrawerLayout.closeDrawers();
 
-
-
-                 if (menuItem.getItemId() == R.id.nav_item_sent) {
-                     FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
-                     fragmentTransaction.replace(R.id.containerView,new SentFragment()).commit();
-
-                 }
 
                 if (menuItem.getItemId() == R.id.nav_item_inbox) {
                     FragmentTransaction xfragmentTransaction = mFragmentManager.beginTransaction();

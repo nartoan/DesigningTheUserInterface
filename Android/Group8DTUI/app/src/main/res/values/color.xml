@@ -5,5 +5,10 @@
     <color name="black">#000</color>
     <color name="orange">#FA0</color>
     <color name="white">#FFF</color>
+    <color name="first">#E4E4E4</color>
+    <color name="back">#EEEEEE</color>
+    <color name="fifth">#F8F8F8</color>
+    <color name="last">#EEEEEE</color>
+
 
 </resources>

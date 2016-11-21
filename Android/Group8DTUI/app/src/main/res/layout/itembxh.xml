@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="1dp"
+    android:background="@color/white"
+    android:padding="5dp"
+    android:id="@+id/itemlayout">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/vitri"
+        android:layout_weight="1"
+        android:paddingLeft="3dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif"
+        android:textSize="15sp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/doibong"
+        android:layout_margin="1dp"
+        android:layout_weight="2"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/tendoibong"
+        android:layout_margin="1dp"
+        android:layout_weight="4"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/sotran"
+        android:layout_weight="1"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/hieuso"
+        android:layout_weight="1"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/diem"
+        android:layout_weight="1"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+</LinearLayout>

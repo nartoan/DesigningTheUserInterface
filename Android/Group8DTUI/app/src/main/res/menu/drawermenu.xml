@@ -6,7 +6,7 @@
     <menu>
         <item android:title="Bóng đá Anh"
             android:id="@+id/nav_item_inbox"
-            android:icon="@drawable/anh"/>
+            android:icon="@drawable/anh_nav" />
 
         <item android:title="Bóng đá Ý"
             android:id="@+id/nav_item_sent"

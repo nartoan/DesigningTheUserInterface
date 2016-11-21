@@ -10,7 +10,7 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/orange"
+        android:background="#125688"
         android:id="@+id/toolbar"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:title="Ngoại hạng Anh" />
@@ -41,6 +41,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:id="@+id/shitstuff"
+
         app:itemTextColor="@color/black"
         app:menu="@menu/drawermenu"
         app:headerLayout="@layout/nav_header_2"
