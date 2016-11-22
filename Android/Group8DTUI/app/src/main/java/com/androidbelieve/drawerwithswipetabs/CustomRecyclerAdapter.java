@@ -2,6 +2,7 @@ package com.androidbelieve.drawerwithswipetabs;
 
 import android.content.DialogInterface;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -44,6 +45,7 @@ public class CustomRecyclerAdapter extends RecyclerView.Adapter<CustomRecyclerAd
         holder.hieuso.setText(item.getHieuso());
         holder.diem.setText(item.getDiem());
         holder.mLayout.setBackgroundResource(item.getBackground());
+        holder.cardview.setCardBackgroundColor(item.getBackground());
     }
 
     @Override
@@ -63,6 +65,7 @@ public class CustomRecyclerAdapter extends RecyclerView.Adapter<CustomRecyclerAd
         public TextView vitri, tendoibong, sotran, hieuso, diem;
         public ImageView img;
         LinearLayout mLayout;
+        public CardView cardview;
 
 
         public RecyclerViewHolder(View itemView) {
@@ -75,6 +78,7 @@ public class CustomRecyclerAdapter extends RecyclerView.Adapter<CustomRecyclerAd
             diem = (TextView) itemView.findViewById(R.id.diem);
             mLayout = (LinearLayout) itemView.findViewById(R.id.itemlayout);
             img = (ImageView) itemView.findViewById(R.id.doibong);
+            cardview =(CardView) itemView.findViewById(R.id.cardview);
 
             // set listener for button delete
             //btnDelete.setOnClickListener(this);
