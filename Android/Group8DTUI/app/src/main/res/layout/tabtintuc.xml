@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:text='MU mua Messi 100 triệu euro: Sự "xúc phạm" với Barca?'
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvtintuc"
+        android:layout_weight="0.03" />
+
+    <TextView
+        android:text="Thứ Tư, ngày 23/11/2016 08:19 AM (GMT+7)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_weight="0.03" />
+
+    <TextView
+        android:text='Có nhiều lí do để tin rằng, MU đang biến mình thành kẻ "mơ mộng tội nghiệp" khi nghĩ rằng có thể thuyết phục Lionel Messi rời Barca với cái giá 100 triệu euro.'
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_weight="0.03" />
+
+    <TextView
+        android:text="Năm 2008, trong cuộc họp bàn bí mật với Messi và thân phụ kiêm người đại diện - ông Jorge, BLĐ Barca đã cam kết sẽ biến siêu sao 29 tuổi thành cầu thủ hưởng lương cao nhất CLB, thậm chí lịch sử bóng đá nếu anh đủ xuất sắc để trở thành số 1 trên sân cỏ. 8 năm sau, Messi đã làm được, còn Barca cũng làm đủ mọi cách để thực hiện lời cam kết ấy."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_weight="0.03" />
+
+    <ImageView
+        android:layout_width="277dp"
+        android:layout_height="121dp"
+        android:src="@drawable/tintuc"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:text="Barca không thiếu thốn đến mức bán Messi để đổi lấy 100 triệu euro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_weight="0.03" />
+
+    <TextView
+        android:text="Cũng trong khoảng thời gian 8 năm, ​&quot;Gã khổng lồ xứ Catalunya&quot; kiếm được hàng loạt hợp đồng béo bở, đỉnh điểm là sự kiện nhận gói tài trợ áo đấu thời hạn 4 năm, mỗi mùa gần 48 triệu bảng (55 triệu euro) với tập đoàn Rakuten (Nhật Bản). Hợp đồng này iến Barca thành đội có doanh thu từ tài trợ áo đấu hàng đầu thế giới mà chỉ... MU mới sánh bằng (Chevrolet, 53 triệu bảng/năm).  Như vậy, Barca có thể không nhiều tiền như MU, nhưng cũng chẳng thiếu thốn đến mức hạ mình vì 100 triệu euro để mất đi một biểu tượng vĩ đại , một... &quot;con gà đẻ trứng vàng&quot;.  Vấn đề ở chính Messi  Messi đang trong giai đoạn nhạy cảm, nửa muốn tìm kiếm thử thách mới khi quá no nê vinh quang, nửa lại muốn ở lại để trở thành biểu tượng bất diệt. Nhưng cần biết, 29 không phải độ tuổi mà cầu thủ nào cũng mạo hiểm đánh cược sự nghiệp của mình ở giải đấu khắc nghiệt như Premier League.   Tuổi 29, Messi vẫn ngự trên đỉnh cao nhưng vài năm sau, chẳng ai đoán trước được anh sẽ ở đâu. Thậm chí HLV Jose Mourinho còn mạnh dạn dự báo: “5 năm nữa, Messi sẽ bước vào tuổi 34 và tất cả chúng ta sẽ phải rơi lệ tiếc nuối về tài năng của cậu ấy”.  Nhiều huyền thoại vĩ đại bắt đầu xuống dốc khi trạc tuổi. Maradona tiêu tan sự nghiệp vì bị phát hiện dương tính với doping. Pele chia tay Santos để đầu quân cho New York Cosmos, bắt đầu thời gian &quot;dưỡng già&quot; trên đất Mỹ. Cristiano Ronaldo cũng không còn duy trì phong độ đỉnh cao.  Nếu tìm bến đỗ an toàn về chuyên môn, PSG là lựa chọn thích hợp hơn. Cần một &quot;mái nhà&quot; dưỡng già, Newell's Old Boys sẽ được ưu tiên hàng đầu. Còn Barca, đơn giản là sự lựa chọn lí tưởng nhất bởi hội tụ cả 2 yếu tố trên.  100 triệu euro: Messi chỉ bằng Pogba?  Ngày 8/8, MU chính thức công bố bản hợp đồng trị giá 105 triệu euro (tương đương 89,3 triệu bảng) với Paul Pogba. Chưa kể 5 triệu euro trả thêm tùy vào thành tích, tiền vệ người Pháp đã trở thành cầu thủ đắt giá nhất lịch sử bóng đá."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_weight="0.03" />
+
+    <ImageView
+        android:layout_width="277dp"
+        android:layout_height="121dp"
+        android:src="@drawable/tintuc1"
+        android:id="@+id/imageView2"
+        android:layout_weight="0.03" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:layout_weight="0.03" />
+
+    <TextView
+        android:text="Thương vụ này ngay lập tức vấp phải nhiều phản ứng, rằng Pogba đang bị thổi phồng giá trị thực, để rồi thời gian đã chứng thực điều đó. Pogba chẳng để lại quá nhiều ấn tượng ngoài những kiểu tóc điệu đà, còn MU vật lộn ở vị trí thứ 6 Premier League.  Giờ đây, khi “Quỷ đỏ” muốn bỏ ra 100 triệu euro – tức ít hơn thương vụ Pogba 10 triệu - để chiêu mộ Messi, khối người sẽ phải ôm bụng cười!  Đặt lên bàn cân, Pogba chẳng có “cửa” nào so sánh với Messi. Siêu sao người Argentina là đương kim cầu thủ xuất sắc nhất, sở hữu 5 QBV và hàng tá kỉ lục vĩ đại. Ngay cả thời điểm 23 tuổi như Pogba hiện tại, Messi đã sở hữu 127 bàn thắng, 1 QBV cùng nhiều danh hiệu tập thể cao quý.  100 triệu cho Pogba? MU đã dám làm điều tưởng chừng điên rồ đó. Vì vậy một khi họ thực sự khao khát Messi (hoặc không thể trả cho Barca phí giải phóng hợp đồng “trên trời” 250 triệu euro) thì ít nhất siêu sao người Argentina phải xứng đáng với cái giá gấp rưỡi 100 triệu euro!  "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:layout_weight="0.03" />
+</LinearLayout>
