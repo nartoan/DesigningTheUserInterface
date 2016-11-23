@@ -9,7 +9,7 @@ public class Data {
     private String vitri, tendoibong, sotran, hieuso, diem;
     private int img, background;
 
-    public Data(String vitri, String tendoibong, String sotran, String hieuso, String diem, int img, int background){
+    public Data(String vitri, String tendoibong, String sotran, String hieuso, String diem, int img, int background) {
         this.vitri = vitri;
         this.tendoibong = tendoibong;
         this.sotran = sotran;
@@ -19,51 +19,51 @@ public class Data {
         this.background = background;
     }
 
-    public int getBackground(){
+    public int getBackground() {
         return this.background;
     }
 
-    public int getImg(){
+    public int getImg() {
         return this.img;
     }
 
-    public String getVitri(){
+    public String getVitri() {
         return this.vitri;
     }
 
-    public String getTendoibong(){
+    public String getTendoibong() {
         return this.tendoibong;
     }
 
-    public String getSotran(){
+    public String getSotran() {
         return this.sotran;
     }
 
-    public String getHieuso(){
+    public String getHieuso() {
         return this.hieuso;
     }
 
-    public String getDiem(){
+    public String getDiem() {
         return this.diem;
     }
 
-    public void setVitri(String vitri){
+    public void setVitri(String vitri) {
         this.vitri = vitri;
     }
 
-    public void setTendoibong(String tendoibong){
+    public void setTendoibong(String tendoibong) {
         this.tendoibong = tendoibong;
     }
 
-    public void setSotran(String sotran){
+    public void setSotran(String sotran) {
         this.sotran = sotran;
     }
 
-    public void setHieuso(String hieuso){
+    public void setHieuso(String hieuso) {
         this.hieuso = hieuso;
     }
 
-    public void setDiem(String diem){
+    public void setDiem(String diem) {
         this.diem = diem;
     }
 }

@@ -1,12 +1,8 @@
 package com.androidbelieve.drawerwithswipetabs;
 
-import android.app.Activity;
 import android.content.DialogInterface;
-import android.content.res.Resources;
-import android.graphics.Color;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.TintTypedArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,10 +22,9 @@ public class CustomRecyclerAdapter extends RecyclerView.Adapter<CustomRecyclerAd
 
     private List<Data> listData = new ArrayList<Data>();
 
-    public CustomRecyclerAdapter(List<Data> list){
+    public CustomRecyclerAdapter(List<Data> list) {
         this.listData = list;
     }
-
 
 
     @Override
@@ -57,10 +52,9 @@ public class CustomRecyclerAdapter extends RecyclerView.Adapter<CustomRecyclerAd
     }
 
 
-
     /**
      * ViewHolder for item view of list
-     * */
+     */
 
     public class RecyclerViewHolder extends RecyclerView.ViewHolder implements
             DialogInterface.OnClickListener {
@@ -87,8 +81,10 @@ public class CustomRecyclerAdapter extends RecyclerView.Adapter<CustomRecyclerAd
 
         }
 
+
         @Override
         public void onClick(DialogInterface dialogInterface, int i) {
+
 
         }
 

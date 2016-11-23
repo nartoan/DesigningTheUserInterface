@@ -9,7 +9,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,6 +22,7 @@ public class tab3Fragment extends Fragment {
     private RecyclerView recyclerView;
     private CustomRecyclerAdapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
+    private boolean created = false;
 
     @Nullable
     @Override
@@ -36,11 +36,12 @@ public class tab3Fragment extends Fragment {
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(mAdapter);
-        addItem();
+        if (!created) addItem();
         return view;
     }
 
-    public void addItem(){
+    public void addItem() {
+        created = true;
         Data item = new Data("20", "Swansea City", "12", "-11", "6", R.drawable.swansea, R.color.last);
         list.add(0, item);
 
@@ -96,7 +97,7 @@ public class tab3Fragment extends Fragment {
         list.add(0, item);
 
         item = new Data("2", "Liverpool", "12", "16", "27", R.drawable.liverpool, R.color.back);
-        list.add(0,item);
+        list.add(0, item);
 
         item = new Data("1", "Chelsea", "12", "18", "28", R.drawable.chelsea, R.color.first);
         list.add(0, item);
