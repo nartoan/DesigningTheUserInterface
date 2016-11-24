@@ -1,9 +1,9 @@
-package com.androidbelieve.drawerwithswipetabs;
+package com.androidbelieve.drawerwithswipetabs.BXH;
 
 import android.widget.ImageView;
 
 /**
- * Created by Trang kute on 11/22/2016.
+ * Created by Nguyen Duc Thuan on 11/22/2016.
  */
 
 public class DataChild {

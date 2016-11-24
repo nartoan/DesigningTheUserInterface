@@ -1,4 +1,4 @@
-package com.androidbelieve.drawerwithswipetabs;
+package com.androidbelieve.drawerwithswipetabs.Main;
 
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -8,19 +8,22 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatSpinner;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.Spinner;
 
-import java.util.ArrayList;
+import com.androidbelieve.drawerwithswipetabs.Main.TabFragment;
+import com.androidbelieve.drawerwithswipetabs.R;
 
 public class MainActivity extends AppCompatActivity {
     DrawerLayout mDrawerLayout;
     NavigationView mNavigationView;
     FragmentManager mFragmentManager;
     FragmentTransaction mFragmentTransaction;
+
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
         mNavigationView = (NavigationView) findViewById(R.id.shitstuff);
         mNavigationView.setItemIconTintList(null);
+
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
 
         /**

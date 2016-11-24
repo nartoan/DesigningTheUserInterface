@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:layout_gravity="center"
     android:layout_margin="5dp"
-    card_view:cardCornerRadius="4dp"
-    android:id="@+id/cardview">
+    card_view:cardCornerRadius="1dp"
+    android:id="@+id/cardviewtab2">
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="horizontal"
         android:layout_width="match_parent"

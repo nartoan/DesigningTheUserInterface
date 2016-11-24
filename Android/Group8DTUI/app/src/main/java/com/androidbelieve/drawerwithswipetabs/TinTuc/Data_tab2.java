@@ -1,4 +1,4 @@
-package com.androidbelieve.drawerwithswipetabs;
+package com.androidbelieve.drawerwithswipetabs.TinTuc;
 
 import android.speech.tts.Voice;
 import android.widget.ImageView;
