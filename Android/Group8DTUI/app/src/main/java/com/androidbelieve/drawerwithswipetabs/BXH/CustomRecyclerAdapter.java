@@ -47,7 +47,7 @@ public class CustomRecyclerAdapter extends RecyclerView.Adapter<CustomRecyclerAd
         holder.hieuso.setText(item.getHieuso());
         holder.diem.setText(item.getDiem());
         holder.mLayout.setBackgroundResource(item.getBackground());
-        holder.cardview.setCardBackgroundColor(item.getBackground());
+//        holder.cardview.setCardBackgroundColor(item.getBackground());
     }
 
     @Override
@@ -80,7 +80,7 @@ public class CustomRecyclerAdapter extends RecyclerView.Adapter<CustomRecyclerAd
             diem = (TextView) itemView.findViewById(R.id.diem);
             mLayout = (LinearLayout) itemView.findViewById(R.id.itemlayout);
             img = (ImageView) itemView.findViewById(R.id.doibong);
-            cardview =(CardView) itemView.findViewById(R.id.cardview);
+            //cardview =(CardView) itemView.findViewById(R.id.cardview);
 
             // set listener for button delete
             //btnDelete.setOnClickListener(this);

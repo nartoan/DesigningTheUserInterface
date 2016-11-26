@@ -11,33 +11,35 @@
         android:elevation="5dp"
         android:paddingBottom="5dp"
         android:paddingTop="5dp"
-        android:paddingLeft="10dp">
+        android:paddingLeft="10dp"
+        android:weightSum="10">
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="ĐỘI BÓNG"
             android:textColor="#fff"
             android:textSize="18sp"
             android:padding="3dp"
+            android:layout_weight="8"
              />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="ST"
             android:textColor="#fff"
             android:textSize="18sp"
-            android:layout_marginLeft="153dp"
-            android:padding="3dp" />
+            android:padding="3dp"
+            android:layout_weight="1"/>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="HS"
             android:textColor="#fff"
             android:textSize="18sp"
-            android:layout_marginLeft="7dp"
             android:padding="3dp"
+            android:layout_weight="1"
             />
 
         <TextView
@@ -46,8 +48,8 @@
             android:text="Đ"
             android:textColor="#fff"
             android:textSize="18sp"
-            android:layout_marginLeft="15dp"
             android:padding="3dp"
+            android:layout_weight="1"
             />
     </LinearLayout>
 
