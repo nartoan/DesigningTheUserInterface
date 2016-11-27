@@ -1,6 +1,7 @@
 package com.androidbelieve.drawerwithswipetabs.TinTuc;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.Typeface;
 import android.support.v7.widget.RecyclerView;
