@@ -20,7 +20,7 @@
 
         <ImageView
             android:layout_width="190dp"
-            android:layout_height="100dp"
+            android:layout_height="107dp"
             android:id="@+id/anhtintuc"
             android:layout_gravity="center"
             android:foregroundGravity="center"/>
