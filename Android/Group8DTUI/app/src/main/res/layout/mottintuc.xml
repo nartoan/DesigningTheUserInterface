@@ -13,5 +13,5 @@
         android:background="#BF360C"
         android:id="@+id/toolbar2"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:title="Nguyen Duc Thuan" />
+        app:title="Ngoại Hạng Anh" />
   </LinearLayout>
