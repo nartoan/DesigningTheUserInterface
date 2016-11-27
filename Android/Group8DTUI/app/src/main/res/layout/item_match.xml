@@ -1,72 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="50dp"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    card_view:cardElevation="3dp"
+    android:id="@+id/cardview_match">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="1dp"
     android:background="@color/white"
     android:padding="5dp"
-    android:id="@+id/itemlayout">
-
-    <ImageView
-        android:layout_height="wrap_content"
-        android:id="@+id/alarm"
-        android:layout_margin="1dp"
-        android:layout_weight="1.82"
-        android:gravity="center"
-        android:layout_width="0dp" />
+    android:id="@+id/itemlayout_match">
 
     <TextView
-        android:layout_height="match_parent"
-        android:id="@+id/tendoi1"
-        android:layout_margin="1dp"
-        android:layout_weight="1.90"
-        android:gravity="center_vertical"
-        android:textStyle="bold"
-        android:fontFamily="sans-serif"
-        android:textSize="10sp"
-        android:textColor="@color/black"
-        android:layout_width="0dp" />
-
-    <ImageView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/doibong1"
-        android:layout_margin="1dp"
-        android:layout_weight="1.94"
-        android:gravity="center" />
-
-    <TextView
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:id="@+id/time"
-        android:layout_weight="2.02"
-        android:gravity="center_vertical"
         android:textStyle="bold"
         android:fontFamily="sans-serif"
         android:textSize="13sp"
         android:textColor="@color/black"
         android:textAlignment="center"
         android:freezesText="false"
-        android:paddingLeft="15dp" />
-
-    <ImageView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/doibong2"
-        android:layout_margin="1dp"
-        android:layout_weight="2"
-        android:gravity="center"/>
+        android:paddingLeft="5dp"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:id="@+id/tendoi2"
+        android:id="@+id/tendoi1"
         android:layout_margin="1dp"
-        android:layout_weight="1.82"
-        android:gravity="center_vertical"
+        android:layout_weight="1.90"
         android:textStyle="bold"
         android:fontFamily="sans-serif"
         android:textSize="10sp"
-        android:textColor="@color/black" />
+        android:textColor="@color/black"
+        android:layout_width="0dp"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/doibong1"
+        android:layout_margin="1dp"
+        android:layout_marginLeft="4dp"
+        android:layout_weight="0.84"
+        android:layout_gravity="center_vertical|center_horizontal" />
+
+    <TextView
+        android:layout_height="match_parent"
+        android:text="@string/score"
+        android:id="@+id/score"
+        android:layout_margin="1dp"
+        android:layout_weight="1.90"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textSize="14sp"
+        android:textColor="@color/red"
+        android:layout_width="0dp"
+        android:gravity="center_vertical|center_horizontal"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/doibong2"
+        android:layout_margin="1dp"
+        android:layout_weight="0.84"
+        android:layout_gravity="center_vertical|center_horizontal" />
+
+    <TextView
+        android:layout_height="match_parent"
+        android:id="@+id/tendoi2"
+        android:layout_margin="1dp"
+        android:layout_weight="1.90"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textSize="10sp"
+        android:textColor="@color/black"
+        android:layout_width="0dp"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/alarm"
+        android:layout_margin="1dp"
+        android:layout_weight="0.6"
+        android:layout_gravity="center_vertical|center_horizontal" />
 
 </LinearLayout>
+</android.support.v7.widget.CardView>

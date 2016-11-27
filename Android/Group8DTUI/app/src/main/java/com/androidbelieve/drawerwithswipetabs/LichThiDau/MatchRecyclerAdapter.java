@@ -78,7 +78,7 @@ public class MatchRecyclerAdapter extends RecyclerView.Adapter<MatchRecyclerAdap
             time = (TextView) itemView.findViewById(R.id.time);
             name2 = (TextView) itemView.findViewById(R.id.tendoi2);
             img2 = (ImageView) itemView.findViewById(R.id.doibong2);
-            mLayout = (LinearLayout) itemView.findViewById(R.id.itemlayout);
+            mLayout = (LinearLayout) itemView.findViewById(R.id.itemlayout_match);
 
             alarm.setOnClickListener(new View.OnClickListener() {
 
@@ -86,8 +86,9 @@ public class MatchRecyclerAdapter extends RecyclerView.Adapter<MatchRecyclerAdap
                     Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
                     String title = name1.getText() + " vs " + name2.getText();
                     i.putExtra(AlarmClock.EXTRA_MESSAGE, title);
-                    Integer _hour = Integer.parseInt((String) time.getText().subSequence(0,2));
-                    Integer _minute = Integer.parseInt((String) time.getText().subSequence(3,5));
+                    String _time = (String) time.getText().subSequence(6,11);
+                    Integer _hour = Integer.parseInt((String) _time.subSequence(0,2));
+                    Integer _minute = Integer.parseInt((String) _time.subSequence(3,5));
                     i.putExtra(AlarmClock.EXTRA_HOUR, _hour);
                     i.putExtra(AlarmClock.EXTRA_MINUTES, _minute);
                     v.getContext().startActivity(i);
