@@ -74,7 +74,7 @@ public class tab2Fragment extends android.support.v4.app.Fragment implements Bas
         imageSlider.setPresetTransformer(SliderLayout.Transformer.Accordion);
         imageSlider.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
         imageSlider.setCustomAnimation(new DescriptionAnimation());
-        imageSlider.setDuration(2000);
+        imageSlider.setDuration(5000);
         imageSlider.addOnPageChangeListener(this);
 
         mAdapter = new tab2Recycler(list);
@@ -88,7 +88,7 @@ public class tab2Fragment extends android.support.v4.app.Fragment implements Bas
 
     private void addItem() {
         created = true;
-        Data_tab2 item = new Data_tab2(R.drawable.chelsea,"k biet viet gi car, :( viet linh tinh nha");
+        Data_tab2 item = new Data_tab2(R.drawable.chelsea,"a bcds casdas fasdajl dadasd dsadsadsa sadsadsad");
         list.add(item);
         item = new Data_tab2(R.drawable.mu,"k biet viet gi car, :( viet linh tinh nha");
         list.add(item);

@@ -55,40 +55,40 @@ public class tab3Fragment extends Fragment {
         item = new Data("18", "Hull City", "12", "-17", "10", R.drawable.hull, R.color.last);
         list.add(0, item);
 
-        item = new Data("17", "West Ham United", "12", "-10", "11", R.drawable.westham, R.color.white);
+        item = new Data("17", "West Ham United", "12", "-10", "11", R.drawable.westham, R.color.other);
         list.add(0, item);
 
-        item = new Data("16", "Crystal Palace", "12", "-4", "11", R.drawable.crystal, R.color.white);
+        item = new Data("16", "Crystal Palace", "12", "-4", "11", R.drawable.crystal, R.color.other);
         list.add(0, item);
 
-        item = new Data("15", "Middlesbrough", "11", "-2", "11", R.drawable.middlesbrough, R.color.white);
+        item = new Data("15", "Middlesbrough", "11", "-2", "11", R.drawable.middlesbrough, R.color.other);
         list.add(0, item);
 
-        item = new Data("14", "Leicester City", "12", "-6", "12", R.drawable.leicester, R.color.white);
+        item = new Data("14", "Leicester City", "12", "-6", "12", R.drawable.leicester, R.color.other);
         list.add(0, item);
 
-        item = new Data("13", "Stoke City", "12", "-6", "13", R.drawable.stoke, R.color.white);
+        item = new Data("13", "Stoke City", "12", "-6", "13", R.drawable.stoke, R.color.other);
         list.add(0, item);
 
-        item = new Data("12", "West Bromwich Albion", "11", "-3", "13", R.drawable.westbromwich, R.color.white);
+        item = new Data("12", "West Bromwich Albion", "11", "-3", "13", R.drawable.westbromwich, R.color.other);
         list.add(0, item);
 
-        item = new Data("11", "Burnley", "11", "-4", "14", R.drawable.burnley, R.color.white);
+        item = new Data("11", "Burnley", "11", "-4", "14", R.drawable.burnley, R.color.other);
         list.add(0, item);
 
-        item = new Data("10", "Southampton", "12", "0", "14", R.drawable.southampton, R.color.white);
+        item = new Data("10", "Southampton", "12", "0", "14", R.drawable.southampton, R.color.other);
         list.add(0, item);
 
-        item = new Data("9", "Bournemouth", "12", "-2", "15", R.drawable.bournemouth, R.color.white);
+        item = new Data("9", "Bournemouth", "12", "-2", "15", R.drawable.bournemouth, R.color.other);
         list.add(0, item);
 
-        item = new Data("8", "Watford", "12", "-3", "18", R.drawable.watford, R.color.white);
+        item = new Data("8", "Watford", "12", "-3", "18", R.drawable.watford, R.color.other);
         list.add(0, item);
 
-        item = new Data("7", "Everton", "12", "2", "19", R.drawable.everton, R.color.white);
+        item = new Data("7", "Everton", "12", "2", "19", R.drawable.everton, R.color.other);
         list.add(0, item);
 
-        item = new Data("6", "Manchester United", "12", "3", "19", R.drawable.mu, R.color.white);
+        item = new Data("6", "Manchester United", "12", "3", "19", R.drawable.mu, R.color.other);
         list.add(0, item);
 
         item = new Data("5", "Tottenham Hotspur", "12", "10", "24", R.drawable.tottenham, R.color.fifth);

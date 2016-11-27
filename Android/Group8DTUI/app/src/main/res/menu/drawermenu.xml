@@ -37,6 +37,16 @@
         </menu>
     </item>
 
+    <item android:title="Đội bóng hàng đầu">
+        <menu>
+            <item android:title="Chelsea" />
+            <item android:title="Manchester United" />
+            <item android:title="Liverpool" />
+            <item android:title="Arsenal" />
+            <item android:title="Manchester City" />
+        </menu>
+    </item>
+
 
 
 

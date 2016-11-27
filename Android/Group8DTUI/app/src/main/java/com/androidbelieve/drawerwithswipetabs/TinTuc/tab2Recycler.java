@@ -20,8 +20,7 @@ import java.util.List;
 
 public class tab2Recycler extends RecyclerView.Adapter<tab2Recycler.RViewHolder>{
 
-    private final static int HEADER_VIEW = 0;
-    private final static int CONTENT_VIEW = 1;
+
     private List<Data_tab2> list = new ArrayList<Data_tab2>();
 
     public  tab2Recycler (List<Data_tab2> list){
@@ -58,8 +57,6 @@ public class tab2Recycler extends RecyclerView.Adapter<tab2Recycler.RViewHolder>
             Data_tab2 item = list.get(position);
             holder.text.setText(item.getText());
             holder.img.setImageResource(item.getImg());
-
-
     }
 
     @Override
@@ -77,7 +74,7 @@ public class tab2Recycler extends RecyclerView.Adapter<tab2Recycler.RViewHolder>
         public RViewHolder (View view){
             super(view);
             img = (ImageView) view.findViewById(R.id.anhtintuc);
-            text = (TextView) view.findViewById(R.id.texttintuc);
+            text = (TextView) view.findViewById(R.id.titlenews);
         }
         @Override
         public void onClick(DialogInterface dialogInterface, int i) {

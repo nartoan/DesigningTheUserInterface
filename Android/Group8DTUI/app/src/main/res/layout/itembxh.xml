@@ -21,7 +21,8 @@
     android:layout_height="match_parent"
     android:layout_marginTop="1dp"
     android:padding="5dp"
-    android:id="@+id/itemlayout">
+    android:id="@+id/itemlayout"
+    android:weightSum="10">
 
     <TextView
         android:layout_width="0dp"
