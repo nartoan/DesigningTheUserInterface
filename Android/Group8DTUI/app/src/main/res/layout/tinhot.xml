@@ -13,12 +13,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="1dp"
-        android:padding="5dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="2dp"
         android:id="@+id/tab2layout">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="190dp"
+            android:layout_height="100dp"
             android:id="@+id/anhtintuc"
             android:layout_gravity="center"
             android:foregroundGravity="center"/>
@@ -26,13 +28,16 @@
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:orientation="vertical"
-            android:padding="5dp">
+            android:padding="5dp"
+            android:layout_marginTop="5dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/titlenews"
                 android:fontFamily="sans-serif"
-                android:layout_marginBottom="1dp"/>
+                android:layout_marginBottom="1dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -49,7 +54,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/categories"/>
+                    android:id="@+id/categories"
+                    android:text="Chelsea"
+                    android:textColor="#2196F3"
+                    android:layout_gravity="center"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

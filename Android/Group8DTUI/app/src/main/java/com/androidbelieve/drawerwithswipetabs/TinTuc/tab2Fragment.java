@@ -1,5 +1,6 @@
 package com.androidbelieve.drawerwithswipetabs.TinTuc;
 
+import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -50,10 +51,10 @@ public class tab2Fragment extends android.support.v4.app.Fragment implements Bas
         url_maps.put("Game of Thrones", "http://images.boomsbeat.com/data/images/full/19640/game-of-thrones-season-4-jpg.jpg");
 
         HashMap<String,Integer> file_maps = new HashMap<String, Integer>();
-        file_maps.put("Hannibal",R.drawable.hannibal);
-        file_maps.put("Big Bang Theory",R.drawable.bigbang);
-        file_maps.put("House of Cards",R.drawable.house);
-        file_maps.put("Game of Thrones", R.drawable.game_of_thrones);
+        file_maps.put("M.U tính chiêu mộ \"Vua kiến tạo\" NHA ngay tháng Một. Ferdinand chỉ ra 2 mắt xích yếu trong sơ đồ 3-4-3 của Chelsea",R.drawable.hannibal);
+        file_maps.put("Người M.U lạc quan về cơ hội vô địch Premier League",R.drawable.bigbang);
+        file_maps.put("Ibrahimovic nói gì sau khi được dựng tượng ở Thụy Điển?",R.drawable.house);
+        file_maps.put("Chelsea thăng hoa: Đừng quên Pedro", R.drawable.game_of_thrones);
 
         for(String name : file_maps.keySet()){
             TextSliderView textSliderView = new TextSliderView(getActivity());
@@ -77,7 +78,12 @@ public class tab2Fragment extends android.support.v4.app.Fragment implements Bas
         imageSlider.setDuration(5000);
         imageSlider.addOnPageChangeListener(this);
 
-        mAdapter = new tab2Recycler(list);
+        mAdapter = new tab2Recycler(list) {
+            @Override
+            public AssetManager getAsset() {
+                return getActivity().getAssets();
+            }
+        };
         mLayoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
@@ -88,19 +94,19 @@ public class tab2Fragment extends android.support.v4.app.Fragment implements Bas
 
     private void addItem() {
         created = true;
-        Data_tab2 item = new Data_tab2(R.drawable.chelsea,"a bcds casdas fasdajl dadasd dsadsadsa sadsadsad");
+        Data_tab2 item = new Data_tab2(R.drawable.tab2_1,"MU - West Ham: Mourinho hưng phấn đón \"Búa tạ\"");
         list.add(item);
-        item = new Data_tab2(R.drawable.mu,"k biet viet gi car, :( viet linh tinh nha");
+        item = new Data_tab2(R.drawable.tab2_2,"Chelsea - Tottenham: Bước ngoặt tuyệt tác cứa lòng");
         list.add(item);
-        item = new Data_tab2(R.drawable.hull,"k biet viet gi car, :( viet linh tinh nha");
+        item = new Data_tab2(R.drawable.tab2_3,"Arsenal: Xhaka, nguy cơ từ đắt giá thành hàng hớ");
         list.add(item);
-        item = new Data_tab2(R.drawable.southampton,"k biet viet gi car, :( viet linh tinh nha");
+        item = new Data_tab2(R.drawable.tab2_4,"Góc chiến thuật Chelsea – Tottenham: Xuất thần và bản lĩnh");
         list.add(item);
-        item = new Data_tab2(R.drawable.liverpool,"k biet viet gi car, :( viet linh tinh nha");
+        item = new Data_tab2(R.drawable.tab2_5,"Chelsea bay trên đỉnh, Conte chưa dám mơ vô địch");
         list.add(item);
-        item = new Data_tab2(R.drawable.arsenal,"k biet viet gi car, :( viet linh tinh nha");
+        item = new Data_tab2(R.drawable.tab2_6,"Lên số 1, Chelsea chờ \"xả thịt\" Tottenham lẫn Man City");
         list.add(item);
-        item = new Data_tab2(R.drawable.leicester,"k biet viet gi car, :( viet linh tinh nha");
+        item = new Data_tab2(R.drawable.tab2_7,"Liverpool - Sunderland: Nghẹt thở tại Anfield");
         list.add(item);
     }
 
