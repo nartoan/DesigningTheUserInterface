@@ -80,7 +80,7 @@ public class tab2Fragment extends android.support.v4.app.Fragment implements Bas
         imageSlider.setDuration(5000);
         imageSlider.addOnPageChangeListener(this);
 
-        mAdapter = new tab2Recycler(list) {
+        mAdapter = new tab2Recycler(list, getActivity()) {
             @Override
             public AssetManager getAsset() {
                 return getActivity().getAssets();
@@ -96,6 +96,7 @@ public class tab2Fragment extends android.support.v4.app.Fragment implements Bas
                     @Override
                     public void onItemClick(View view, int position) {
                         Intent intent = new Intent(getContext(), mottintuc.class);
+                        startActivity(intent);
                     }
 
                     @Override

@@ -1,5 +1,6 @@
 package com.androidbelieve.drawerwithswipetabs.TinTuc;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.AssetManager;
@@ -24,11 +25,12 @@ import java.util.List;
 
 public abstract class tab2Recycler extends RecyclerView.Adapter<tab2Recycler.RViewHolder> implements GetAssetInterface {
 
-
+    Context context;
     private List<Data_tab2> list = new ArrayList<Data_tab2>();
 
-    public  tab2Recycler (List<Data_tab2> list){
+    public  tab2Recycler (List<Data_tab2> list, Context context){
         this.list = list;
+        this.context = context;
     }
 
     public class ViewHolder0 extends RViewHolder{
@@ -52,6 +54,13 @@ public abstract class tab2Recycler extends RecyclerView.Adapter<tab2Recycler.RVi
     public RViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         View itemView = inflater.inflate(R.layout.tinhot, parent, false);
+        itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, mottintuc.class).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                //context.startActivity(intent);
+            }
+        });
         return new RViewHolder(itemView);
     }
 
