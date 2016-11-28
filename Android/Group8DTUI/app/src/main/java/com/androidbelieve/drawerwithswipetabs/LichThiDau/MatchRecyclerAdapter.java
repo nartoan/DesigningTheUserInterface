@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -41,7 +42,6 @@ public class MatchRecyclerAdapter extends RecyclerView.Adapter<MatchRecyclerAdap
     @Override
     public void onBindViewHolder(RecyclerViewHolder holder, int position) {
         Data_match item = listData.get(position);
-        holder.alarm.setImageResource(item.getAlarm());
         holder.img1.setImageResource(item.getImg1());
         holder.name1.setText(item.getName1());
         holder.time.setText(item.getTime());
@@ -66,13 +66,14 @@ public class MatchRecyclerAdapter extends RecyclerView.Adapter<MatchRecyclerAdap
 
 
         public TextView name1, name2, time;
-        public ImageView img1, img2, alarm;
+        public ImageView img1, img2;
+        public Button alarm;
         LinearLayout mLayout;
 
 
         public RecyclerViewHolder(View itemView) {
             super(itemView);
-            alarm = (ImageView) itemView.findViewById(R.id.alarm);
+            alarm = (Button) itemView.findViewById(R.id.alarm);
             img1 = (ImageView) itemView.findViewById(R.id.doibong1);
             name1 = (TextView) itemView.findViewById(R.id.tendoi1);
             time = (TextView) itemView.findViewById(R.id.time);
