@@ -5,6 +5,10 @@
     <string name="action_settings">Settings</string>
     <string name="score">"? : ?"</string>
 
+    <string name="article_title">MU mua Messi 100 triệu euro: Sự xúc phạm với Barca?</string>
+    <string name="article_timestamp">Thứ Tư, ngày 23/11/2016 08:19 AM (GMT+7)</string>
+    <string name="article_intro">Có nhiều lí do để tin rằng, MU đang biến mình thành kẻ \"mơ mộng tội nghiệp\" khi nghĩ rằng có thể thuyết phục Lionel Messi rời Barca với cái giá 100 triệu euro.</string>
+
     <string-array name="soccer">
         <item>Bóng đá Anh</item>
         <item>Bóng đá Pháp</item>

@@ -20,6 +20,7 @@
         </activity>
         <activity android:name="com.androidbelieve.Group8.TinTuc.mottintuc" />
         <activity android:name="com.androidbelieve.Group8.Main.MainActivity"></activity>
+        <activity android:name="com.androidbelieve.Group8.LichThiDau.OneMatch"></activity>
     </application>
 
 </manifest>
