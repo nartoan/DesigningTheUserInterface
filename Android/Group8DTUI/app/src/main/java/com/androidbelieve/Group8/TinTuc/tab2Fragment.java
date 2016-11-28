@@ -36,14 +36,12 @@ public class tab2Fragment extends android.support.v4.app.Fragment implements Bas
     private tab2Recycler mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
     private boolean created = false;
-    private SliderLayout imageSlider;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.tab2, container, false);
         recyclerView = (RecyclerView) view.findViewById(R.id.tab2recycler);
-        imageSlider = (SliderLayout)view.findViewById(R.id.slider);
 
         mAdapter = new tab2Recycler(list, this) {
             @Override
@@ -90,13 +88,6 @@ public class tab2Fragment extends android.support.v4.app.Fragment implements Bas
         list.add(item);
         item = new Data_tab2(R.drawable.tab2_7,"Liverpool - Sunderland: Nghẹt thở tại Anfield");
         list.add(item);
-    }
-
-    @Override
-    public void onStop() {
-        // To prevent a memory leak on rotation, make sure to call stopAutoCycle() on the slider before activity or fragment is destroyed
-        imageSlider.stopAutoCycle();
-        super.onStop();
     }
 
     @Override

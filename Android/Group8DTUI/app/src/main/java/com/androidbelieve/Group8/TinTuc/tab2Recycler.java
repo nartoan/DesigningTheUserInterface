@@ -130,6 +130,14 @@ public abstract class tab2Recycler extends RecyclerView.Adapter<RecyclerView.Vie
     }
 
     @Override
+    public void onViewRecycled(RecyclerView.ViewHolder holder) {
+        if(getItemViewType(holder.getAdapterPosition()) == TYPE_HEADER) {
+            RViewHolderHeader viewHolder = (RViewHolderHeader) holder;
+            viewHolder.sliderLayout.stopAutoCycle();
+        }
+    }
+
+    @Override
     public int getItemCount() {
         return list.size();
     }
