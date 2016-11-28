@@ -1,26 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.RecyclerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:custom="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:id="@+id/tab2recycler"
+    android:layout_marginTop="10dp"
+    android:scrollbars="vertical">
 
-    <com.daimajia.slider.library.SliderLayout
-        android:id="@+id/slider"
-        android:layout_width="match_parent"
-        custom:pager_animation="Accordion"
-        custom:auto_cycle="true"
-        custom:indicator_visibility="visible"
-        custom:pager_animation_span="1100"
-        android:layout_height="200dp"/>
-
-    <android.support.v7.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tab2recycler"
-        android:layout_marginTop="10dp"
-        android:scrollbars="vertical">
-
-    </android.support.v7.widget.RecyclerView>
-
-</LinearLayout>
+</android.support.v7.widget.RecyclerView>

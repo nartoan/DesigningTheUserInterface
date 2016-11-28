@@ -45,7 +45,6 @@ public class TabFragment extends Fragment {
          * The setupWithViewPager dose't works without the runnable .
          * Maybe a Support Library Bug .
          */
-
         tabLayout.post(new Runnable() {
             @Override
             public void run() {
