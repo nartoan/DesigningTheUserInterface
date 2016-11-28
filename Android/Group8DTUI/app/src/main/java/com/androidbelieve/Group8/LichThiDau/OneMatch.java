@@ -16,7 +16,7 @@ public class OneMatch extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.onematch);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar3);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbarOneMatch);
         setSupportActionBar(toolbar);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
