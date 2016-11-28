@@ -1,5 +1,6 @@
 package com.androidbelieve.Group8.TinTuc;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.os.Bundle;
@@ -99,7 +100,7 @@ public class tab2Fragment extends android.support.v4.app.Fragment implements Bas
 
                     @Override
                     public void onLongItemClick(View view, int position) {
-
+                        Toast.makeText((Context) getActivity(), "Chạm tay nhau 1s thôi là nhớ nhau cả đời!", Toast.LENGTH_LONG).show();
                     }
                 })
         );
