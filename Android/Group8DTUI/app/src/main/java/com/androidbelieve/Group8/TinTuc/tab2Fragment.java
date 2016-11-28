@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.androidbelieve.Group8.R;
 import com.daimajia.slider.library.Animations.DescriptionAnimation;
@@ -40,46 +41,11 @@ public class tab2Fragment extends android.support.v4.app.Fragment implements Bas
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.tab2, null);
+        View view = inflater.inflate(R.layout.tab2, container, false);
         recyclerView = (RecyclerView) view.findViewById(R.id.tab2recycler);
-
         imageSlider = (SliderLayout)view.findViewById(R.id.slider);
 
-        HashMap<String,String> url_maps = new HashMap<String, String>();
-        url_maps.put("Hannibal", "http://static2.hypable.com/wp-content/uploads/2013/12/hannibal-season-2-release-date.jpg");
-        url_maps.put("Big Bang Theory", "http://tvfiles.alphacoders.com/100/hdclearart-10.png");
-        url_maps.put("House of Cards", "http://cdn3.nflximg.net/images/3093/2043093.jpg");
-        url_maps.put("Game of Thrones", "http://images.boomsbeat.com/data/images/full/19640/game-of-thrones-season-4-jpg.jpg");
-
-        HashMap<String,Integer> file_maps = new HashMap<String, Integer>();
-        file_maps.put("M.U tính chiêu mộ \"Vua kiến tạo\" NHA ngay tháng Một. Ferdinand chỉ ra 2 mắt xích yếu trong sơ đồ 3-4-3 của Chelsea",R.drawable.hannibal);
-        file_maps.put("Người M.U lạc quan về cơ hội vô địch Premier League",R.drawable.bigbang);
-        file_maps.put("Ibrahimovic nói gì sau khi được dựng tượng ở Thụy Điển?",R.drawable.house);
-        file_maps.put("Chelsea thăng hoa: Đừng quên Pedro", R.drawable.game_of_thrones);
-
-        for(String name : file_maps.keySet()){
-            TextSliderView textSliderView = new TextSliderView(getActivity());
-            // initialize a SliderLayout
-            textSliderView
-                    .description(name)
-                    .image(file_maps.get(name))
-                    .setScaleType(BaseSliderView.ScaleType.Fit)
-                    .setOnSliderClickListener(this);
-
-            //add your extra information
-            textSliderView.bundle(new Bundle());
-            textSliderView.getBundle()
-                    .putString("extra",name);
-
-            imageSlider.addSlider(textSliderView);
-        }
-        imageSlider.setPresetTransformer(SliderLayout.Transformer.Accordion);
-        imageSlider.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
-        imageSlider.setCustomAnimation(new DescriptionAnimation());
-        imageSlider.setDuration(5000);
-        imageSlider.addOnPageChangeListener(this);
-
-        mAdapter = new tab2Recycler(list, getActivity()) {
+        mAdapter = new tab2Recycler(list, this) {
             @Override
             public AssetManager getAsset() {
                 return getActivity().getAssets();
@@ -132,8 +98,6 @@ public class tab2Fragment extends android.support.v4.app.Fragment implements Bas
         imageSlider.stopAutoCycle();
         super.onStop();
     }
-
-
 
     @Override
     public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {}
