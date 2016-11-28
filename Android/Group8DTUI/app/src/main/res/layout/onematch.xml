@@ -11,8 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#BF360C"
-        android:id="@+id/toolbar2"
+        android:id="@+id/toolbar3"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:title="Ngoại hạng Anh" />
-    
+
 </LinearLayout>
