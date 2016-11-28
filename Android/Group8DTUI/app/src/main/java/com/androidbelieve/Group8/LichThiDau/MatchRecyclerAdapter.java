@@ -1,5 +1,6 @@
 package com.androidbelieve.Group8.LichThiDau;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.provider.AlarmClock;
@@ -23,12 +24,13 @@ import java.util.List;
  */
 
 public class MatchRecyclerAdapter extends RecyclerView.Adapter<MatchRecyclerAdapter.RecyclerViewHolder> {
-    ContextCompat res;
+    Context context;
 
     private List<Data_match> listData = new ArrayList<Data_match>();
 
-    public MatchRecyclerAdapter(List<Data_match> list) {
+    public MatchRecyclerAdapter(List<Data_match> list, Context context) {
         this.listData = list;
+        this.context = context;
     }
 
 
@@ -36,6 +38,13 @@ public class MatchRecyclerAdapter extends RecyclerView.Adapter<MatchRecyclerAdap
     public RecyclerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         View itemView = inflater.inflate(R.layout.item_match, parent, false);
+        itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, OneMatch.class);
+                context.startActivity(intent);
+            }
+        });
         return new RecyclerViewHolder(itemView);
     }
 

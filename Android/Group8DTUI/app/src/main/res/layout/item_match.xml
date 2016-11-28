@@ -2,12 +2,11 @@
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:layout_gravity="center"
-    android:layout_marginLeft="2dp"
-    android:layout_marginRight="2dp"
-    card_view:cardElevation="3dp"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="1dp"
     android:id="@+id/cardview_match">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal" android:layout_width="match_parent"
@@ -36,7 +35,8 @@
             android:gravity="center"
             android:layout_gravity="center_vertical"
             android:layout_weight="0.15"
-            android:layout_width="0dp" />
+            android:layout_width="0dp"
+            />
 
         <LinearLayout
             android:orientation="vertical"
@@ -59,7 +59,7 @@
                     android:layout_weight="0.2"
                     android:textStyle="bold"
                     android:fontFamily="sans-serif"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:gravity="center"
                     android:layout_gravity="center_vertical"
                     android:textColor="@color/black"
@@ -101,23 +101,28 @@
                     android:fontFamily="sans-serif"
                     android:gravity="center"
                     android:layout_gravity="center_vertical"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textColor="@color/black"
                     android:layout_width="0dp"/>
 
             </LinearLayout>
 
             <Button
-                android:text="Set Alarm"
-                android:textSize="9dp"
-                android:background="@color/cardview_shadow_start_color"
+                android:text="Cài nhắc nhở"
+                android:textSize="13sp"
+                android:background="#4fc3f7"
+                android:drawableLeft="@drawable/ic_notifications_black_24dp"
+                android:tint="@color/white"
                 android:textColor="@color/white"
                 android:gravity="center"
                 android:layout_gravity="center_horizontal"
-                android:layout_width="130dp"
+                android:layout_width="fill_parent"
                 android:id="@+id/alarm"
                 android:layout_weight="0.3"
-                android:layout_height="9dp" />
+                android:layout_height="9dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
 
         </LinearLayout>
 
