@@ -14,7 +14,7 @@
         android:scaleType="centerCrop"/>
 
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/title1"
         android:layout_toEndOf="@id/cover"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -32,7 +32,6 @@
         android:layout_below="@id/title"
         android:gravity="center_vertical"
         android:text="asdasdasdasdasdasdasdasd"
-        android:maxLines="1"
-        android:layout_toRightOf="@id/cover" />
+        android:maxLines="1"/>
 
 </RelativeLayout>
