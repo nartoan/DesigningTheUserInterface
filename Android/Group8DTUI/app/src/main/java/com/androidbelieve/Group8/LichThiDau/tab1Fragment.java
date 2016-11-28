@@ -31,7 +31,7 @@ public class tab1Fragment extends Fragment {
 
         recyclerView = (RecyclerView) view.findViewById(R.id.recycler_match);
 
-        mAdapter = new MatchRecyclerAdapter(list);
+        mAdapter = new MatchRecyclerAdapter(list, getActivity());
         mLayoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
