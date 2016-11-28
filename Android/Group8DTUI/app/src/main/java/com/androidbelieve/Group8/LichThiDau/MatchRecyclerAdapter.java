@@ -1,4 +1,4 @@
-package com.androidbelieve.drawerwithswipetabs.LichThiDau;
+package com.androidbelieve.Group8.LichThiDau;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.androidbelieve.drawerwithswipetabs.R;
+import com.androidbelieve.Group8.R;
 
 import java.util.ArrayList;
 import java.util.List;

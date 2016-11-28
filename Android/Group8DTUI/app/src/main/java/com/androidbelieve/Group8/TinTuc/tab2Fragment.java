@@ -1,4 +1,4 @@
-package com.androidbelieve.drawerwithswipetabs.TinTuc;
+package com.androidbelieve.Group8.TinTuc;
 
 import android.content.Intent;
 import android.content.res.AssetManager;
@@ -11,10 +11,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
-import com.androidbelieve.drawerwithswipetabs.Main.MainActivity;
-import com.androidbelieve.drawerwithswipetabs.R;
+import com.androidbelieve.Group8.R;
 import com.daimajia.slider.library.Animations.DescriptionAnimation;
 import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;

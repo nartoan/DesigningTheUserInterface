@@ -1,7 +1,4 @@
-package com.androidbelieve.drawerwithswipetabs.TinTuc;
-
-import android.speech.tts.Voice;
-import android.widget.ImageView;
+package com.androidbelieve.Group8.TinTuc;
 
 /**
  * Created by trangkute on 11/23/2016.

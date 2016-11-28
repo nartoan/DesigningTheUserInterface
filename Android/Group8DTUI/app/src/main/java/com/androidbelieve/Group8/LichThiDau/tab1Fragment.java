@@ -1,4 +1,4 @@
-package com.androidbelieve.drawerwithswipetabs.LichThiDau;
+package com.androidbelieve.Group8.LichThiDau;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,9 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.androidbelieve.drawerwithswipetabs.LichThiDau.Data_match;
-import com.androidbelieve.drawerwithswipetabs.LichThiDau.MatchRecyclerAdapter;
-import com.androidbelieve.drawerwithswipetabs.R;
+import com.androidbelieve.Group8.R;
 
 import java.util.ArrayList;
 import java.util.List;

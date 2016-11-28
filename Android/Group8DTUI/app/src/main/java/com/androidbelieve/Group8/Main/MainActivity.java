@@ -1,4 +1,4 @@
-package com.androidbelieve.drawerwithswipetabs.Main;
+package com.androidbelieve.Group8.Main;
 
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -14,8 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 
-import com.androidbelieve.drawerwithswipetabs.Main.TabFragment;
-import com.androidbelieve.drawerwithswipetabs.R;
+import com.androidbelieve.Group8.R;
 
 public class MainActivity extends AppCompatActivity {
     DrawerLayout mDrawerLayout;

@@ -1,4 +1,4 @@
-package com.androidbelieve.drawerwithswipetabs.BXH;
+package com.androidbelieve.Group8.BXH;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,9 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.androidbelieve.drawerwithswipetabs.BXH.CustomRecyclerAdapter;
-import com.androidbelieve.drawerwithswipetabs.BXH.Data;
-import com.androidbelieve.drawerwithswipetabs.R;
+import com.androidbelieve.Group8.R;
 
 import java.util.ArrayList;
 import java.util.List;

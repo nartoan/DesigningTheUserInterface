@@ -1,4 +1,4 @@
-package com.androidbelieve.drawerwithswipetabs.Main;
+package com.androidbelieve.Group8.Main;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -11,10 +11,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.androidbelieve.drawerwithswipetabs.BXH.tab3Fragment;
-import com.androidbelieve.drawerwithswipetabs.LichThiDau.tab1Fragment;
-import com.androidbelieve.drawerwithswipetabs.R;
-import com.androidbelieve.drawerwithswipetabs.TinTuc.tab2Fragment;
+import com.androidbelieve.Group8.BXH.tab3Fragment;
+import com.androidbelieve.Group8.LichThiDau.tab1Fragment;
+import com.androidbelieve.Group8.R;
+import com.androidbelieve.Group8.TinTuc.tab2Fragment;
 
 /**
  * Created by Ratan on 7/27/2015.

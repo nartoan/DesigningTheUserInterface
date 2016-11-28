@@ -1,4 +1,4 @@
-package com.androidbelieve.drawerwithswipetabs.BXH;
+package com.androidbelieve.Group8.BXH;
 
 import android.content.DialogInterface;
 import android.support.v4.content.ContextCompat;
@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.androidbelieve.drawerwithswipetabs.R;
+import com.androidbelieve.Group8.R;
 
 import java.util.ArrayList;
 import java.util.List;

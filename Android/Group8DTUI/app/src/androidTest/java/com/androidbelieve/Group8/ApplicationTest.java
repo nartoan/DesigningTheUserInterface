@@ -1,4 +1,4 @@
-package com.androidbelieve.drawerwithswipetabs;
+package com.androidbelieve.Group8;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

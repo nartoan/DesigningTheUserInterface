@@ -1,4 +1,4 @@
-package com.androidbelieve.drawerwithswipetabs.BXH;
+package com.androidbelieve.Group8.BXH;
 
 import android.widget.ImageView;
 

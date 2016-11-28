@@ -1,4 +1,4 @@
-package com.androidbelieve.drawerwithswipetabs.LichThiDau;
+package com.androidbelieve.Group8.LichThiDau;
 
 /**
  * Created by thuanbv on 11/23/2016.

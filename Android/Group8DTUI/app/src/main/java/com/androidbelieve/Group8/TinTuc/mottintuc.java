@@ -1,10 +1,10 @@
-package com.androidbelieve.drawerwithswipetabs.TinTuc;
+package com.androidbelieve.Group8.TinTuc;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
-import com.androidbelieve.drawerwithswipetabs.R;
+import com.androidbelieve.Group8.R;
 
 /**
  * Created by Trang kute on 11/27/2016.

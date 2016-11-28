@@ -1,4 +1,4 @@
-package com.androidbelieve.drawerwithswipetabs.TinTuc;
+package com.androidbelieve.Group8.TinTuc;
 
 /**
  * Created by Trang kute on 11/27/2016.

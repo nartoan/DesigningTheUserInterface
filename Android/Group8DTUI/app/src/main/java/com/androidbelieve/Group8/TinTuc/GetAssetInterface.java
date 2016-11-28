@@ -1,4 +1,4 @@
-package com.androidbelieve.drawerwithswipetabs.TinTuc;
+package com.androidbelieve.Group8.TinTuc;
 
 import android.content.res.AssetManager;
 
