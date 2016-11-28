@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -13,81 +15,80 @@
         android:background="#BF360C"
         android:id="@+id/toolbar2"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:title="Ngoại Hạng Anh" />
+        app:title="Ngoại hạng Anh" />
 
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/activity_container"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.androidbelieve.Group8.TinTuc.mottintuc">
+
+    <RelativeLayout
+        android:id="@+id/activity_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.cloudteddy.newsreader.MainActivity">
+        tools:context="com.androidbelieve.Group8.TinTuc.mottintuc"
+        android:background="#ffffff">
 
-        <RelativeLayout
-            android:id="@+id/activity_main"
+        <ImageView
+            android:id="@+id/cover"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:context="com.cloudteddy.newsreader.MainActivity"
-            android:background="#ffffff">
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/cover"/>
 
-            <ImageView
-                android:id="@+id/cover"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:adjustViewBounds="true"
-                android:src="@drawable/cover"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cover"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="@string/article_title"/>
 
-            <TextView
-                android:id="@+id/title"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/cover"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp"
-                android:paddingTop="10dp"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="#000000"
-                android:text="@string/article_title"/>
+        <TextView
+            android:id="@+id/timestamp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp"
+            android:textSize="12sp"
+            android:text="@string/article_timestamp"/>
 
-            <TextView
-                android:id="@+id/timestamp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/title"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp"
-                android:paddingBottom="16dp"
-                android:textSize="12sp"
-                android:text="@string/article_timestamp"/>
+        <TextView
+            android:id="@+id/intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timestamp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="@string/article_intro"/>
 
-            <TextView
-                android:id="@+id/intro"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/timestamp"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp"
-                android:textStyle="bold"
-                android:textColor="#000000"
-                android:text="@string/article_intro"/>
+        <WebView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/intro"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"/>
 
-            <WebView
-                android:id="@+id/content"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/intro"
-                android:paddingStart="6dp"
-                android:paddingEnd="6dp"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/related"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
 
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/related"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/content"/>
+    </RelativeLayout>
 
-        </RelativeLayout>
-
-    </ScrollView>
-
-</LinearLayout>
+</ScrollView>
+    </LinearLayout>
